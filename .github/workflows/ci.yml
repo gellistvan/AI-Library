@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     container:
       image: pandoc/latex:edge-ubuntu
@@ -18,6 +18,11 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+
+      - name: Install CMake and make
+        run: |
+          apt-get update
+          apt-get install -y cmake make
 
       - name: Configure CMake
         run: cmake -S . -B build
