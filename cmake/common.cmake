@@ -42,6 +42,8 @@ macro(add_combined_book_target TARGET_NAME PREAMBLE_FILE SUFFIX MARKDOWN_FILES)
     # Set the output PDF file name
     set(OUTPUT_DIR ${CMAKE_INSTALL_BINARY_DIR}/${REL_DIR})
     set(OUTPUT_PDF ${OUTPUT_DIR}/${TARGET_NAME}_${SUFFIX}.pdf)
+    file(MAKE_DIRECTORY ${OUTPUT_DIR})
+
 
     # Add custom target to generate combined PDF
     add_custom_target(
