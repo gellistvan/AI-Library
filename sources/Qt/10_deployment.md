@@ -1,5 +1,3 @@
-
-
 ## Chapter 10: Deployment
 
 This chapter explores the crucial aspects of deploying Qt applications, focusing on eﬀective packaging, 

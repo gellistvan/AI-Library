@@ -1,0 +1,13 @@
+title: Programming embedded systems
+subtitle: in C++
+author: Istvan Gellai
+margin-left: 2cm
+margin-right: 2cm
+margin-top: 2.5cm
+margin-bottom: 2.5cm
+highlight-syntax: kate
+toc: true
+header-includes:
+  - \usepackage{fvextra}
+  - \usepackage{verbatim}
+  - \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
