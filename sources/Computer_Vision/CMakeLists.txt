@@ -43,7 +43,7 @@ set(PART_8_CHAPTERS
 set(PART_9_CHAPTERS
     "${CMAKE_CURRENT_SOURCE_DIR}/Part_9_Future_Directions/Chapter_25.md")
 
-add_book_target(${CMAKE_CURRENT_SOURCE_DIR}/computer_vision.md preamble.yml a4.pdf)
+add_book_target(${CMAKE_CURRENT_SOURCE_DIR}/computer_vision.md preamble_a4.yml a4.pdf)
 
 set(ALL_SOURCE_FILES
     PART_1_CHAPTERS
