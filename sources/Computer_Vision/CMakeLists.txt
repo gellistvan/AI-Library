@@ -43,27 +43,28 @@ set(PART_8_CHAPTERS
 set(PART_9_CHAPTERS
     "${CMAKE_CURRENT_SOURCE_DIR}/Part_9_Future_Directions/Chapter_25.md")
 
-add_book_target(${CMAKE_CURRENT_SOURCE_DIR}/computer_vision.md preamble_a4.yml a4.pdf)
-
 set(ALL_SOURCE_FILES
-    PART_1_CHAPTERS
-    PART_2_CHAPTERS
-    PART_3_CHAPTERS
-    PART_4_CHAPTERS
-    PART_5_CHAPTERS
-    PART_6_CHAPTERS
-    PART_7_CHAPTERS
-    PART_8_CHAPTERS
-    PART_9_CHAPTERS
+    ${PART_1_CHAPTERS}
+    ${PART_2_CHAPTERS}
+    ${PART_3_CHAPTERS}
+    ${PART_4_CHAPTERS}
+    ${PART_5_CHAPTERS}
+    ${PART_6_CHAPTERS}
+    ${PART_7_CHAPTERS}
+    ${PART_8_CHAPTERS}
+    ${PART_9_CHAPTERS}
 )
 
-add_combined_book_target(computer_vision_part_1 ${CMAKE_CURRENT_SOURCE_DIR}/preamble_a4.yml a4 "${PART_1_CHAPTERS}")
-add_combined_book_target(computer_vision_part_2 ${CMAKE_CURRENT_SOURCE_DIR}/preamble_a4.yml a4 "${PART_2_CHAPTERS}")
-add_combined_book_target(computer_vision_part_3 ${CMAKE_CURRENT_SOURCE_DIR}/preamble_a4.yml a4 "${PART_3_CHAPTERS}")
-add_combined_book_target(computer_vision_part_4 ${CMAKE_CURRENT_SOURCE_DIR}/preamble_a4.yml a4 "${PART_4_CHAPTERS}")
-add_combined_book_target(computer_vision_part_5 ${CMAKE_CURRENT_SOURCE_DIR}/preamble_a4.yml a4 "${PART_5_CHAPTERS}")
-add_combined_book_target(computer_vision_part_6 ${CMAKE_CURRENT_SOURCE_DIR}/preamble_a4.yml a4 "${PART_6_CHAPTERS}")
-add_combined_book_target(computer_vision_part_7 ${CMAKE_CURRENT_SOURCE_DIR}/preamble_a4.yml a4 "${PART_7_CHAPTERS}")
-add_combined_book_target(computer_vision_part_8 ${CMAKE_CURRENT_SOURCE_DIR}/preamble_a4.yml a4 "${PART_8_CHAPTERS}")
-add_combined_book_target(computer_vision_part_9 ${CMAKE_CURRENT_SOURCE_DIR}/preamble_a4.yml a4 "${PART_9_CHAPTERS}")
+if(BUILD_BOOK_PARTS)
+    add_combined_book_target(computer_vision_part_1 ${CMAKE_CURRENT_SOURCE_DIR}/preamble_a4.yml a4 "${PART_1_CHAPTERS}")
+    add_combined_book_target(computer_vision_part_2 ${CMAKE_CURRENT_SOURCE_DIR}/preamble_a4.yml a4 "${PART_2_CHAPTERS}")
+    add_combined_book_target(computer_vision_part_3 ${CMAKE_CURRENT_SOURCE_DIR}/preamble_a4.yml a4 "${PART_3_CHAPTERS}")
+    add_combined_book_target(computer_vision_part_4 ${CMAKE_CURRENT_SOURCE_DIR}/preamble_a4.yml a4 "${PART_4_CHAPTERS}")
+    add_combined_book_target(computer_vision_part_5 ${CMAKE_CURRENT_SOURCE_DIR}/preamble_a4.yml a4 "${PART_5_CHAPTERS}")
+    add_combined_book_target(computer_vision_part_6 ${CMAKE_CURRENT_SOURCE_DIR}/preamble_a4.yml a4 "${PART_6_CHAPTERS}")
+    add_combined_book_target(computer_vision_part_7 ${CMAKE_CURRENT_SOURCE_DIR}/preamble_a4.yml a4 "${PART_7_CHAPTERS}")
+    add_combined_book_target(computer_vision_part_8 ${CMAKE_CURRENT_SOURCE_DIR}/preamble_a4.yml a4 "${PART_8_CHAPTERS}")
+    add_combined_book_target(computer_vision_part_9 ${CMAKE_CURRENT_SOURCE_DIR}/preamble_a4.yml a4 "${PART_9_CHAPTERS}")
+endif ()
+
 add_combined_book_target(computer_vision ${CMAKE_CURRENT_SOURCE_DIR}/preamble_a4.yml a4 "${ALL_SOURCE_FILES}")

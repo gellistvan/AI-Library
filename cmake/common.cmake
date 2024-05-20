@@ -1,31 +1,33 @@
 macro(add_book_target MARKDOWN_FILE PREAMBLE_FILE SUFFIX)
-    # Get the directory of the markdown file relative to the source directory
-    get_filename_component(MARKDOWN_DIR ${MARKDOWN_FILE} DIRECTORY)
+    if(BUILD_BOOK_PARTS)
+        # Get the directory of the markdown file relative to the source directory
+        get_filename_component(MARKDOWN_DIR ${MARKDOWN_FILE} DIRECTORY)
 
-    # Get the relative path from the source directory to the markdown file directory
-    file(RELATIVE_PATH REL_DIR ${CMAKE_SOURCE_DIR}/sources/ ${MARKDOWN_DIR})
+        # Get the relative path from the source directory to the markdown file directory
+        file(RELATIVE_PATH REL_DIR ${CMAKE_SOURCE_DIR}/sources/ ${MARKDOWN_DIR})
 
-    # Construct the output directory based on the relative path
-    set(OUTPUT_DIR ${CMAKE_INSTALL_BINARY_DIR}/${REL_DIR})
-    file(MAKE_DIRECTORY ${OUTPUT_DIR})
+        # Construct the output directory based on the relative path
+        set(OUTPUT_DIR ${CMAKE_INSTALL_BINARY_DIR}/${REL_DIR})
+        file(MAKE_DIRECTORY ${OUTPUT_DIR})
 
-    # Get the filename without the directory and add the suffix
-    get_filename_component(FILE_NAME ${MARKDOWN_FILE} NAME_WE)
+        # Get the filename without the directory and add the suffix
+        get_filename_component(FILE_NAME ${MARKDOWN_FILE} NAME_WE)
 
-    set(OUTPUT_FILE ${FILE_NAME}_${SUFFIX})
-    set(OUTPUT_FILE_PATH ${OUTPUT_DIR}/${FILE_NAME}_${SUFFIX})
+        set(OUTPUT_FILE ${FILE_NAME}_${SUFFIX})
+        set(OUTPUT_FILE_PATH ${OUTPUT_DIR}/${FILE_NAME}_${SUFFIX})
 
-    # Add custom target to generate PDF
-    add_custom_target(
-            ${OUTPUT_FILE}
-            ALL
-            COMMAND pandoc ${MARKDOWN_FILE} -o ${OUTPUT_FILE_PATH} --metadata-file=${PREAMBLE_FILE}
-            DEPENDS ${MARKDOWN_FILE}
-            COMMENT "Generating PDF from Markdown using Pandoc with preamble ${PREAMBLE_FILE}"
-            WORKING_DIRECTORY ${MARKDOWN_DIR}
-    )
+        # Add custom target to generate PDF
+        add_custom_target(
+                ${OUTPUT_FILE}
+                ALL
+                COMMAND pandoc ${MARKDOWN_FILE} -o ${OUTPUT_FILE_PATH} --metadata-file=${PREAMBLE_FILE}
+                DEPENDS ${MARKDOWN_FILE}
+                COMMENT "Generating PDF from Markdown using Pandoc with preamble ${PREAMBLE_FILE}"
+                WORKING_DIRECTORY ${MARKDOWN_DIR}
+        )
 
-    message(STATUS "Generating FILE to ${OUTPUT_FILE_PATH}")
+        message(STATUS "Generating FILE to ${OUTPUT_FILE_PATH}")
+    endif ()
 endmacro()
 
 

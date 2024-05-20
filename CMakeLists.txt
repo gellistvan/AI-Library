@@ -2,6 +2,9 @@ cmake_minimum_required(VERSION 3.10)
 
 project(AI_Library)
 
+option(BUILD_BOOK_PARTS "Build individual parts and chapters" OFF)
+
+
 set(CMAKE_INSTALL_BINARY_DIR ${CMAKE_SOURCE_DIR}/output)
 message(STATUS "BIN_DIR:${CMAKE_INSTALL_BINARY_DIR}")
 file(MAKE_DIRECTORY ${CMAKE_BINARY_DIR})

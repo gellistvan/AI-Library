@@ -48,11 +48,13 @@ set(ALL_SOURCE_FILES
         "${CMAKE_CURRENT_SOURCE_DIR}/Closure.md"
 )
 
-add_combined_book_target(advanced_cpp_part_1 ${CMAKE_CURRENT_SOURCE_DIR}/preamble_a4.yml a4 "${PART_1_CHAPTERS}")
-add_combined_book_target(advanced_cpp_part_2 ${CMAKE_CURRENT_SOURCE_DIR}/preamble_a4.yml a4 "${PART_2_CHAPTERS}")
-add_combined_book_target(advanced_cpp_part_3 ${CMAKE_CURRENT_SOURCE_DIR}/preamble_a4.yml a4 "${PART_3_CHAPTERS}")
-add_combined_book_target(advanced_cpp_part_4 ${CMAKE_CURRENT_SOURCE_DIR}/preamble_a4.yml a4 "${PART_4_CHAPTERS}")
-add_combined_book_target(advanced_cpp_part_5 ${CMAKE_CURRENT_SOURCE_DIR}/preamble_a4.yml a4 "${PART_5_CHAPTERS}")
-add_combined_book_target(advanced_cpp_part_6 ${CMAKE_CURRENT_SOURCE_DIR}/preamble_a4.yml a4 "${PART_6_CHAPTERS}")
+if(BUILD_BOOK_PARTS)
+    add_combined_book_target(advanced_cpp_part_1 ${CMAKE_CURRENT_SOURCE_DIR}/preamble_a4.yml a4 "${PART_1_CHAPTERS}")
+    add_combined_book_target(advanced_cpp_part_2 ${CMAKE_CURRENT_SOURCE_DIR}/preamble_a4.yml a4 "${PART_2_CHAPTERS}")
+    add_combined_book_target(advanced_cpp_part_3 ${CMAKE_CURRENT_SOURCE_DIR}/preamble_a4.yml a4 "${PART_3_CHAPTERS}")
+    add_combined_book_target(advanced_cpp_part_4 ${CMAKE_CURRENT_SOURCE_DIR}/preamble_a4.yml a4 "${PART_4_CHAPTERS}")
+    add_combined_book_target(advanced_cpp_part_5 ${CMAKE_CURRENT_SOURCE_DIR}/preamble_a4.yml a4 "${PART_5_CHAPTERS}")
+    add_combined_book_target(advanced_cpp_part_6 ${CMAKE_CURRENT_SOURCE_DIR}/preamble_a4.yml a4 "${PART_6_CHAPTERS}")
+endif()
 add_combined_book_target(advanced_cpp ${CMAKE_CURRENT_SOURCE_DIR}/preamble_a4.yml a4 "${ALL_SOURCE_FILES}")
 
