@@ -27,9 +27,7 @@ Corners in an image are points where the intensity changes significantly in mult
    Compute the gradient of the image in both the x and y directions. These gradients represent changes in intensity.
 
    Let $I(x, y)$ be the image intensity at point $(x, y)$. The gradients $I_x$ and $I_y$ are computed as:
-   $$
-   I_x = \frac{\partial I}{\partial x}, \quad I_y = \frac{\partial I}{\partial y}
-   $$
+   $I_x = \frac{\partial I}{\partial x}, \quad I_y = \frac{\partial I}{\partial y}$
 
 2. **Structure Tensor (Second Moment Matrix)**:
    Construct a matrix $M$ using the gradients, which encapsulates the local intensity changes around a point:
