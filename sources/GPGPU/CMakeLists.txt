@@ -13,6 +13,15 @@ set(CHAPTERS
         "${CMAKE_CURRENT_SOURCE_DIR}/11_konyvtarak_es_apik.md"
         "${CMAKE_CURRENT_SOURCE_DIR}/12_valos_alkalmazasok.md"
         "${CMAKE_CURRENT_SOURCE_DIR}/13_cuda_jovoje.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/14_opencl_kornyezet.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/15_opencl_alapok.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/16_opencl_memoriakezeles.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/17_halado_opencl.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/18_opencl_optimalizatio.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/19_opencl_alkalmazasok.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/20_hibakereses.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/21_zarszo.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/fuggelek.md"
 )
 
 

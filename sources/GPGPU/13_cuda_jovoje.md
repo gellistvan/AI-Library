@@ -4,11 +4,11 @@
 
 A GPU technológia és a CUDA ökoszisztéma folyamatosan fejlődik, hogy megfeleljen a modern számítástechnika egyre növekvő igényeinek. Az olyan legújabb GPU architektúrák, mint az Ampere és a Hopper, új szintre emelik a számítási teljesítményt és energiahatékonyságot, miközben új lehetőségeket kínálnak a fejlesztők számára. A CUDA ökoszisztéma is dinamikusan fejlődik, számos új fejlesztéssel és innovációval, amelyek elősegítik a programozási hatékonyságot és a hardverek teljesítményének maximális kihasználását. Ezen felül, a CUDA technológia kvantumszámítástechnikában való alkalmazása is ígéretes kutatási irányokat nyit meg, amelyek hosszú távon alapvetően változtathatják meg a számítástechnika jövőjét. Ebben a fejezetben részletesen áttekintjük ezeket a legújabb trendeket és jövőbeli fejlesztéseket.
 
-#### 13.1 A legújabb GPU architektúrák
+### 13.1 A legújabb GPU architektúrák
 
 A GPU architektúrák folyamatos fejlődése révén a számítási teljesítmény és az energiahatékonyság új szintjeit érhetjük el. Az Ampere és a Hopper a legújabb példák erre a fejlődésre.
 
-##### Ampere Architektúra
+#### Ampere Architektúra
 
 Az NVIDIA Ampere architektúrája jelentős előrelépést hozott a GPU technológiában. Az Ampere alapú GPU-k, mint például az A100, jelentős teljesítménynövekedést kínálnak a korábbi generációkhoz képest. Az Ampere architektúra egyik legnagyobb újítása a Tensor Core technológia továbbfejlesztése, amely drámai módon felgyorsítja a mélytanulási modellek képzését és inferenciáját.
 
@@ -48,7 +48,7 @@ int main() {
 }
 ```
 
-##### Hopper Architektúra
+#### Hopper Architektúra
 
 A Hopper architektúra az NVIDIA következő nagy dobása, amely még nagyobb teljesítményt és hatékonyságot ígér. A Hopper architektúra újdonságai között szerepel a továbbfejlesztett Tensor Core technológia, az új memóriahierarchia és a skálázható több-GPU rendszerek támogatása. Ezek az újítások lehetővé teszik a még komplexebb és nagyobb méretű adathalmazok feldolgozását.
 
@@ -104,11 +104,11 @@ int main(int argc, char** argv) {
 }
 ```
 
-#### 13.2 Jövőbeli fejlesztések a CUDA ökoszisztémában
+### 13.2 Jövőbeli fejlesztések a CUDA ökoszisztémában
 
 A CUDA ökoszisztéma folyamatos fejlesztései és újdonságai nagyban hozzájárulnak a fejlesztők munkájának megkönnyítéséhez és a hardverek teljesítményének maximális kihasználásához. A következő években számos újításra számíthatunk, amelyek még hatékonyabbá és könnyebbé teszik a CUDA használatát.
 
-##### Folyamatos fejlesztések és újdonságok
+#### Folyamatos fejlesztések és újdonságok
 
 A CUDA platform folyamatosan bővül új könyvtárakkal, eszközökkel és API-kkal, amelyek célja a fejlesztési folyamat egyszerűsítése és a teljesítmény növelése. Az új verziókban bevezetett optimalizációk és újítások lehetővé teszik a fejlesztők számára, hogy még nagyobb teljesítményt érjenek el a meglévő hardverekkel.
 
@@ -159,11 +159,11 @@ int main() {
 }
 ```
 
-#### 13.3 CUDA alkalmazások a kvantumszámítástechnikában
+### 13.3 CUDA alkalmazások a kvantumszámítástechnikában
 
 A kvantumszámítástechnika területén végzett kutatások egyre inkább előtérbe kerülnek, és a CUDA technológia jelentős szerepet játszhat ezen kutatásokban. A kvantumszámítógépek által kínált párhuzamosság és teljesítménylehetőségek kiaknázása érdekében a CUDA ökoszisztéma folyamatosan adaptálódik és fejlődik.
 
-##### Jövőbeli kutatási irányok
+#### Jövőbeli kutatási irányok
 
 A kvantumszámítástechnika terén a CUDA alkalmazásának egyik legfontosabb iránya a kvantumszimulációk és a kvantumalgoritmusok fejlesztése. A CUDA segítségé
 
