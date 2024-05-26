@@ -1,3 +1,4 @@
+add_subdirectory(Algoritmusok)
 add_subdirectory(Computer_Vision)
 add_subdirectory(Embedded_systems)
 add_subdirectory(Advanced_Cpp)
