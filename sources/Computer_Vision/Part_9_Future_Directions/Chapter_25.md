@@ -2,7 +2,6 @@
 \newpage
 # Part IX: Future Directions
 
-\newpage
 ## Chapter 25: Emerging Trends in Computer Vision
 
 As computer vision technology continues to evolve, several emerging trends are shaping its future and expanding its potential applications. This chapter explores the forefront of these advancements, providing a glimpse into the innovations driving the field. We will delve into the significant progress in AI and machine learning, the rise of edge computing and real-time processing capabilities, and the critical ethical and societal implications that accompany these technological developments.

@@ -2,7 +2,6 @@
 \newpage
 # Part I: Introduction
 
-\newpage
 ## Chapter 1: Overview of Computer Vision
 
 ### 1.1. Definition and Scope

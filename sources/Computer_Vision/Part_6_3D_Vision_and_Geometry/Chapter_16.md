@@ -2,7 +2,6 @@
 \newpage
 # Part VI: 3D Vision and Geometry
 
-\newpage
 ## Chapter 16: Stereo Vision and Depth Estimation
 
 Stereo vision and depth estimation are fundamental components of computer vision that enable machines to perceive the world in three dimensions. This chapter delves into the principles and techniques that allow computers to reconstruct depth information from two or more images. By understanding the geometric relationships between different viewpoints, we can estimate the distance and structure of objects within a scene. The following subchapters will explore the foundational concepts of epipolar geometry, the methodologies behind stereo matching algorithms, and the practical applications of extracting depth from stereo images.

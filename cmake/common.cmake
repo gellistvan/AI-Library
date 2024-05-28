@@ -1,5 +1,6 @@
 macro(add_book_target MARKDOWN_FILE PREAMBLE_FILE SUFFIX)
     if(BUILD_BOOK_PARTS)
+        set (MERMAID_FILTER_PATH "~/node_modules/mermaid-filter/index.js")
         # Get the directory of the markdown file relative to the source directory
         get_filename_component(MARKDOWN_DIR ${MARKDOWN_FILE} DIRECTORY)
 

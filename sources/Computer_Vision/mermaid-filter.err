@@ -1,0 +1,6 @@
+file:///usr/local/lib/node_modules/mermaid-filter/node_modules/@mermaid-js/mermaid-cli/src/index.js:274
+      const svg = container.getElementsByTagName?.('svg')?.[0]
+                                                 ^
+
+SyntaxError: Unexpected token '.'
+    at Loader.moduleStrategy (internal/modules/esm/translators.js:133:18)

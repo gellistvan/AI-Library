@@ -3,7 +3,6 @@
 
 # Part III: Feature Detection and Matching
 
-\newpage
 ## Chapter 6: Edge Detection
 
 Edge detection is a fundamental technique in image processing and computer vision, used to identify significant transitions in intensity within an image. These transitions, or edges, represent object boundaries, surface markings, and other critical features. Detecting edges accurately is essential for tasks such as image segmentation, object recognition, and scene understanding. This chapter explores various methods for edge detection, ranging from basic gradient-based techniques to advanced algorithms.

@@ -2,8 +2,6 @@
 \newpage
 # Part VII: Motion Analysis
 
-
-\newpage
 ## Chapter 19: Optical Flow
 
 Optical Flow is a fundamental concept in computer vision that involves estimating the motion of objects in a sequence of images or video frames. By understanding and calculating the apparent motion of pixel intensities, we can gain insights into the movement within a scene, enabling various applications such as object tracking, video stabilization, and motion detection. This chapter delves into key methodologies for computing optical flow, focusing on the Lucas-Kanade method, the Horn-Schunck method, and Dense Optical Flow techniques, providing a comprehensive overview of their principles, implementations, and applications in real-world scenarios.

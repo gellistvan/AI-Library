@@ -1,4 +1,6 @@
+add_subdirectory(ARM_assembly)
 add_subdirectory(Algoritmusok)
+add_subdirectory(Architekturalis_tervezes)
 add_subdirectory(Computer_Vision)
 add_subdirectory(Embedded_systems)
 add_subdirectory(Advanced_Cpp)

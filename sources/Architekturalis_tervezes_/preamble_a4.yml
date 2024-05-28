@@ -1,8 +1,5 @@
-title: Programming embedded systems
-subtitle: in C++
+title: Architekturális design
 author: Istvan Gellai
-fontsize: 12pt
-papersize: a4
 margin-left: 2cm
 margin-right: 2cm
 margin-top: 2.5cm
@@ -11,5 +8,4 @@ highlight-syntax: kate
 toc: true
 header-includes:
   - \usepackage{fvextra}
-  - \usepackage{verbatim}
   - \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}

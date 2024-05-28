@@ -1,6 +1,8 @@
 title: Computer Vision and Image Processing
 subtitle: with C++ and OpenCV
 author: Istvan Gellai
+fontsize: 12pt
+papersize: a4
 margin-left: 2cm
 margin-right: 2cm
 margin-top: 2.5cm

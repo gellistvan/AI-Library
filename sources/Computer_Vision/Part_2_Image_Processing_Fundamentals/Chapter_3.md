@@ -2,7 +2,6 @@
 \newpage
 # Part II: Image Processing Fundamentals
 
-\newpage
 ## Chapter 3: Image Preprocessing
 
 Image preprocessing is a crucial step in computer vision, setting the foundation for successful image analysis and interpretation. It involves preparing and enhancing raw image data to improve the performance of subsequent tasks, such as object detection, classification, and segmentation. This chapter delves into key techniques for image preprocessing, ensuring images are in an optimal state for further processing. We will explore methods to reduce noise, apply various filters, and equalize histograms, enhancing the quality and interpretability of images.

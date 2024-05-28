@@ -2,7 +2,6 @@
 \newpage
 # Part V: Object Detection and Recognition
 
-\newpage
 ## Chapter 13: Classical Object Detection
 
 In the realm of computer vision, object detection is a critical task that involves identifying and locating objects within an image. Before the advent of deep learning, classical object detection methods laid the groundwork for many of the advanced techniques we see today. This chapter delves into these foundational approaches, focusing on the Sliding Window approach and the use of Histogram of Oriented Gradients (HOG) features combined with Support Vector Machines (SVM). These techniques, though overshadowed by modern deep learning models, remain essential for understanding the evolution of object detection methodologies.

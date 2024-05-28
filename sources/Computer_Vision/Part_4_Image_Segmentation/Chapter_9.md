@@ -2,8 +2,6 @@
 \newpage
 # Part IV: Image Segmentation
 
-
-\newpage
 ## Chapter 9: Thresholding Techniques
 
 Thresholding is a fundamental technique in image processing used to simplify images by converting grayscale images into binary images. This process is essential for various applications, such as object detection and segmentation. In this chapter, we will explore key thresholding methods, starting with global and adaptive thresholding techniques that apply fixed and varying thresholds across an image. We will then delve into Otsu's method, an advanced approach that automatically determines an optimal threshold to minimize intra-class variance, enhancing the accuracy of image segmentation.
