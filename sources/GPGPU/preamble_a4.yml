@@ -1,6 +1,8 @@
 title: GPGPU
 subtitle: Általános célú számítások GPU-n
 author: Istvan Gellai
+fontsize: 12pt
+papersize: a4
 margin-left: 2cm
 margin-right: 2cm
 margin-top: 2.5cm

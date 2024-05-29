@@ -1,6 +1,8 @@
 title: Cache coherence and cache friendly programming techniques
 subtitle: in embedded environments
 author: Istvan Gellai
+fontsize: 12pt
+papersize: a4
 margin-left: 2cm
 margin-right: 2cm
 margin-top: 2.5cm
