@@ -4,7 +4,7 @@
 
 Chapter 11, delves into the art and science of enhancing the performance and efficiency of assembly language programs on ARM architecture. This chapter begins by exploring fundamental performance considerations, offering practical techniques to write more efficient code. It then advances into sophisticated optimization methods, including loop unrolling and instruction scheduling, which are crucial for maximizing execution speed and resource utilization. Additionally, the chapter covers the importance of code profiling and analysis, providing insights into various tools and methodologies for identifying and addressing performance bottlenecks. To consolidate learning, a comprehensive example is presented, thoroughly explained to demonstrate the application of these optimization techniques in a real-world scenario.
 
-### Performance Considerations: Techniques for Writing Efficient Code
+### Performance Considerations
 
 Performance optimization in assembly language programming is a critical aspect of developing efficient software, particularly on ARM architecture. Writing efficient assembly code involves a thorough understanding of the hardware, the instruction set architecture (ISA), and the specific performance characteristics of the processor. This chapter aims to provide a comprehensive guide to various techniques and strategies for writing efficient assembly code, focusing on performance considerations.
 
@@ -111,7 +111,7 @@ In this example, several optimization techniques are applied:
 
 By applying these and other techniques, assembly code can be optimized for better performance on ARM processors. Understanding and leveraging the specific characteristics of the ARM architecture is key to achieving efficient, high-performance code.
 
-### Loop Unrolling and Instruction Scheduling: Advanced Optimization Techniques
+### Loop Unrolling and Instruction Scheduling
 
 Optimizing assembly code involves sophisticated techniques that can significantly enhance performance, especially in critical sections of code such as loops. Two advanced optimization techniques—loop unrolling and instruction scheduling—are crucial for maximizing execution speed and efficiency. This chapter provides an in-depth examination of these techniques, explaining their principles, benefits, and implementation strategies with scientific accuracy and detailed examples.
 
@@ -321,7 +321,7 @@ sum_loop_optimized:
 
 In this example, the loop is unrolled by a factor of eight, and instructions are scheduled to minimize stalls. The load instructions (`ldr`) are interleaved with add instructions (`add`), ensuring that each load operation is followed by an independent add operation, allowing the CPU to execute multiple instructions in parallel without waiting for dependencies.
 
-### Code Profiling and Analysis: Tools and Methods for Optimizing Assembly Code
+### Code Profiling and Analysis
 
 Optimizing assembly code is a meticulous task that requires a deep understanding of how code executes on the processor. Profiling and analysis are essential for identifying performance bottlenecks and guiding optimization efforts. This chapter provides a comprehensive and detailed exploration of code profiling and analysis, covering various tools, techniques, and methodologies for optimizing assembly code with scientific accuracy.
 

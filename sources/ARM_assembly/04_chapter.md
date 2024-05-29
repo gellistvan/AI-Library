@@ -138,7 +138,7 @@ While assemblers, debuggers, and emulators are the core components of an ARM ass
     - **Cppcheck**: Static analysis tool for C/C++ that can be adapted for assembly.
     - **Clang Static Analyzer**: Part of the LLVM project, offers static code analysis to detect bugs.
 
-### Installing and Configuring Tools: Step-by-Step Setup Guide
+### Installing and Configuring Tools
 
 Setting up a development environment for ARM assembly programming involves multiple steps, including downloading, installing, and configuring various tools. This guide will provide a comprehensive, step-by-step process to ensure that you have all the necessary components to start developing ARM assembly programs. We will cover the installation and configuration of assemblers, debuggers, and emulators, as well as the setup of integrated development environments (IDEs) and additional tools that enhance the development experience.
 

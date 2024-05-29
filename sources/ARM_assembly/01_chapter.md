@@ -1,3 +1,5 @@
+\newpage
+
 ## **Part I: Introduction to Assembly Language and ARM Architecture**
 
 ## 1. **Introduction**

@@ -6,7 +6,7 @@
 
 Chapter 9 delves into the essential concepts of creating reusable code blocks in Assembly Language and ARM Architecture. This chapter begins by exploring the fundamentals of defining and calling subroutines, which are critical for structuring efficient and maintainable code. It further examines various methods for parameter passing, ensuring that arguments are correctly conveyed to subroutines. Additionally, the chapter covers the intricate details of managing stack frames and local variables, providing a comprehensive understanding of how function calls and local data are handled. To solidify these concepts, a combined example with a detailed explanation is included, demonstrating practical implementation and reinforcing the chapter's teachings.
 
-### Defining and Calling Subroutines: Creating Reusable Code Blocks
+### Defining and Calling Subroutines
 
 Subroutines, also known as procedures or functions, are fundamental to programming, providing a way to organize code into manageable, reusable blocks. In the context of Assembly Language and ARM Architecture, understanding how to define and call subroutines is crucial for writing efficient and maintainable code. This chapter delves deeply into the intricacies of subroutines, covering their definition, calling conventions, and practical applications.
 
@@ -159,7 +159,7 @@ done:
 
 This example showcases the fundamental steps in defining and calling subroutines, parameter passing, and managing the stack. By adhering to these principles, you can create efficient, modular, and maintainable ARM Assembly programs.
 
-### Parameter Passing: Methods for Passing Arguments to Subroutines
+### Parameter Passing
 
 Parameter passing is a critical concept in programming, allowing data to be provided to subroutines or functions for processing. In Assembly Language and ARM Architecture, there are several methods for passing parameters to subroutines, each with its own advantages and use cases. This chapter explores these methods in detail, including passing parameters through registers, the stack, and memory, along with best practices and examples.
 
@@ -428,7 +428,7 @@ int main() {
 }
 ```
 
-### Stack Frames and Local Variables: Managing Function Calls and Local Data
+### Stack Frames and Local Variables
 
 In Assembly Language and ARM Architecture, managing function calls and local data efficiently is essential for writing robust and maintainable code. This involves understanding the concepts of stack frames and local variables. Stack frames allow us to manage the function call process, including parameter passing, return addresses, and local variables. This chapter provides an exhaustive exploration of these concepts, focusing on the ARM architecture.
 

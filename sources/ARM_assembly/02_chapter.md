@@ -89,7 +89,7 @@ As computers evolved, so did assembly languages. The introduction of more powerf
 - **Enhanced Syntax**: Improvements in the syntax of assembly languages made them easier to write and understand.
 - **Integration with Higher-Level Languages**: Assembly language was often used in conjunction with higher-level languages like FORTRAN and COBOL, allowing critical parts of programs to be written in assembly for efficiency while maintaining overall code readability.
 
-### Transition to Assembly Language: Why Assembly Was Developed
+### Why Assembly Was Developed?
 
 The transition from machine code to assembly language was a pivotal moment in the history of computing. This shift was driven by the need to overcome the inherent limitations and challenges associated with programming directly in binary. Assembly language was developed to provide a more efficient, readable, and less error-prone method for programming computers. This subchapter delves into the reasons behind the development of assembly language, exploring the factors that necessitated this transition and how it revolutionized computer programming.
 
@@ -162,7 +162,7 @@ The introduction of assembly language lowered the barrier to entry for programmi
 
 Assembly language laid the groundwork for the development of high-level programming languages. While assembly language provided significant improvements over machine code, it still required detailed management of hardware operations. This experience highlighted the need for even higher levels of abstraction, leading to the creation of languages like FORTRAN, COBOL, and later C. These high-level languages further simplified programming by abstracting away hardware details, enabling even greater productivity and ease of use.
 
-### Assembly in Modern Computing: Current Relevance and Uses
+### Assembly in Modern Computing
 
 Despite the proliferation of high-level programming languages, assembly language continues to hold a significant place in modern computing. Its relevance persists across various domains due to its unique ability to provide low-level control over hardware, optimize performance, and ensure efficient use of system resources. This chapter explores the current relevance and uses of assembly language in contemporary computing, detailing its applications, benefits, and ongoing importance in the field.
 

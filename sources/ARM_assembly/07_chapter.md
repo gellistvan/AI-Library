@@ -4,7 +4,7 @@
 
 Chapter 7 delves into the fundamental components of the ARM architecture, focusing on the various types of registers and their operations. This chapter begins with an overview of the General Purpose Registers (GPRs), which are crucial for holding temporary data and performing arithmetic and logic operations. It then explores Special Purpose Registers, including the Program Counter (PC), Stack Pointer (SP), and status registers, which play essential roles in managing program flow and system states. The chapter progresses to cover essential register operations such as loading, storing, and manipulating data, providing the foundational skills necessary for effective programming in assembly language. Finally, a comprehensive example ties together these concepts, demonstrating their practical application and reinforcing the learning through detailed explanations.
 
-### General Purpose Registers: Overview of ARM Registers
+### General Purpose Registers
 
 General Purpose Registers (GPRs) are integral to the ARM architecture, serving as the primary means for data storage, manipulation, and computation within the CPU. Understanding these registers is essential for anyone aiming to master ARM assembly language, as they are the workhorses of the processor, involved in virtually every instruction executed by the CPU.
 
@@ -140,7 +140,7 @@ In this example:
 
 This example demonstrates the use of GPRs for passing function arguments, performing arithmetic operations, and managing the stack for function calls. It highlights the importance of following conventions to ensure that register values are preserved across function calls and that the program operates correctly and predictably.
 
-### Special Purpose Registers: Program Counter, Stack Pointer, and Status Registers
+### Special Purpose Registers
 
 In ARM architecture, Special Purpose Registers (SPRs) play critical roles in managing program execution, controlling the flow of data, and maintaining the state of the processor. Unlike General Purpose Registers (GPRs), which are mainly used for temporary data storage and computation, SPRs are designed for specific control functions. This chapter will provide an exhaustive and detailed examination of the key SPRs in ARM processors: the Program Counter (PC), the Stack Pointer (SP), and the Status Registers. These registers are fundamental to understanding how ARM processors execute instructions, manage memory, and handle various system states.
 
@@ -292,7 +292,7 @@ In this example:
     - After handling the interrupt, the context is restored by popping the saved values back into the registers and the CPSR.
 - The `SUBS PC, LR, #4` instruction ensures the correct return to the interrupted code by adjusting the PC.
 
-### Register Operations: Loading, Storing, and Manipulating Data in Registers
+### Register Operations
 
 Register operations are the cornerstone of ARM assembly programming, involving a range of instructions for loading data into registers, storing data from registers to memory, and manipulating data within registers. These operations are fundamental for executing any meaningful computation or control flow in a program. This chapter provides an exhaustive and detailed exploration of the various types of register operations in ARM architecture, including loading, storing, and manipulating data.
 

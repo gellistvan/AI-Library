@@ -6,7 +6,7 @@
 
 In this chapter, we will delve into the fundamental building blocks of assembly language, providing a solid foundation for understanding and writing assembly code. We begin with an exploration of assembly language syntax, outlining the basic rules and structure that govern how instructions are written and interpreted. Next, we cover data representation, offering insights into how data is encoded in binary, hexadecimal, and ASCII formats, which are crucial for effective low-level programming. Finally, we introduce assembler directives, essential commands that guide the assembler in processing the source code. By the end of this chapter, you will have a comprehensive understanding of the basic syntax and structure of assembly language, equipping you with the skills to write and interpret simple assembly programs.
 
-### Assembly Language Syntax: Basic Syntax Rules and Structure
+### Basic Syntax Rules and Structure
 
 Assembly language is a low-level programming language that provides a direct interface to the computer's hardware. Unlike high-level languages, assembly language is closely tied to the architecture of the computer and allows precise control over the machine's operations. Understanding the syntax and structure of assembly language is crucial for writing effective and efficient programs. This subchapter delves into the details of assembly language syntax, providing a comprehensive overview of its rules and structure.
 
@@ -258,7 +258,7 @@ Writing efficient and maintainable assembly code requires adherence to best prac
 
 By mastering the syntax and structure of assembly language, you gain the ability to write powerful low-level programs that can directly manipulate hardware, perform high-speed computations, and execute with minimal overhead. This foundational knowledge is essential for any programmer seeking to harness the full potential of their computer's architecture.
 
-### Data Representation: Understanding Binary, Hexadecimal, and ASCII
+### Data Representation
 
 Data representation is fundamental to understanding how computers store, process, and transmit information. At its core, all data in a computer is represented using binary numbers, which are sequences of bits (binary digits). However, for human readability and convenience, we often use other representations such as hexadecimal and ASCII. This chapter provides an in-depth exploration of these data representation systems, their significance, and their practical applications in programming and computer architecture.
 
@@ -478,7 +478,7 @@ File systems use data representation for efficient storage and retrieval.
 
 By mastering binary, hexadecimal, and ASCII representations, you gain a deeper understanding of how computers process and store information, enabling you to write more efficient programs, debug complex issues, and effectively manage data at the lowest levels of the system. This knowledge is foundational for anyone pursuing a career in computer science, engineering, or related fields.
 
-### Using Directives: Common Assembler Directives and Their Usage
+### Common Assembler Directives and Their Usage
 
 Assembler directives, also known as pseudo-operations or pseudo-ops, are instructions that guide the assembler in the assembly process but do not generate machine code themselves. They play a crucial role in defining data structures, controlling the organization of code and data segments, and managing various aspects of the assembly process. This chapter provides an exhaustive overview of common assembler directives, their functions, and how they are used in assembly language programming.
 

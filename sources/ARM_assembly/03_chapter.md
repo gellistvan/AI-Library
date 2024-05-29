@@ -4,7 +4,7 @@
 
 Chapter 3 delves into the world of ARM Architecture, providing a comprehensive overview that serves as the foundation for mastering assembly language programming. We begin with the fascinating history of ARM, tracing its evolution from its inception to its current prominence in the world of microprocessors. This journey through time highlights the innovative milestones that have defined ARM's development and success. Moving forward, we explore the core principles and key features that underpin ARM's design philosophy, emphasizing its efficiency, performance, and versatility. Finally, we introduce the ARM Instruction Set, a critical component for any programmer, offering insights into its structure and functionality. This chapter aims to equip readers with a robust understanding of ARM Architecture, setting the stage for more advanced topics in assembly language programming.
 
-### History of ARM: Evolution of ARM Processors
+### History of ARM
 
 The history of ARM (Acorn RISC Machine) processors is a remarkable journey marked by innovation, adaptation, and global impact. From its humble beginnings in the early 1980s to becoming a dominant force in the semiconductor industry, the evolution of ARM processors is a testament to the power of efficient, scalable, and versatile design principles.
 
@@ -64,7 +64,7 @@ As we look to the future, ARM continues to innovate and expand its influence. Th
 
 Furthermore, ARM's acquisition by NVIDIA in 2020, pending regulatory approval, represents a significant development that could shape the future of the semiconductor industry. This merger has the potential to drive further innovation and integration across different computing domains.
 
-### ARM Architecture Basics: Key Features and Design Philosophy
+### Key Features and Design Philosophy
 
 The ARM (Advanced RISC Machines) architecture is renowned for its efficient design, scalability, and adaptability, making it a dominant force in the world of microprocessors. This chapter provides a detailed and exhaustive exploration of the key features and design philosophy that underpin ARM architecture, elucidating its principles and mechanisms that have led to its widespread adoption across various computing platforms.
 
@@ -189,7 +189,7 @@ Typical pipeline stages include:
 
 By overlapping these stages, ARM processors achieve high instruction throughput and efficiency. Advanced techniques like out-of-order execution and speculative execution further optimize pipeline performance.
 
-### ARM Instruction Set: Introduction to the Instruction Set
+### ARM Instruction Set
 
 The ARM instruction set is a fundamental aspect of ARM architecture, playing a crucial role in its efficiency, performance, and versatility. This chapter provides a comprehensive and detailed examination of the ARM instruction set, covering its structure, types of instructions, addressing modes, and special features. By the end of this chapter, readers will have a deep understanding of how ARM instructions work and how they contribute to the overall design philosophy of ARM processors.
 

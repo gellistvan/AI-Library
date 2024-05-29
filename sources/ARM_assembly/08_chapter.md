@@ -4,7 +4,7 @@
 
 In this chapter, we delve into the intricate workings of memory and addressing modes in ARM architecture, providing a crucial foundation for effective programming and system optimization. We'll explore how ARM processors manage memory through their sophisticated memory architecture, ensuring efficient data handling and processing. Next, we’ll dissect various addressing modes, including immediate, register, and indexed addressing, to demonstrate how they enable precise and flexible data access within the system. Furthermore, we’ll cover stack and heap management, essential for both static and dynamic memory allocation, ensuring robust and scalable code. To solidify your understanding, we will conclude with a comprehensive example that integrates these concepts, offering a detailed explanation to bridge theory and practical application.
 
-### Memory Architecture: How ARM Processors Handle Memory
+### Memory Architecture
 
 Understanding the memory architecture of ARM processors is fundamental for writing efficient and optimized code. ARM processors, widely known for their low power consumption and high performance, utilize a sophisticated memory architecture to handle data storage and retrieval effectively. This chapter provides an exhaustive exploration of how ARM processors manage memory, covering the essential components, their interactions, and the underlying principles that govern memory operations.
 
@@ -168,7 +168,7 @@ This example illustrates how ARM processors handle memory through register manip
 
 By understanding the intricate details of ARM memory architecture, developers can write more efficient, reliable, and optimized code, harnessing the full potential of ARM processors.
 
-### Addressing Modes: Immediate, Register, and Indexed Addressing
+### Addressing Modes
 
 Addressing modes are a critical aspect of ARM architecture, determining how the processor accesses data stored in memory or registers. Efficient use of addressing modes can greatly enhance the performance and flexibility of your code. In this chapter, we will delve deeply into the three primary addressing modes in ARM: immediate, register, and indexed addressing. We will cover the theoretical foundations, practical implementations, and provide comprehensive examples to illustrate each mode's usage.
 
@@ -344,7 +344,7 @@ Example:
 
 In this example, the offset in R1 is scaled by 4 (using the logical shift left operation) before being added to the base address in R0. This is particularly useful for accessing elements in an array where each element is 4 bytes (32 bits) wide.
 
-### Stack and Heap Management: Using the Stack and Managing Dynamic Memory
+### Stack and Heap Management
 
 Efficient memory management is a cornerstone of effective programming, particularly in systems programming and applications that demand high performance. ARM processors, renowned for their power efficiency and versatility, provide robust mechanisms for managing both stack and heap memory. This chapter provides an exhaustive exploration of stack and heap management, detailing their roles, implementations, and best practices in ARM architecture.
 

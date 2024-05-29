@@ -4,7 +4,7 @@
 
 Interrupts and exceptions are crucial aspects of the ARM architecture that allow the processor to respond promptly to events and errors, ensuring efficient and robust system operation. This chapter delves into the interrupt mechanism, explaining how ARM processors manage and prioritize interrupts to maintain smooth functionality. Readers will learn to write Interrupt Service Routines (ISRs) to handle both hardware and software interrupts effectively. The chapter also covers exception handling, providing strategies to deal with unexpected events and errors, thereby enhancing the resilience of the code. A comprehensive example will be presented to illustrate the practical implementation of these concepts, tying together theory and practice for a thorough understanding.
 
-### Interrupt Mechanism: How Interrupts Work on ARM Processors
+### Interrupt Mechanism on ARM Processors
 
 #### Introduction
 
@@ -140,7 +140,7 @@ timer_isr:
     SUBS PC, LR, #4         ; Return from interrupt
 ```
 
-### Writing Interrupt Service Routines (ISR): Handling Hardware and Software Interrupts
+### Writing Interrupt Service Routines (ISR)
 
 #### Introduction
 
@@ -321,7 +321,7 @@ deferred_worker:
     B deferred_worker         ; Loop to handle next item
 ```
 
-### Exception Handling: Dealing with Exceptions and Ensuring Robust Code
+### Exception Handling
 
 #### Introduction
 
