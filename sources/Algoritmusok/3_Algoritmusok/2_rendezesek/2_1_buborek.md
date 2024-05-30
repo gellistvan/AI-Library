@@ -1,4 +1,5 @@
 \newpage
+
 # 2. Rendezési algoritmusok
 
 A rendezési algoritmusok a számítástechnika alapvető eszközei, amelyek nélkülözhetetlenek a hatékony adatszerkezetek kezeléséhez és az adatok gyors eléréséhez. Ezek az algoritmusok különféle módszereket kínálnak az elemek rendezésére egy adott sorrendben, legyen az növekvő vagy csökkenő. A rendezési folyamat jelentősége nem csupán az esztétikai vagy szervezési szempontokban rejlik, hanem kritikus szerepet játszik az adatok gyors keresésében és feldolgozásában is. Ebben a fejezetben megismerkedünk a legfontosabb rendezési algoritmusokkal, beleértve az egyszerűbb, intuitív módszereket, mint a buborékrendezés, valamint az összetettebb, de hatékonyabb technikákat, mint a gyorsrendezés és a rendezőfák. Az algoritmusok működésének megértése és összehasonlítása révén átfogó képet kapunk a különböző megközelítések erősségeiről és gyengeségeiről, valamint arról, hogy mikor érdemes egy adott algoritmust alkalmazni.
