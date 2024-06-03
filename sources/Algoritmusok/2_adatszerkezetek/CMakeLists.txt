@@ -1,8 +1,6 @@
 include(common)
 
-set(PART_1_CHAPTERS
-        "../0_eloszo.md"
-        "../1_1_beezetes.md"
+set(PART_2_CHAPTERS
         "${CMAKE_CURRENT_SOURCE_DIR}/1_alapveto_adatszerkezetek.md"
         "${CMAKE_CURRENT_SOURCE_DIR}/2_hash_tablak.md"
         "${CMAKE_CURRENT_SOURCE_DIR}/3_fa_szerkezetek.md"
@@ -12,7 +10,7 @@ set(PART_1_CHAPTERS
         "${CMAKE_CURRENT_SOURCE_DIR}/7_fenwick_fa.md"
         "${CMAKE_CURRENT_SOURCE_DIR}/8_segment_fa.md"
         "${CMAKE_CURRENT_SOURCE_DIR}/9_sufix_fa_array.md"
+        PARENT_SCOPE
 )
 
-add_combined_book_target(adatszerkezetek ${CMAKE_CURRENT_SOURCE_DIR}/preamble.yml a4 "${PART_1_CHAPTERS}")
 

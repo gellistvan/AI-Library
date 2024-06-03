@@ -54,7 +54,7 @@ macro(add_combined_book_target TARGET_NAME PREAMBLE_FILE SUFFIX MARKDOWN_FILES)
             ALL
             COMMAND pandoc ${MARKDOWN_FILES} -o ${OUTPUT_PDF} --metadata-file=${PREAMBLE_FILE}
             DEPENDS ${MARKDOWN_FILES}
-            COMMENT "Generating combined PDF from Markdown using Pandoc with preamble ${PREAMBLE_FILE}"
+            COMMENT "Generating combined PDF from Markdown using Pandoc from inputs ${MARKDOWN_FILES}"
             WORKING_DIRECTORY ${MARKDOWN_DIR}
     )
 
