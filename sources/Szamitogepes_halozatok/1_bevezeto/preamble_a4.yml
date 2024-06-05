@@ -1,0 +1,14 @@
+title: Számítógépes hálózatok C++ programozóknak
+subtitle: 1. kötet - Bevezetés, Fizikai és adatkapcsolati rétegek
+author: Istvan Gellai
+fontsize: 12pt
+papersize: a4
+margin-left: 2cm
+margin-right: 2cm
+margin-top: 2.5cm
+margin-bottom: 2.5cm
+highlight-syntax: kate
+toc: true
+header-includes:
+  - \usepackage{fvextra}
+  - \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
