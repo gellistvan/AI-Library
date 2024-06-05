@@ -18,6 +18,7 @@ Formálisan, a LIS probléma a következőképpen írható le:
 Például, ha az input sorozat $A = [10, 22, 9, 33, 21, 50, 41, 60, 80]$, akkor a leghosszabb növekvő részsorozat az $[10, 22, 33, 50, 60, 80]$, amelynek hossza 6. Megjegyzendő, hogy a leghosszabb növekvő részsorozat nem feltétlenül egyértelmű; egy másik lehetséges LIS lehetne $[10, 22, 33, 41, 60, 80]$.
 
 #### Matematikai Megfogalmazás
+
 Tekintsük az $LIS(A)$ függvényt, amely megadja a $A$ sorozat leghosszabb növekvő részsorozatának hosszát. A probléma megoldása során olyan $S$ sorozatot keresünk, amely maximalizálja a hosszúságát, azaz:
 
 $$
@@ -44,6 +45,7 @@ A LIS probléma számos gyakorlati alkalmazással bír különböző területeke
     - **Jellemzők Kivonása:** A hosszú növekvő részsorozatok azonosítása segíthet az adatok jellemzőinek kivonásában, amelyeket később különböző prediktív modellekben használhatunk.
 
 #### Matematikai Alkalmazások
+
 1. **Számelmélet:**
     - **Rendteremtési Problémák:** A LIS kapcsolódik olyan számelméleti problémákhoz, mint például a rendteremtési problémák, ahol egy adott permutációban a leghosszabb rendezett részsorozatot keressük.
     - **Young-diagramok:** A LIS hasznos eszköz a Young-diagramokkal kapcsolatos kutatásokban, amelyek fontos szerepet játszanak a kombinatorikus optimalizálásban és a szimmetrikus csoportok elméletében.

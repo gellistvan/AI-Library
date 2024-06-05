@@ -328,6 +328,7 @@ A bizalmasság az adatvédelmet jelenti, biztosítva azt, hogy az információkh
 **Aszimmetrikus titkosítás**: Ezzel ellentétben az aszimmetrikus titkosítás két különböző kulcsot használ: egy nyilvános kulcsot a titkosításhoz és egy privát kulcsot a visszafejtéshez. Ez kényelmesebb kulcskezelést biztosít, de általában lassabb és erőforrásigényesebb.
 
 #### Integritás (Integrity)
+
 Az integritás az adatok épségének és teljességének védelmére utal, biztosítva, hogy az adatok nem kerültek megváltoztatásra illetéktelenek által. A kriptográfiai hash függvényeket gyakran használják az integritás ellenőrzésére, mivel ezek biztosítják, hogy az adat bármilyen kis változása a hash érték szignifikáns változását eredményezi.
 
 **Hash függvények**: Olyan matematikai függvények, amelyek bemenetként egy tetszőleges méretű adatot vesznek fel és fix méretű kimenetet állítanak elő. A jó hash függvények tulajdonságai közé tartoznak a determinisztikusság, az előrejelezhetetlenség, az ütközésállóság és a gyors számítás.

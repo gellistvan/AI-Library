@@ -502,6 +502,7 @@ Az egyesítési technikák hatékonysága jelentős mértékben befolyásolja az
 Az oszd-meg-és-uralkodj (Divide and Conquer) stratégia rendkívül fontos szerepet játszik az algoritmuselmélet és a gyakorlati számítástechnika területén. Az oszd-meg-és-uralkodj algoritmusok teljesítményének elemzése, valamint azok összehasonlítása más megközelítésekkel, mint például a dinamikus programozással (Dynamic Programming), a gráf algoritmusokkal vagy a bonyolultabb keresési stratégiákkal, kritikus fontosságú a hatékony algoritmusok kiválasztásában és alkalmazásában.
 
 #### Teljesítmény elemzése
+
 Az oszd-meg-és-uralkodj algoritmusok teljesítményének elemzése céljából alapvetően három fő lépést azonosíthatunk:
 
 1. **Felbontás (Divide)**: A problémát kisebb részekre bontjuk.

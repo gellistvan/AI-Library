@@ -161,6 +161,7 @@ While RTTI provides powerful capabilities, there are some limitations and consid
 RTTI is typically enabled by default in most C++ compilers. However, it can be disabled for performance or binary size reasons.
 
 ##### Example (GCC/Clang)
+
 To disable RTTI in GCC or Clang, use the `-fno-rtti` compiler flag:
 ```sh
 g++ -fno-rtti main.cpp -o main

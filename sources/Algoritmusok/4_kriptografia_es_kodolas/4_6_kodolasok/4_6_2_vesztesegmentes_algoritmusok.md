@@ -448,9 +448,11 @@ int main() {
 Az LZW (Lempel-Ziv-Welch) algoritmus egy veszteségmentes adattömörítési módszer, amely az 1978-ban Abraham Lempel és Jacob Ziv által kidolgozott LZ78 algoritmus továbbfejlesztése. Terry Welch 1984-ben módosította és optimalizálta ezt az algoritmust, amely azóta széles körben használt technológia lett különböző adattömörítési alkalmazásokban.
 
 #### Alapelvek és működési mechanizmus
+
 Az LZW algoritmus a szimbólumok sorozatát ahelyett, hogy egyetlen szimbólumot tömörítene, egy index táblázatba (szótárba) kódolja, amely a már látott szimbólumokat vagy szimbólumsorozatokat tartalmazza. Az algoritmus két fő lépésből áll: a kódolási és dekódolási fázisból.
 
 ##### Kódolás
+
 1. **Szótár inicializálása**
    Az algoritmus kezdetekor egy előre definiált szótárat használ, amely tartalmazza az összes lehetséges egyedi input karaktert. Ez azt jelenti, hogy egy 8 bites kódrendszer esetén a kezdeti szótár 256 bejegyzésből áll (0-255), amely az egyes karakterekhez tartozik.
 
@@ -463,6 +465,7 @@ Az LZW algoritmus a szimbólumok sorozatát ahelyett, hogy egyetlen szimbólumot
    Az előző lépéseket ismételjük mindaddig, amíg minden bejövő karaktert feldolgozunk. A szótár mérete folyamatosan növekszik, új bejegyzésekkel gazdagítva a lenyomozott mintázatokat.
 
 ##### Dekódolás
+
 1. **Szótár inicializálása**
    Az algoritmus dekódoló partnere is ugyanazt a kezdeti szótárat használja, mint a kódoló oldal.
 
@@ -564,6 +567,7 @@ int main() {
 ```
 
 #### Algoritmus analízis
+
 Az LZW algoritmus hatékonyan képes tömöríteni a visszatérő mintázatokat, anélkül, hogy különleges a priori tudásra lenne szükség az adatok eloszlásáról. Ez az alapvető előnye számos más tömörítési technikával szemben.
 
 1. **Teljesítmény**:
@@ -577,6 +581,7 @@ Az LZW algoritmus hatékonyan képes tömöríteni a visszatérő mintázatokat,
     - Az LZW algoritmus kimagaslóan jól teljesít akkor, ha az input adatokban többször előforduló alzsúfoltságok helyezkednek el, ilyen esetekben a tömörítési ráta jelentősen növelhet.
 
 #### Alkalmazások
+
 Az LZW-t széles körben használják különböző adattömörítési alkalmazásokban:
 1. **GIF képfájl formátum**:
    Az LZW az egyik legismertebb algoritmus, amelyet a GIF képfájl formátum használ. Az 1980-as évek végén ez az egyik első színes képfájl formátum volt, amely veszteségmentes adattömörítési technikát alkalmazott.

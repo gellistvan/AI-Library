@@ -266,6 +266,7 @@ A videókompresszió modern világunk egyik kulcsfontosságú technológiája, a
 Az H.264 kompressziós algoritmus számos innovatív technikát alkalmaz a videó adatok hatékony csökkentése érdekében, miközben megőrzi a lehető legjobb vizuális minőséget. A következő szakaszok részletezik ezeket az elveket és technikákat.
 
 ##### 1. **Intraframe tömörítés (I-képkockák)**
+
 Az intraframe tömörítés a képkockákon belüli redundancia csökkentésére összpontosít. Az I-képkockák a videó olyan képkockái, amelyeket teljes mértékben, önállóan tömörítenek, minden más képkocka nélkül. Ez általában egy DCT (Discrete Cosine Transform) alapú megközelítést használ, ahol a képkocka blokkjaira (általában 8x8 vagy 16x16 pixeles blokkok) felosztják, majd ezek a blokkok frekvenciatartományba kerülnek átalakításra.
 
 A blokkok átalakítása után kvantálási lépések következnek, amelyek jelentősen csökkentik a kép adatmennyiségét azáltal, hogy a kevésbé fontos frekvenciakomponensek pontosságát csökkentik. Végül, a blokkadatokat entropia kódolással (például Huffman vagy aritmetikai kódolással) tömörítik tovább az adatok mennyiségének minimalizálása érdekében.
@@ -314,6 +315,7 @@ int main() {
 }
 ```
 ##### 2. **Interframe tömörítés (P és B-képkockák)**
+
 Az interframe tömörítés a képkockák közötti redundancia csökkentésére összpontosít. A P-képkockák (prediktív képkockák) egy korábbi I vagy P-képkockából való elmozdulás révén kerülnek tömörítésre. A mozgáskompenzációs technikákat alkalmazzák, ahol az aktuális képkocka blokkjait keresik meg a korábbiakban, és kiszámítják a mozgásvektorokat.
 
 A B-képkockák (biprediktív képkockák) két különböző képkocka (egy korábbi és egy jövőbeli) között végzik el a predikciót. Ez jelentős mennyiségű redundancia csökkentési lehetőséget biztosít.

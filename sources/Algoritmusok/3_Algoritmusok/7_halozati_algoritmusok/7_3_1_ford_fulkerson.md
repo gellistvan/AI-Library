@@ -17,18 +17,23 @@ A Ford-Fulkerson algoritmus az áramlási hálózatok maximális áramlásának 
 Az algoritmus alapját az áramlási hálózat (flow network) fogalma képezi. Egy áramlási hálózat egy irányított gráf, amelynek csúcsai (vertices) vannak, és élei (edges) maximum kapacitással (capacity) rendelkeznek, amelyek meghatározzák, hogy mennyi áramlás folyhat át rajtuk. Az áramlási hálózat egy kiemelt forrást (source) és nyelőt (sink) is tartalmaz. Az algoritmus célja a forrástól a nyelőig terjedő maximális áramlás meghatározása.
 
 ##### 1. **Kezdeti állapot**:
+
 Az algoritmus egy kezdeti állapottal indul, ahol minden élre vonatkozó kezdeti áramlás nulla.
 
 ##### 2. **Maradék hálózat** (Residual Network):
+
 Az algoritmus a maradék hálózatot használja az aktuális áramlás és a még használható kapacitás meghatározására. A maradék hálózat az eredeti hálózat egy olyan változata, ahol minden él kapacitása csökkent a már átfolyt áramlás mértékével. Ha egy (u, v) él eredeti kapacitása `c(u, v)` és áramlása `f(u, v)` akkor a maradék hálózatban (u, v) él kapacitása `c'(u, v) = c(u, v) - f(u, v)`. Ezen kívül, a fordított él (v, u) kapacitása `c'(v, u) = f(u, v)` (ez lehetővé teszi az áramlás visszafordítását, ha szükséges).
 
 ##### 3. **Útkeresés**:
+
 Az algoritmus egy útkeresési módszert alkalmaz a maradék hálózatban, hogy megtaláljon egy forrástól a nyelőig tartó utat, amelyen még további áramlást lehet vinni (ezt hívjuk növelőútnak, augmenting path). Tipikusan szélességi keresést (BFS) vagy mélységi keresést (DFS) használnak erre a feladatra.
 
 ##### 4. **Áramlás növelése**:
+
 Ha egy növelőutat találunk, az út mentén lévő összes él maximális kapacitását figyelembe véve meghatározza a növelési értéket (bottleneck capacity), amely a legkisebb kapacitás az út mentén. Ezután ezen a növelőúton ennek megfelelően megnöveli az áramlást.
 
 ##### 5. **Iteráció**:
+
 Az algoritmus addig ismétli az útkeresést és áramlás növelését, amíg nem talál több növelőutat. Ekkor az aktuális áramlás lesz a maximális áramlás a hálózatban.
 
 #### Pseudocode és C++ kód

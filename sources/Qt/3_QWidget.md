@@ -5,6 +5,7 @@ For Chapter 3 of your Qt programming course focused on "GUI Programming with QtW
 ### 3.1: Introduction to Widgets
 
 #### Overview 
+
 Widgets are the basic building blocks of a GUI application in Qt. They can display data and interface elements and receive user inputs. Widgets can be as simple as a label or as complex as an entire window.
 
 * QWidget: The base class for all UI components.
@@ -15,6 +16,7 @@ Widgets are the basic building blocks of a GUI application in Qt. They can displ
 * Hierarchy and Composition: Widgets can contain other widgets. For example, a form can be composed of multiple labels, text ﬁelds, and buttons.
 * Event System: Widgets respond to user inputs through an event system (e.g., mouse clicks, key presses).
 #### Hierarchy and Composition
+
 In Qt, widgets are the basic building blocks for user interfaces. Each widget can act as a container for other widgets, allowing developers to create complex layouts with nested widgets. This hierarchical organization of widgets not only makes it easier to manage the layout and rendering of the GUI but also simplifies the process of handling events propagated through the widget tree.
 
 **How it Works:**
@@ -24,6 +26,7 @@ In Qt, widgets are the basic building blocks for user interfaces. Each widget ca
 **Example:** Consider a simple login form. This form might be a QDialog that contains several QLabels (for username, password labels), QLineEdits (for entering username and password), and QPushButtons (for actions like login and cancel). The dialog acts as the parent widget, and all labels, line edits, and buttons are its children, managed by a layout.
 
 #### Event System
+
 Qt's event system is designed to handle various user inputs and other occurrences in an application. Widgets in Qt can respond to a wide range of events such as mouse clicks, key presses, and custom events defined by the developer.
 
 **How it Works:**

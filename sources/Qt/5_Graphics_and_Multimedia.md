@@ -14,6 +14,7 @@ Chapter 5 equips students with the knowledge and skills to use Qt's powerful gra
 - **Styling:** Conﬁguring pen styles, brush colors, and ﬁll patterns.
 
 #### Coordinate System in QPainter
+
 The QPainter coordinate system is used to position and draw graphics primitives such as lines, rectangles, and text in a widget or other paintable surface. The coordinate system's origin (0, 0) by default is located at the top-left corner of the painting surface, with x-coordinates extending to the right and y-coordinates extending downwards. This orientation is intuitive for typical GUI applications, as it corresponds with the way controls and content are laid out on screens.
 
 **Transformations:**

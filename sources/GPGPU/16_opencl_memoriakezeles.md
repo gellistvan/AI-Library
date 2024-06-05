@@ -4,6 +4,7 @@
 Az OpenCL memória kezelése és optimalizálása kulcsfontosságú szerepet játszik a GPGPU alkalmazások teljesítményének maximalizálásában. Az OpenCL programok hatékonyságát nagymértékben befolyásolja, hogy hogyan használják a különböző típusú memóriákat és hogyan optimalizálják a memória hozzáféréseket. Ebben a fejezetben áttekintjük a memória hierarchiát, a globális, lokális és privát memória használatát, valamint a koaleszált memória hozzáférés optimalizálását. Továbbá, részletesen foglalkozunk a bankütközések elkerülésének technikáival, és bemutatjuk a konstans memória és a képfeldolgozás memória használatának sajátosságait. A fejezet végére az olvasó átfogó képet kap arról, hogyan lehet hatékonyan kezelni és optimalizálni az OpenCL memóriát a teljesítmény növelése érdekében.
 
 ### 16.1 Memória hierarchia és hozzáférés
+
 Az OpenCL-ben a memória hierarchia és a hozzáférés optimalizálása kritikus fontosságú a programok teljesítményének maximalizálása érdekében. Az OpenCL memória modellje négy fő memóriaterületet különböztet meg: globális, lokális, privát és konstans memória. Minden memória típusnak megvan a saját szerepe és használati módja, amelyet megfelelően kell alkalmazni a hatékony memória hozzáférés érdekében.
 
 **Globális, lokális és privát memória használata**

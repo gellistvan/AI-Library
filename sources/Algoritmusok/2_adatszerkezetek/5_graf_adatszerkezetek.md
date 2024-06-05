@@ -13,9 +13,11 @@ A grafelmélet az egyik legfontosabb és legszélesebb körben alkalmazott terü
 A grafok legfontosabb elemei a csúcsok, amelyeket gyakran pontoknak is nevezünk. Egy graf $G = (V, E)$ definíciójában $V$ a csúcsok halmazát jelöli. A csúcsok lehetnek egyének egy szociális hálózatban, városok egy útvonalhálózatban vagy állapotok egy állapotgépben. Az egyes csúcsokat általában egyedi azonosítóval látják el, például számokkal vagy betűkkel.
 
 #### Formális definíció
+
 Legyen $G = (V, E)$ egy graf, ahol $V$ a csúcsok halmaza. Ha a graf $n$ csúcsot tartalmaz, akkor $|V| = n$.
 
 #### Példa
+
 Vegyünk egy egyszerű grafot $G$, amelyben a csúcsok halmaza $V = \{A, B, C, D\}$. Ebben az esetben négy csúcsunk van, és $|V| = 4$.
 
 ### Élek (Edges)
@@ -23,15 +25,19 @@ Vegyünk egy egyszerű grafot $G$, amelyben a csúcsok halmaza $V = \{A, B, C, D
 Az élek a csúcsok közötti kapcsolatokat reprezentálják. Az élek halmazát $E$ jelöli. Az él lehet irányítatlan (amikor a kapcsolat kétirányú) vagy irányított (amikor a kapcsolat egyirányú).
 
 #### Irányítatlan élek
+
 Irányítatlan graf esetén az éleket rendezetlen csúcspárok alkotják, azaz az él bármelyik irányban járható. Ha $u$ és $v$ csúcsok között irányítatlan él van, akkor ezt $\{u, v\}$-vel jelöljük.
 
 #### Irányított élek
+
 Irányított grafban az élek rendezett párokként szerepelnek, azaz az él csak egy irányban járható. Ha $u$-ból $v$-be van él, akkor ezt $(u, v)$-vel jelöljük.
 
 #### Formális definíció
+
 Legyen $G = (V, E)$ egy graf. Az élek halmaza $E$ tartalmazhat rendezetlen (irányítatlan graf) vagy rendezett (irányított graf) csúcspárokat. Ha a graf $m$ élt tartalmaz, akkor $|E| = m$.
 
 #### Példa
+
 Az előző példában a csúcsok halmaza $V = \{A, B, C, D\}$. Tegyük fel, hogy az élek halmaza $E = \{\{A, B\}, \{B, C\}, \{C, D\}, \{D, A\}\}$ egy irányítatlan graf esetén. Ebben az esetben négy élünk van, és $|E| = 4$.
 
 ### Fokszámok (Degrees)
@@ -39,17 +45,20 @@ Az előző példában a csúcsok halmaza $V = \{A, B, C, D\}$. Tegyük fel, hogy
 A fokszám egy csúcsra érkező vagy abból kiinduló élek számát jelenti. Az irányítatlan grafokban egy csúcs fokszáma az összes rá kapcsolódó él száma. Az irányított grafokban megkülönböztetjük a bejövő fokszámot (in-degree) és a kimenő fokszámot (out-degree).
 
 #### Irányítatlan graf fokszáma
+
 Egy irányítatlan grafban egy $v$ csúcs fokszámát $deg(v)$-vel jelöljük, és az összes $v$-re érkező él számát jelenti.
 
 $deg(v) = \text{csúcsra érkező élek száma}$
 
 #### Irányított graf fokszámai
+
 Irányított grafban egy $v$ csúcs bejövő fokszámát $deg^-(v)$-vel, kimenő fokszámát pedig $deg^+(v)$-vel jelöljük.
 
 $deg^-(v) = \text{csúcsra bejövő élek száma}$
 $deg^+(v) = \text{csúcsból kiinduló élek száma}$
 
 #### Példa
+
 Tegyük fel, hogy van egy irányítatlan grafunk az alábbi élekkel:
 
 $E = \{\{A, B\}, \{A, C\}, \{B, C\}, \{C, D\}\}$

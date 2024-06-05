@@ -80,6 +80,7 @@ Az EAP sajátossága, hogy sok függ az adott autentikációs módszertől a biz
 Az EAP (Extensible Authentication Protocol) egy sokoldalú és hatékony hálózati autentikációs keretrendszer, amely számos különböző autentikációs módszert támogat. Az EAP rugalmassága és bővíthetősége lehetővé teszi, hogy különböző hálózati környezetekben alkalmazzuk, beleértve a vezeték nélküli és vezetékes hálózatokat is. A különböző EAP-típusú autentikációk egyszerűségüket vagy biztonságukat figyelembe véve könnyen alkalmazhatóak az adott hálózati igényeknek megfelelően. Az EAP egy dinamikus autentikációs rendszer, amely folyamatos fejlesztést és alkalmazást biztosít a jövőbeni hálózati igényekhez.### 7.1.2. EAP-TLS (EAP-Transport Layer Security)
 
 ### 7.1.2. Az EAP-TLS (Extensible Authentication Protocol-Transport Layer Security)
+
 Az EAP-TLS (Extensible Authentication Protocol-Transport Layer Security) egyike a legelterjedtebb és legbiztonságosabb EAP alapú protokolloknak, amelyeket az autentikáció és a hitelesítés területén alkalmaznak. Az EAP-TLS az IEEE 802 szabványcsalád része, és főként az IEEE 802.1X szabványon keresztül használják, amely eredetileg a vezeték nélküli hálózatok hitelesítésére szolgált. Az EAP-TLS alapjai az SSL/TLS (Secure Sockets Layer/Transport Layer Security) protokollra épülnek, amelyet széleskörűen használnak a webes biztonságos kommunikáció során. Ebben a fejezetben részletesen bemutatjuk az EAP-TLS protokoll működését, előnyeit, kihívásait és gyakorlati alkalmazásait.
 
 #### Bevezetés az EAP-TLS-be
@@ -301,6 +302,7 @@ A PEAP első fázisa egy TLS kapcsolat létesítése a kliens és az autentikác
   A legelterjedtebb algoritmusok a TLS kézfogás során a Diffie-Hellman kulcscsere, RSA és az ECC (Elliptic Curve Cryptography). Ezek az algoritmusok különböző biztonsági és teljesítményszintű követelményeknek is megfelelnek.
 
 ##### 2. fázis: Belső EAP hitelesítési szakasz
+
 Miután a TLS kapcsolat sikeresen létrejött, a PEAP második fázisában történik a valódi felhasználói hitelesítés, amely további EAP-módszereken keresztül valósul meg. A PEAP második fázisa az alábbi módon működik:
 
 - **EAP Inner Method**:
@@ -365,6 +367,7 @@ A LEAP egy kihívás-válasz mechanizmust használ az autentikációra, amely az
 - **Válasz:** A kliens ezt a kihívást használja, hogy egy egyedi válasszal reagáljon, amely tartalmazza a felhasználói jelszót egy hash algoritmussal kombinálva.
 
 ##### 4. Mutuális Autentikáció
+
 Az MS-CHAPv2 továbbá lehetővé teszi a mutuális autentikációt is, ahol a szerver is bemutat egy kihívást, amelyre a kliensnek válaszolnia kell, ezáltal mindkét fél megbizonyosodik egymás identitásáról.
 
 ##### 5. Tranzitív Titkosítási Kulcscsere
@@ -549,12 +552,15 @@ A PAC nem tanúsítvány-alapú, tehát nincs szükség komplex tanúsítvány i
 Az EAP-FAST egy rugalmas és biztonságos autentikációs protokoll, amely a PAC alapú megközelítést alkalmazza, hogy megbízható és biztonságos csatornát biztosítson az adatok továbbításához és hitelesítéséhez. Az EAP-FAST protokoll lépései és adatstruktúrái biztosítják a hálózati hozzáférés biztonságát anélkül, hogy komplex PKI infrastruktúrákra lenne szükség. A megfelelő PAC kezelési politikák, mint az időszakos regenerálás és biztonságos tárolás, alapvetőek a rendszer biztonságos működtetéséhez.### 7.1.7. EAP-SIM (EAP for Subscriber Identity Module)
 
 #### Bevezetés
+
 Az Extensible Authentication Protocol (EAP) egy rugalmas keretrendszer, amely számos autentikációs módszert támogat azzal a céllal, hogy biztonságos kommunikációt biztosítson különböző hálózati rendszerek számára. Az EAP-SIM (EAP for Subscriber Identity Module) egy olyan EAP módszer, amelyet kifejezetten mobil hálózatokban használnak, ahol a felhasználói azonosítást és hitelesítést a SIM (Subscriber Identity Module) kártyák segítségével végzik. Az EAP-SIM különösen fontos a GSM (Global System for Mobile Communications) hálózatokban, ahol a SIM-kártyák elterjedt eszközök a biztonság és az ügyfélazonosítás biztosításában.
 
 #### EAP és EAP-SIM áttekintése
+
 Az EAP-SIM az egyik olyan EAP módszer, amely lehetővé teszi a GSM SIM-kártyák által tárolt információk használatát a hitelesítési folyamat során. Ez a módszer kihasználja a GSM hálózatokban használt meglévő hitelesítési és kulcskezelési infrastruktúrát. Az EAP-SIM támogatja a hitelesítést, a kulcscserét és az adattitkosítást, amelyek kulcsfontosságúak a biztonságos hálózati kommunikációhoz.
 
 #### EAP-SIM Működési Mechanizmusa
+
 Az EAP-SIM autentikációs folyamat három fő fázisból áll: a kihívás-válasz fázis, az autentikációs- és kulcscsere fázis, valamint a titkosított adatcsere fázisa.
 
 1. **Kihívás-válasz fázis:**
@@ -567,6 +573,7 @@ Az EAP-SIM autentikációs folyamat három fő fázisból áll: a kihívás-vál
    A létrehozott származtatott kulcsokat további titkosítás és hitelesítés céljára használják, biztosítva ezzel a kommunikáció titkosságát és integritását az ügyfél és a hálózat között.
 
 #### Részletes Működés és Üzenetfolyam
+
 Az alábbiakban részletesen áttekintjük az EAP-SIM protokoll üzenetfolyamatát, különös figyelemmel az üzenetek felépítésére és a kulcscserére.
 
 1. **Identity Request/Response:**
@@ -586,6 +593,7 @@ Az alábbiakban részletesen áttekintjük az EAP-SIM protokoll üzenetfolyamat�
     - **EAP-Success:** A sikeres hitelesítést jelzi a kliens számára, és megkezdődhet a kulcscsere.
 
 #### Biztonsági Szempontok
+
 Az EAP-SIM protokoll számos biztonsági mechanizmust tartalmaz a támadások megelőzése érdekében, beleértve a következőket:
 
 - **Replay Protection:** Az EAP-SIM kihívás-válasz mechanizmusa védi a rendszer a visszajátszási támadások ellen, mivel minden kihívás egyedülálló.
@@ -593,6 +601,7 @@ Az EAP-SIM protokoll számos biztonsági mechanizmust tartalmaz a támadások me
 - **Mutual Authentication:** Az EAP-SIM protokoll kölcsönös hitelesítést biztosít, így mind a kliens, mind a hálózat megbízik egymás hitelességében.
 
 #### Implementációs Példa
+
 Az alábbiakban egy egyszerű EAP-SIM autentikációs folyamatot mutatunk be C++ nyelven, hogy példát adjunk a protokoll implementációjára.
 
 ```cpp
