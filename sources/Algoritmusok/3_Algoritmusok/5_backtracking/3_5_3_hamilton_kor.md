@@ -56,6 +56,7 @@ Az alábbiakban bemutatunk egy egyszerű backtracking algoritmust a Hamilton kö
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 using namespace std;
 
@@ -168,6 +169,7 @@ Az alábbiakban bemutatunk egy optimalizált backtracking algoritmust C++ nyelve
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 using namespace std;
 
@@ -222,13 +224,16 @@ Ez a kód egy egyszerű backtracking megoldást valósít meg, amely pruning tec
 
 
 ### Dinamikus Programozással Optimalizált Backtracking Algoritmus
+
 A backtracking algoritmus, optimalizálható a **pruning technika** és a **dinamikus programozás** kombinációját alkalmazva. A megközelítés magában foglalja az élek és csúcsok kizárását, amelyek biztosan nem vezetnek megoldáshoz, és memoizációt használ a részproblémák megoldásainak tárolására.
 Ez a kód különösen hatékonyan működik azáltal, hogy az éleket először átvizsgálja, és csak a legvalószínűbb jelöltekkel dolgozik tovább.
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <cstring>
+
 using namespace std;
 
 #define V 5

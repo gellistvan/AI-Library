@@ -29,6 +29,7 @@ OpenCV is a powerful library for computer vision that provides various tools and
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 using namespace cv;
@@ -134,6 +135,7 @@ OpenCV provides built-in functions for computing HOG features and training an SV
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/ml.hpp>
 #include <iostream>
 

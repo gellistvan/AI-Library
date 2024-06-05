@@ -39,6 +39,7 @@ The `std::any` class template, introduced in C++17, is a standard library utilit
 
 ```cpp
 #include <any>
+
 #include <iostream>
 #include <string>
 
@@ -67,6 +68,7 @@ The `std::function` class template provides type erasure for callable objects. I
 
 ```cpp
 #include <functional>
+
 #include <iostream>
 
 void printMessage(const std::string& message) {
@@ -219,6 +221,7 @@ Type erasure allows us to store objects of different types in a single collectio
 
 ```cpp
 #include <vector>
+
 #include <memory>
 
 int main() {
@@ -265,6 +268,7 @@ Type erasure is a powerful technique in C++ that provides runtime polymorphism b
 
 ```cpp
 #include <any>
+
 #include <iostream>
 #include <string>
 
@@ -298,6 +302,7 @@ In this example, `std::any` is used to store and retrieve values of different ty
 
 ```cpp
 #include <any>
+
 #include <iostream>
 #include <typeinfo>
 
@@ -332,6 +337,7 @@ In this example, the `type()` method is used to check the type of the stored val
 
 ```cpp
 #include <variant>
+
 #include <iostream>
 #include <string>
 
@@ -365,6 +371,7 @@ In this example, `std::variant` is used to store and retrieve values of differen
 
 ```cpp
 #include <variant>
+
 #include <iostream>
 #include <string>
 
@@ -406,8 +413,10 @@ While both `std::any` and `std::variant` provide type erasure, they have differe
 
 ```cpp
 #include <any>
+
 #include <iostream>
 #include <string>
+
 #include <unordered_map>
 
 class Settings {
@@ -458,8 +467,10 @@ In this example, `Settings` uses `std::any` to store settings of various types. 
 
 ```cpp
 #include <variant>
+
 #include <iostream>
 #include <string>
+
 #include <vector>
 
 struct MouseEvent {
@@ -529,6 +540,7 @@ The basic usage of `std::function` involves specifying the desired function sign
 
 ```cpp
 #include <functional>
+
 #include <iostream>
 #include <string>
 
@@ -576,6 +588,7 @@ One common use case for `std::function` is in event handling systems, where it c
 
 ```cpp
 #include <functional>
+
 #include <iostream>
 #include <vector>
 
@@ -620,6 +633,7 @@ In this example, the `Button` class uses `std::function<void()>` to store a clic
 
 ```cpp
 #include <functional>
+
 #include <iostream>
 #include <vector>
 
@@ -659,6 +673,7 @@ In this example, the `forEach` function template takes a `std::vector<T>` and a 
 
 ```cpp
 #include <functional>
+
 #include <iostream>
 #include <string>
 
@@ -692,8 +707,10 @@ In this example, `std::function<void(const Printer&, const std::string&)>` is us
 
 ```cpp
 #include <functional>
+
 #include <iostream>
 #include <string>
+
 #include <vector>
 
 class Processor {
@@ -771,6 +788,7 @@ First, define an abstract interface that specifies the operations to be supporte
 
 ```cpp
 #include <memory>
+
 #include <iostream>
 
 // Abstract interface
@@ -1002,6 +1020,7 @@ Dynamic polymorphism is achieved using inheritance and virtual functions. This a
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 // Base class with virtual functions
@@ -1170,6 +1189,7 @@ Let's consider a practical example of a polymorphic container that can store and
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <memory>
 
@@ -1255,6 +1275,7 @@ In this example, the `ShapeContainer` uses dynamic polymorphism to store and ope
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 // Base class template using CRTP

@@ -208,8 +208,10 @@ The team applied NUMA-aware memory allocation and data partitioning to ensure th
 
 ```cpp
 #include <numa.h>
+
 #include <iostream>
 #include <vector>
+
 #include <thread>
 
 void* allocateLocalMemory(size_t size, int node) {
@@ -407,8 +409,10 @@ Consider a real-life scenario where an application uses a concurrent hash map. T
 
 ```cpp
 #include <iostream>
+
 #include <unordered_map>
 #include <mutex>
+
 #include <thread>
 #include <vector>
 
@@ -446,10 +450,13 @@ int main() {
 
 ```cpp
 #include <iostream>
+
 #include <unordered_map>
 #include <mutex>
+
 #include <thread>
 #include <vector>
+
 #include <immintrin.h>
 
 std::unordered_map<int, int> hashMap;

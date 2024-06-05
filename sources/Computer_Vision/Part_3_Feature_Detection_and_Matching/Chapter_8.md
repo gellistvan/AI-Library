@@ -38,6 +38,7 @@ Key points are detected as local extrema in the scale-space.
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/xfeatures2d.hpp>
 
 int main() {
@@ -85,6 +86,7 @@ The key points are localized by finding the local maxima of the determinant of t
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/xfeatures2d.hpp>
 
 int main() {
@@ -128,6 +130,7 @@ where $I(p_i)$ and $I(p_j)$ are the intensities of the points $p_i$ and $p_j$ in
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/xfeatures2d.hpp>
 
 int main() {
@@ -205,6 +208,7 @@ The brute-force matcher compares each descriptor in the first set to all descrip
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/xfeatures2d.hpp>
 
 int main() {
@@ -244,6 +248,7 @@ The Fast Library for Approximate Nearest Neighbors (FLANN) is an efficient imple
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/xfeatures2d.hpp>
 #include <opencv2/flann.hpp>
 
@@ -284,6 +289,7 @@ Implementing the k-NN approach with the ratio test to filter out poor matches.
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/xfeatures2d.hpp>
 
 int main() {
@@ -336,6 +342,7 @@ Cross-check matching involves verifying matches by ensuring that the match found
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/xfeatures2d.hpp>
 
 int main() {
@@ -410,6 +417,7 @@ Let's implement RANSAC for robust feature matching using OpenCV. We will use SIF
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/xfeatures2d.hpp>
 
 int main() {
@@ -525,6 +533,7 @@ Let's implement RANSAC for robust feature matching using OpenCV. We will use SIF
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/xfeatures2d.hpp>
 
 int main() {

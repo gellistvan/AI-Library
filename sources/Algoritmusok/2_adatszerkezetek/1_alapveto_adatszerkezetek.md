@@ -448,6 +448,7 @@ A következő példa C++ nyelven mutatja be egy egyszerű verem megvalósítás�
 
 ```cpp
 #include <iostream>
+
 #include <stdexcept>
 
 class Stack {
@@ -571,6 +572,7 @@ Nézzünk néhány további példát a verem különböző műveleteire C++ nyel
 
 ```cpp
 #include <iostream>
+
 #include <stdexcept>
 
 class Stack {
@@ -618,6 +620,7 @@ int main() {
 
 ```cpp
 #include <iostream>
+
 #include <stdexcept>
 
 class Stack {
@@ -688,6 +691,7 @@ A következő példa C++ nyelven mutatja be egy egyszerű sor megvalósítását
 
 ```cpp
 #include <iostream>
+
 #include <stdexcept>
 
 class Queue {
@@ -831,6 +835,7 @@ Nézzünk néhány további példát a sor különböző műveleteire C++ nyelve
 
 ```cpp
 #include <iostream>
+
 #include <stdexcept>
 
 class Queue {
@@ -884,6 +889,7 @@ int main() {
 
 ```cpp
 #include <iostream>
+
 #include <stdexcept>
 
 class Queue {

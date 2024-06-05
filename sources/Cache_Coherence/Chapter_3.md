@@ -512,8 +512,10 @@ Consider a multithreaded application where multiple threads increment a shared c
 
 ```cpp
 #include <atomic>
+
 #include <thread>
 #include <vector>
+
 #include <iostream>
 
 std::atomic<int> counter(0);

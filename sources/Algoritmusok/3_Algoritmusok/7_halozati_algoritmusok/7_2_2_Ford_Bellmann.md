@@ -39,6 +39,7 @@ Az alábbiakban bemutatok egy egyszerű, bár részletes Bellman-Ford algoritmus
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <limits>
 
@@ -148,6 +149,7 @@ A Bellman-Ford algoritmus egy réteges megközelítést alkalmaz a legrövidebb 
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 struct Edge {

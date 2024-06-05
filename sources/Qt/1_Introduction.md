@@ -1,11 +1,14 @@
 ## Chapter 1: Introduction to Qt
 ### 1.1: What is Qt?
+
 Qt is a comprehensive cross-platform framework and toolkit that is widely used for developing software applications that can run on various hardware platforms with little to no change in the underlying codebase. It provides developers with all the tools necessary to build graphical user interfaces (GUIs) and also supports non-GUI features, such as networking, file handling, and database interaction. Qt supports multiple programming languages, but is most commonly used with C++.
 
 ### 1.2: History of Qt
+
 Qt was first released in 1995 by Trolltech, a Norwegian software company. Its development was motivated by the need for a portable and efficient tool for creating attractive, native-looking GUIs on different operating systems. Over the years, Qt underwent significant changes. In 2008, Nokia acquired Trolltech, leading to further development and expansion of Qt's capabilities into mobile platforms. In 2012, Digia acquired Qt, and later spun off a subsidiary named The Qt Company to oversee its development. Qt has grown from a widget toolkit for C++ with bindings to other languages, evolving into a robust framework driving software development across desktop, embedded, and mobile platforms.
 
 ### 1.3: Qt Features and Advantages
+
 Features:
 - **Cross-platform Development:** Qt enables development across Windows, Linux, Mac OS, and mobile operating systems.
 - **Rich Set of Modules:** Includes tools for creating GUIs, accessing databases, managing system resources, networking, and much more.
@@ -20,6 +23,7 @@ Advantages:
 - **Flexibility:** The modular nature allows developers to include only what is necessary in the application, reducing the footprint.
 
 ### 1.4: Overview of Qt Modules
+
 Qt is structured around several modules, each designed to cater to different aspects of application development:
 - **QtCore:** Provides core non-GUI functionality including loops, threading, data structures, etc.
 - **QtGui:** Contains classes for windowing system integration, event handling, and 2D graphics.
@@ -30,6 +34,7 @@ Qt is structured around several modules, each designed to cater to different asp
 - **QtWebEngine:** Provides classes to embed web content in applications.
 
 ### 1.5: Setting Up the Development Environment
+
 Requirements: A suitable IDE such as Qt Creator, which is the official IDE for Qt development. The Qt framework, available via the Qt website.
 
 **Installation Steps:**
@@ -38,6 +43,7 @@ Requirements: A suitable IDE such as Qt Creator, which is the official IDE for Q
 - Configure the IDE with the necessary compilers and debuggers based on your operating system.
 
 ### 1.6: Your First Qt Application
+
 Creating your first application in Qt involves several steps:
 - **Create a New Project:** Open Qt Creator, and start a new project using the 'Qt Widgets Application' template.
 - **Design the UI:** Use the Qt Designer integrated within Qt Creator to drag and drop widgets like buttons, labels, and text boxes onto your form.
@@ -47,6 +53,7 @@ Creating your first application in Qt involves several steps:
 Here is a simple "Hello, World!" example:
 ```
 #include <QApplication>
+
 #include <QPushButton>
 int main(int argc, char **argv)
 {

@@ -38,6 +38,7 @@ First, let's look at how to perform K-means clustering using OpenCV:
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 int main() {
@@ -91,8 +92,10 @@ For a deeper understanding, here’s how you can implement K-means clustering fr
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 #include <vector>
+
 #include <cmath>
 #include <limits>
 
@@ -274,6 +277,7 @@ First, let's see how to perform mean shift segmentation using OpenCV:
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 int main() {
@@ -310,8 +314,10 @@ Now, let's look at a custom implementation of the mean shift algorithm:
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 #include <vector>
+
 #include <cmath>
 
 using namespace cv;
@@ -434,6 +440,7 @@ OpenCV provides an implementation of graph-based segmentation via the `cv::segme
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/ximgproc/segmentation.hpp>
 #include <iostream>
 
@@ -475,8 +482,10 @@ Here is a simplified custom implementation of graph-based segmentation using the
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 #include <vector>
+
 #include <cmath>
 #include <limits>
 

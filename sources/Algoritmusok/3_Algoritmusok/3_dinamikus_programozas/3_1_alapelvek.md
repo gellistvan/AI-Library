@@ -7,6 +7,7 @@ A dinamikus programozás az algoritmusok tervezésének egy hatékony módszere,
 \newpage
 
 ## 3.1. Alapelvek
+
 A dinamikus programozás alapelvei fejezet célja, hogy átfogó képet nyújtson ennek a hatékony algoritmikus módszernek a kulcsfogalmairól és technikáiról. Először megvizsgáljuk az optimalitás és az alstruktúra fogalmát, amelyek a dinamikus programozás alapvető építőkövei. Ezt követően részletezzük a top-down és bottom-up megközelítéseket, amelyek különböző stratégiákat kínálnak a problémák megoldására. A memoizáció és a táblázat kitöltés módszereinek bemutatásával rávilágítunk arra, hogyan lehet hatékonyan tárolni az alproblémák eredményeit a számítások gyorsítása érdekében. Végül, összefoglaljuk az általános lépéseket, amelyek irányt adnak a dinamikus programozás alkalmazásában, biztosítva, hogy az olvasó magabiztosan alkalmazhassa ezeket a technikákat különböző problémák megoldására.
 
 ### 3.1.1. Optimalitás és alstruktúra
@@ -49,6 +50,7 @@ A következő C++ kód bemutatja, hogyan valósítható meg az LCS probléma din
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
 
@@ -101,6 +103,7 @@ A következő C++ kód bemutatja a Matrix Chain Multiplication probléma dinamik
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <limits.h>
 
@@ -161,6 +164,7 @@ A Fibonacci-számok kiszámítása top-down megközelítéssel:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 std::vector<int> memo;
@@ -206,6 +210,7 @@ A Fibonacci-számok kiszámítása bottom-up megközelítéssel:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 int fibonacci(int n) {
@@ -285,6 +290,7 @@ Vizsgáljuk meg a Fibonacci-számok kiszámítását memoizációval:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 std::vector<int> memo;
@@ -334,6 +340,7 @@ A Fibonacci-számok kiszámítása táblázat kitöltéssel:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 int fibonacci(int n) {
@@ -455,6 +462,7 @@ A top-down megközelítés esetében a probléma megoldása rekurzívan történ
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 std::vector<int> memo;
@@ -478,6 +486,7 @@ int main() {
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 int fibonacci(int n) {

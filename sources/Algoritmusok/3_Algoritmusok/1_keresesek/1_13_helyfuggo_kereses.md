@@ -43,6 +43,7 @@ Az alábbiakban bemutatunk egy egyszerű K-d fa implementációt C++ nyelven:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
 
@@ -172,8 +173,10 @@ Az alábbiakban egy egyszerű R-fa implementációt mutatunk be C++ nyelven:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
+
 #include <limits>
 
 struct MBR {
@@ -429,6 +432,7 @@ Az alábbiakban bemutatunk egy egyszerű quadtree implementációt C++ nyelven:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <memory>
 

@@ -28,6 +28,7 @@ $$ B(x, y) =
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 int main() {
@@ -81,6 +82,7 @@ where:
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 int main() {
@@ -168,6 +170,7 @@ OpenCV provides a convenient function to implement Otsu's method. Below is a det
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 int main() {
@@ -210,8 +213,10 @@ For educational purposes, let's implement Otsu's method from scratch in C++ with
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 #include <vector>
+
 #include <numeric>
 
 double calculateOtsuThreshold(const cv::Mat& image) {

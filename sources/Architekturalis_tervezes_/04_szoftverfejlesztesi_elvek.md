@@ -198,6 +198,7 @@ A DRY elv azt jelenti, hogy a kódban nem szabad ismétlődő információkat va
 
 ```python
 # DRY elv megsértése
+
 class Order:
     def calculate_discount(self, amount):
         return amount * 0.1
@@ -207,6 +208,7 @@ class Invoice:
         return amount * 0.1
 
 # DRY elv alkalmazása
+
 class DiscountCalculator:
     @staticmethod
     def calculate_discount(amount):
@@ -229,6 +231,7 @@ A KISS elv azt hirdeti, hogy a rendszereket és a kódot a lehető legegyszerűb
 
 ```python
 # KISS elv megsértése
+
 def find_value_complex(data, target):
     for i in range(len(data)):
         for j in range(i + 1, len(data)):
@@ -237,6 +240,7 @@ def find_value_complex(data, target):
     return False
 
 # KISS elv alkalmazása
+
 def find_value_simple(data, target):
     return target in data
 ```
@@ -249,6 +253,7 @@ A YAGNI elv szerint nem szabad olyan funkciókat vagy jellemzőket implementáln
 
 ```python
 # YAGNI elv megsértése
+
 class WarehouseManager:
     def __init__(self):
         self.warehouses = []
@@ -261,6 +266,7 @@ class WarehouseManager:
         pass
 
 # YAGNI elv alkalmazása
+
 class SimpleInventoryManager:
     def __init__(self):
         self.inventory = {}

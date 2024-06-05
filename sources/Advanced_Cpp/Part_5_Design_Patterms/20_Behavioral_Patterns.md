@@ -29,6 +29,7 @@ First, we define a common interface for all sorting strategies:
 ```cpp
 // Strategy.h
 #ifndef STRATEGY_H
+
 #define STRATEGY_H
 
 #include <vector>
@@ -49,6 +50,7 @@ Next, we implement several sorting algorithms that conform to the `Strategy` int
 ```cpp
 // BubbleSort.h
 #ifndef BUBBLESORT_H
+
 #define BUBBLESORT_H
 
 #include "Strategy.h"
@@ -72,6 +74,7 @@ public:
 ```cpp
 // QuickSort.h
 #ifndef QUICKSORT_H
+
 #define QUICKSORT_H
 
 #include "Strategy.h"
@@ -111,6 +114,7 @@ private:
 ```cpp
 // MergeSort.h
 #ifndef MERGESORT_H
+
 #define MERGESORT_H
 
 #include "Strategy.h"
@@ -183,9 +187,11 @@ The `Context` class will maintain a reference to a `Strategy` object and delegat
 ```cpp
 // Context.h
 #ifndef CONTEXT_H
+
 #define CONTEXT_H
 
 #include "Strategy.h"
+
 #include <memory>
 
 class Context {
@@ -214,8 +220,10 @@ Here's how we can use the Strategy Pattern to sort a list of integers with diffe
 ```cpp
 // main.cpp
 #include <iostream>
+
 #include "Context.h"
 #include "BubbleSort.h"
+
 #include "QuickSort.h"
 #include "MergeSort.h"
 
@@ -309,6 +317,7 @@ First, we define an abstract class for observers that declares the `update` meth
 ```cpp
 // Observer.h
 #ifndef OBSERVER_H
+
 #define OBSERVER_H
 
 class Observer {
@@ -327,9 +336,11 @@ Next, we define an abstract class for the subject that declares methods for atta
 ```cpp
 // Subject.h
 #ifndef SUBJECT_H
+
 #define SUBJECT_H
 
 #include <vector>
+
 #include <memory>
 #include "Observer.h"
 
@@ -368,6 +379,7 @@ The `WeatherStation` class maintains the current temperature and notifies its ob
 ```cpp
 // WeatherStation.h
 #ifndef WEATHERSTATION_H
+
 #define WEATHERSTATION_H
 
 #include "Subject.h"
@@ -393,9 +405,11 @@ Now, we implement concrete observers that display the temperature in different w
 ```cpp
 // CurrentConditionsDisplay.h
 #ifndef CURRENTCONDITIONSDISPLAY_H
+
 #define CURRENTCONDITIONSDISPLAY_H
 
 #include <iostream>
+
 #include "Observer.h"
 
 class CurrentConditionsDisplay : public Observer {
@@ -411,9 +425,11 @@ public:
 ```cpp
 // StatisticsDisplay.h
 #ifndef STATISTICSDISPLAY_H
+
 #define STATISTICSDISPLAY_H
 
 #include <iostream>
+
 #include "Observer.h"
 
 class StatisticsDisplay : public Observer {
@@ -440,6 +456,7 @@ Here's how we can use the Observer Pattern to monitor and display temperature ch
 ```cpp
 // main.cpp
 #include "WeatherStation.h"
+
 #include "CurrentConditionsDisplay.h"
 #include "StatisticsDisplay.h"
 
@@ -503,6 +520,7 @@ First, we define an interface for visitors that declares visit methods for each 
 ```cpp
 // Visitor.h
 #ifndef VISITOR_H
+
 #define VISITOR_H
 
 class Circle;
@@ -527,6 +545,7 @@ Next, we define an interface for elements that declares an accept method:
 ```cpp
 // Element.h
 #ifndef ELEMENT_H
+
 #define ELEMENT_H
 
 #include "Visitor.h"
@@ -547,6 +566,7 @@ Now, we implement the concrete shapes (Circle, Rectangle, and Triangle) that acc
 ```cpp
 // Circle.h
 #ifndef CIRCLE_H
+
 #define CIRCLE_H
 
 #include "Element.h"
@@ -571,6 +591,7 @@ private:
 ```cpp
 // Rectangle.h
 #ifndef RECTANGLE_H
+
 #define RECTANGLE_H
 
 #include "Element.h"
@@ -597,6 +618,7 @@ private:
 ```cpp
 // Triangle.h
 #ifndef TRIANGLE_H
+
 #define TRIANGLE_H
 
 #include "Element.h"
@@ -627,11 +649,14 @@ Next, we implement concrete visitors that define specific operations to be perfo
 ```cpp
 // AreaVisitor.h
 #ifndef AREAVISITOR_H
+
 #define AREAVISITOR_H
 
 #include <iostream>
+
 #include "Visitor.h"
 #include "Circle.h"
+
 #include "Rectangle.h"
 #include "Triangle.h"
 
@@ -659,11 +684,14 @@ public:
 ```cpp
 // DrawVisitor.h
 #ifndef DRAWVISITOR_H
+
 #define DRAWVISITOR_H
 
 #include <iostream>
+
 #include "Visitor.h"
 #include "Circle.h"
+
 #include "Rectangle.h"
 #include "Triangle.h"
 
@@ -692,8 +720,10 @@ Here's how we can use the Visitor Pattern to perform operations on a collection 
 ```cpp
 // main.cpp
 #include "Circle.h"
+
 #include "Rectangle.h"
 #include "Triangle.h"
+
 #include "AreaVisitor.h"
 #include "DrawVisitor.h"
 
@@ -753,9 +783,11 @@ First, we define an interface for handlers that declares a method for handling r
 ```cpp
 // Handler.h
 #ifndef HANDLER_H
+
 #define HANDLER_H
 
 #include <memory>
+
 #include <string>
 
 class Handler {
@@ -786,9 +818,11 @@ Next, we implement concrete handlers that process requests or forward them to th
 ```cpp
 // ConsoleLogger.h
 #ifndef CONSOLELOGGER_H
+
 #define CONSOLELOGGER_H
 
 #include "Handler.h"
+
 #include <iostream>
 
 class ConsoleLogger : public Handler {
@@ -812,9 +846,11 @@ private:
 ```cpp
 // FileLogger.h
 #ifndef FILELOGGER_H
+
 #define FILELOGGER_H
 
 #include "Handler.h"
+
 #include <iostream>
 
 class FileLogger : public Handler {
@@ -839,9 +875,11 @@ private:
 ```cpp
 // EmailLogger.h
 #ifndef EMAILLOGGER_H
+
 #define EMAILLOGGER_H
 
 #include "Handler.h"
+
 #include <iostream>
 
 class EmailLogger : public Handler {
@@ -870,6 +908,7 @@ Here's how we can set up and use the chain of logging handlers to process log me
 ```cpp
 // main.cpp
 #include "ConsoleLogger.h"
+
 #include "FileLogger.h"
 #include "EmailLogger.h"
 

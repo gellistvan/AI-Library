@@ -58,8 +58,10 @@ The first step is to develop a baseline version of the simulation. This version 
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <thread>
+
 #include <mutex>
 
 enum State { Susceptible, Infected, Recovered };
@@ -409,8 +411,10 @@ Implement the initial version of the simulation with basic functionality.
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <thread>
+
 #include <mutex>
 
 enum State { Susceptible, Infected, Recovered };

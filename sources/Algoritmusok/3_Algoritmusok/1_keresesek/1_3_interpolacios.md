@@ -40,6 +40,7 @@ Az alábbiakban bemutatjuk az interpolációs keresés egy egyszerű iteratív m
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 int interpolacioKereses(const std::vector<int>& lista, int kulcs) {
@@ -106,6 +107,7 @@ Az iteratív implementáció egyértelmű és hatékony módja az interpoláció
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 int interpolacioKereses(const std::vector<int>& lista, int kulcs) {
@@ -134,6 +136,7 @@ A rekurzív megközelítés szintén népszerű, de nagyobb adathalmazok esetén
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 int interpolacioKeresesRekurziv(const std::vector<int>& lista, int kulcs, int also, int felso) {
@@ -299,6 +302,7 @@ Az alábbiakban bemutatjuk mindkét algoritmus egyszerű implementációját C++
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 int binarisKereses(const std::vector<int>& lista, int kulcs) {
@@ -321,6 +325,7 @@ int binarisKereses(const std::vector<int>& lista, int kulcs) {
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 int interpolacioKereses(const std::vector<int>& lista, int kulcs) {

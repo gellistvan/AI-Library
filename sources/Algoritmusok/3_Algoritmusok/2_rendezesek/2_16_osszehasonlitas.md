@@ -436,6 +436,7 @@ Tudományos számítások és szimulációk során gyakran nagy mennyiségű ada
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 void merge(std::vector<int>& arr, int l, int m, int r) {
@@ -507,6 +508,7 @@ int main() {
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 int partition(std::vector<int>& arr, int low, int high) {

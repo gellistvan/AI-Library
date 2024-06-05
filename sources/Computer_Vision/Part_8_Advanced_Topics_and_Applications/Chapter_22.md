@@ -58,6 +58,7 @@ Here's the C++ code to perform semantic segmentation using the Deeplabv3 model i
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/dnn.hpp>
 
 using namespace cv;
@@ -178,8 +179,10 @@ Here's the C++ code to perform scene classification using the MobileNet model in
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/dnn.hpp>
 #include <iostream>
+
 #include <fstream>
 
 using namespace cv;
@@ -298,8 +301,10 @@ Here’s an example of how you might integrate a pre-trained image captioning mo
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/dnn.hpp>
 #include <iostream>
+
 #include <fstream>
 
 using namespace cv;

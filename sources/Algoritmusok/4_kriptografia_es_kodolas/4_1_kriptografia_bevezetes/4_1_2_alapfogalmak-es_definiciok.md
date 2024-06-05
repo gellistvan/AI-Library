@@ -66,6 +66,7 @@ Implementáció C++ nyelven:
 
 ```cpp
 #include <iostream>
+
 #include <openssl/aes.h>
 
 void encrypt(const unsigned char* plaintext, unsigned char* ciphertext, const unsigned char* key) {
@@ -110,8 +111,10 @@ Az RSA alapú titkosítás és visszafejtés folyamata C++ nyelven az alábbiak 
 
 ```cpp
 #include <iostream>
+
 #include <openssl/rsa.h>
 #include <openssl/pem.h>
+
 #include <openssl/err.h>
 
 RSA* generate_key() {
@@ -201,6 +204,7 @@ A véletlenszám-generátorok két fő típusa létezik:
 Példa CSPRNG implementációjára C++ nyelven:
 ```cpp
 #include <iostream>
+
 #include <random>
 #include <iomanip>
 
@@ -258,6 +262,7 @@ A Diffie-Hellman algoritmus lehetővé teszi két fél számára, hogy biztonsá
 
 ```cpp
 #include <iostream>
+
 #include <cmath>
 
 // Simple implementation of Diffie-Hellman key exchange
@@ -321,6 +326,7 @@ A hatékony kulcsmenedzsmenthez világos és szabályozott politikákra van szü
 A modern kriptográfia és kódolási algoritmusok célja információk védelme és az eredményesség garantálása az adatkommunikáció számos aspektusában. Az alapvető biztonsági alapelvek közé tartoznak a bizalmasság, az integritás, a hitelesség és a nem-megtagadás. Ezek az alapelvek mind különböző fenyegetésekre és támadási vektorokra reagálnak, és mindegyik elengedhetetlen a biztonságos rendszer kialakításához.
 
 #### Bizalmasság (Confidentiality)
+
 A bizalmasság az adatvédelmet jelenti, biztosítva azt, hogy az információkhoz csak az arra jogosult személyek férhetnek hozzá. Ennek biztosítása érdekében gyakran titkosítást alkalmaznak, amely az adatokat olvashatatlan formába átalakítja illetéktelenek számára.
 
 **Szimmetrikus titkosítás**: Ez egy olyan titkosítási módszer, ahol a titkosításhoz és a visszafejtéshez ugyanazt a kulcsot használják. Ez gyors és hatékony, de a kulcsok megosztása és kezelése problémás lehet nagy rendszerek esetében.
@@ -328,6 +334,7 @@ A bizalmasság az adatvédelmet jelenti, biztosítva azt, hogy az információkh
 **Aszimmetrikus titkosítás**: Ezzel ellentétben az aszimmetrikus titkosítás két különböző kulcsot használ: egy nyilvános kulcsot a titkosításhoz és egy privát kulcsot a visszafejtéshez. Ez kényelmesebb kulcskezelést biztosít, de általában lassabb és erőforrásigényesebb.
 
 #### Integritás (Integrity)
+
 Az integritás az adatok épségének és teljességének védelmére utal, biztosítva, hogy az adatok nem kerültek megváltoztatásra illetéktelenek által. A kriptográfiai hash függvényeket gyakran használják az integritás ellenőrzésére, mivel ezek biztosítják, hogy az adat bármilyen kis változása a hash érték szignifikáns változását eredményezi.
 
 **Hash függvények**: Olyan matematikai függvények, amelyek bemenetként egy tetszőleges méretű adatot vesznek fel és fix méretű kimenetet állítanak elő. A jó hash függvények tulajdonságai közé tartoznak a determinisztikusság, az előrejelezhetetlenség, az ütközésállóság és a gyors számítás.
@@ -336,8 +343,10 @@ Például a Secure Hash Algorithm (SHA) családja széles körben használt hash
 
 ```cpp
 #include <openssl/sha.h>
+
 #include <iostream>
 #include <iomanip>
+
 #include <sstream>
 
 std::string sha256(const std::string &data) {
@@ -361,6 +370,7 @@ int main() {
 ```
 
 #### Hitelesség (Authenticity)
+
 A hitelesség biztosítja, hogy az információk valóban attól a személytől származnak, aki állítja. Ezen elv kulcsfontosságú az adatok megbízhatóságának védelme érdekében. Digitális aláírások és tanúsítványokat alkalmaznak ennek a követelménynek a megvalósítására.
 
 **Digitális aláírások**: Az aláírás az információkhoz adott titkosított adatrész, amelyet az adatküldő privát kulcsával hoztak létre, és amit a fogadó a nyilvános kulccsal dekódolhat az adatok érvényességének ellenőrzésére.
@@ -368,6 +378,7 @@ A hitelesség biztosítja, hogy az információk valóban attól a személytől 
 **Tanúsítványok**: Digitális tanúsítványok hitelesített entitások által kibocsátott digitális dokumentumok, amelyek összekötik a nyilvános kulcsot a hitelesített entitással. A legtöbb modern titkosítási rendszer, mint a TLS (Transport Layer Security), tanúsítványokra támaszkodik a hitelesség biztosításához.
 
 #### Nem-megtagadás (Non-repudiation)
+
 A nem-megtagadás biztosítja, hogy az adatok elküldője később nem tagadhatja meg az adatok elküldését. Ez különösen fontos jogi és gazdasági környezetekben, ahol a tranzakciók hitelessége és megcáfolhatatlansága kulcsfontosságú.
 
 **Digitális aláírások a nem-megtagadás érdekében**: A digitális aláírások nemcsak az adatok hitelességét biztosítják, hanem azt is garantálják, hogy az információ küldője nem tagadhatja meg annak létrehozását és küldését. Egy kompromittálatlan privát kulccsal aláírt üzenet biztosítja, hogy csak az adott személy hozhatta létre az üzenetet.

@@ -146,6 +146,7 @@ Az alábbi C++ kód bemutatja a dinamikus programozás alkalmazását az érmék
 
 ```cpp
 #include <vector>
+
 #include <algorithm>
 #include <climits>
 

@@ -33,6 +33,7 @@ Az alábbiakban egy C++ nyelvű példa található, amely bemutatja a számlál�
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
 
@@ -167,6 +168,7 @@ Az alábbiakban egy példa bemutatja, hogyan használható a számláló rendez�
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 // Counting Sort function
@@ -295,6 +297,7 @@ Az alábbi kódrészlet bemutatja a számláló rendezés implementációját C+
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
 
@@ -378,6 +381,7 @@ Képzeljük el, hogy egy osztály 30 diákjának vizsga pontszámait szeretnénk
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 // Function to perform counting sort on exam scores
@@ -427,6 +431,7 @@ A digitális képek hisztogramjának készítése során a pixelértékek gyakor
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 // Function to create histogram of image pixel values
@@ -461,6 +466,7 @@ A radix sort egy összetettebb rendezési algoritmus, amely több lépésben ren
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
 

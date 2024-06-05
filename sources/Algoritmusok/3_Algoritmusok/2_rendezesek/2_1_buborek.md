@@ -5,6 +5,7 @@
 A rendezési algoritmusok a számítástechnika alapvető eszközei, amelyek nélkülözhetetlenek a hatékony adatszerkezetek kezeléséhez és az adatok gyors eléréséhez. Ezek az algoritmusok különféle módszereket kínálnak az elemek rendezésére egy adott sorrendben, legyen az növekvő vagy csökkenő. A rendezési folyamat jelentősége nem csupán az esztétikai vagy szervezési szempontokban rejlik, hanem kritikus szerepet játszik az adatok gyors keresésében és feldolgozásában is. Ebben a fejezetben megismerkedünk a legfontosabb rendezési algoritmusokkal, beleértve az egyszerűbb, intuitív módszereket, mint a buborékrendezés, valamint az összetettebb, de hatékonyabb technikákat, mint a gyorsrendezés és a rendezőfák. Az algoritmusok működésének megértése és összehasonlítása révén átfogó képet kapunk a különböző megközelítések erősségeiről és gyengeségeiről, valamint arról, hogy mikor érdemes egy adott algoritmust alkalmazni.
 
 ## 2.1.   Buborékrendezés (Bubble Sort)
+
 A buborékrendezés (Bubble Sort) az egyik legegyszerűbb és legintuitívabb rendezési algoritmus, amelyet gyakran tanítanak bevezető számítástechnikai kurzusokon. Ez a fejezet részletesen bemutatja a buborékrendezés alapelveit és annak implementációját, majd tovább lépve az optimalizált változatokra, amelyek célja a hatékonyság javítása. Elemzésre kerül az algoritmus teljesítménye és komplexitása is, hogy mélyebb megértést nyerjünk annak működéséről és korlátairól. Végezetül gyakorlati példák segítségével szemléltetjük, hogyan alkalmazható a buborékrendezés valós problémák megoldásában, kiemelve annak erősségeit és gyengeségeit. Ez a fejezet átfogó képet ad a buborékrendezésről, amely alapot nyújt a további, bonyolultabb rendezési algoritmusok megértéséhez is.
 
 ### 2.1.1. Alapelvek és implementáció
@@ -25,6 +26,7 @@ Az alábbiakban bemutatjuk a buborékrendezés alapvető implementációját C++
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 // Function to perform Bubble Sort on a vector
@@ -109,6 +111,7 @@ A korai kilépés az egyik legegyszerűbb optimalizációs technika a buborékre
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 void optimizedBubbleSort(std::vector<int>& arr) {
@@ -137,6 +140,7 @@ Egy másik optimalizálási lehetőség a belső ciklus határértékének dinam
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 void optimizedBubbleSortWithBoundary(std::vector<int>& arr) {
@@ -163,6 +167,7 @@ A cocktail shaker sort, más néven bidirectional bubble sort, egy továbbfejles
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 void cocktailShakerSort(std::vector<int>& arr) {
@@ -263,6 +268,7 @@ Az alábbi C++ példakód bemutatja, hogyan mérhetjük a buborékrendezés fut�
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <chrono>
 
@@ -334,6 +340,7 @@ A buborékrendezés kiválóan alkalmas oktatási célokra, mivel könnyen érth
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 void bubbleSort(std::vector<int>& arr) {
@@ -369,6 +376,7 @@ Tegyük fel, hogy egy kis méretű osztály létszám szerinti listáját szeret
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 void bubbleSort(std::vector<int>& arr) {
@@ -402,6 +410,7 @@ Egy weboldalon megjelenő kommentek listáját időrendben kell tartani, ahol a 
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 void bubbleSort(std::vector<int>& arr) {
@@ -449,6 +458,7 @@ Egy adatbázis rekordjait rendezzük az életkor szerint növekvő sorrendbe, ah
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 struct Record {

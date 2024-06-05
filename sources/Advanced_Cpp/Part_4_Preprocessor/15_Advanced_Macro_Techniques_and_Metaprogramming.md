@@ -99,6 +99,7 @@ Building on the ability to count arguments, you can generate different code base
 #include <iostream>
 
 #define PRINT_SELECT(_1, _2, NAME, ...) NAME
+
 #define PRINT(...) PRINT_SELECT(__VA_ARGS__, PRINT2, PRINT1)(__VA_ARGS__)
 
 #define PRINT1(arg1) \
@@ -127,6 +128,7 @@ Logging is a common use case for variadic macros. By using variadic macros, you 
 
 ```cpp
 #include <iostream>
+
 #include <string>
 
 #define LOG(level, ...) \
@@ -149,6 +151,7 @@ Another practical use of variadic macros is for assertions that provide detailed
 
 ```cpp
 #include <iostream>
+
 #include <cassert>
 
 #define ASSERT(condition, ...) \
@@ -271,11 +274,14 @@ Recursive macros can also be used to expand argument lists, which is particularl
 #define PRINT_ARG(arg) std::cout << arg << std::endl;
 
 #define EXPAND_ARGS_1(arg) PRINT_ARG(arg)
+
 #define EXPAND_ARGS_2(arg, ...) PRINT_ARG(arg); EXPAND_ARGS_1(__VA_ARGS__)
 #define EXPAND_ARGS_3(arg, ...) PRINT_ARG(arg); EXPAND_ARGS_2(__VA_ARGS__)
+
 #define EXPAND_ARGS_4(arg, ...) PRINT_ARG(arg); EXPAND_ARGS_3(__VA_ARGS__)
 
 #define GET_MACRO(_1, _2, _3, _4, NAME, ...) NAME
+
 #define PRINT_ARGS(...) GET_MACRO(__VA_ARGS__, EXPAND_ARGS_4, EXPAND_ARGS_3, EXPAND_ARGS_2, EXPAND_ARGS_1)(__VA_ARGS__)
 
 int main() {
@@ -310,8 +316,10 @@ Recursive macros can be used to generate repetitive code for data structures, su
     FOR_EACH(INITIALIZE_FIELD, __VA_ARGS__)
 
 #define FOR_EACH_1(macro, arg) macro(arg)
+
 #define FOR_EACH_2(macro, arg, ...) macro(arg); FOR_EACH_1(macro, __VA_ARGS__)
 #define FOR_EACH_3(macro, arg, ...) macro(arg); FOR_EACH_2(macro, __VA_ARGS__)
+
 #define FOR_EACH_4(macro, arg, ...) macro(arg); FOR_EACH_3(macro, __VA_ARGS__)
 #define FOR_EACH(macro, ...) GET_MACRO(__VA_ARGS__, FOR_EACH_4, FOR_EACH_3, FOR_EACH_2, FOR_EACH_1)(macro, __VA_ARGS__)
 
@@ -343,10 +351,13 @@ Recursive macros can perform compile-time computations, such as calculating fact
 #define FACTORIAL(n) FACTORIAL_##n
 
 #define FACTORIAL_0 1
+
 #define FACTORIAL_1 1
 #define FACTORIAL_2 2
+
 #define FACTORIAL_3 6
 #define FACTORIAL_4 24
+
 #define FACTORIAL_5 120
 #define FACTORIAL_6 720
 
@@ -472,10 +483,12 @@ Deferred macro expansion can be used to control the timing of macro expansion, e
 #include <iostream>
 
 #define EXPAND(x) x
+
 #define DEFER(x) x EMPTY()
 #define EMPTY()
 
 #define EXAMPLE1() std::cout << "Example 1" << std::endl;
+
 #define EXAMPLE2() std::cout << "Example 2" << std::endl;
 
 #define SELECT_EXAMPLE(num) EXPAND(EXAMPLE##num())
@@ -500,6 +513,7 @@ Variadic macros can be combined with other macro techniques to handle optional a
 #include <iostream>
 
 #define GET_MACRO(_1, _2, NAME, ...) NAME
+
 #define LOG1(message) std::cout << "LOG: " << message << std::endl;
 #define LOG2(level, message) std::cout << level << ": " << message << std::endl;
 
@@ -709,6 +723,7 @@ To add some type safety to macros, you can use type traits and static assertions
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 #define SAFE_ADD(x, y) \
@@ -760,6 +775,7 @@ Token pasting can be used to create unique identifiers or dynamically generate c
 #include <iostream>
 
 #define CONCATENATE(arg1, arg2) arg1##arg2
+
 #define MAKE_UNIQUE(name) CONCATENATE(name, __LINE__)
 
 int main() {
@@ -904,6 +920,7 @@ Macros can also simplify the instantiation of template classes or functions, par
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 template <typename T>
@@ -942,6 +959,7 @@ Variadic templates, introduced in C++11, allow functions and classes to accept a
 
 ```cpp
 #include <iostream>
+
 #include <utility>
 
 // Helper macro to generate forwarding code
@@ -969,6 +987,7 @@ Template metaprogramming allows for compile-time computations and logic. Macros 
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 template <typename T>
@@ -1005,6 +1024,7 @@ Macros can simplify the definition of generic data structures by generating temp
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 // Template for a generic container
@@ -1063,6 +1083,7 @@ Macros can be used to generate type traits and enable conditional compilation ba
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 template <typename T>
@@ -1172,6 +1193,7 @@ Macros can be used to conditionally instantiate templates, based on compile-time
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 template <typename T>
@@ -1284,6 +1306,7 @@ Type traits are a common use case for template metaprogramming. Macros can autom
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 template <typename T>
@@ -1366,6 +1389,7 @@ SFINAE (Substitution Failure Is Not An Error) is a technique used in template me
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 // Macro to define an enable_if type trait
@@ -1515,6 +1539,7 @@ Type traits allow for compile-time type information queries and manipulations.
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 template <typename T>
@@ -1583,6 +1608,7 @@ Macros can be used to generate compile-time sequences, which can be useful for t
 
 ```cpp
 #include <iostream>
+
 #include <utility>
 
 template <std::size_t... Indices>
@@ -1668,6 +1694,7 @@ Type traits are a form of metaprogramming that allows querying and manipulating 
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 template <typename T>
@@ -1702,6 +1729,7 @@ Macros can define type aliases to simplify the use of complex or frequently used
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 #define VECTOR_OF(type) std::vector<type>
@@ -1756,6 +1784,7 @@ Macros can simplify the instantiation of template classes or functions with spec
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 template <typename T>
@@ -1796,6 +1825,7 @@ Macros can automate the generation of enums and corresponding string conversion 
 #include <iostream>
 
 #define ENUM_ENTRY(name) name,
+
 #define ENUM_TO_STRING(name) case name: return #name;
 
 #define DEFINE_ENUM(EnumName, ENUM_LIST) \
@@ -1862,6 +1892,7 @@ Type traits can be enhanced with macros to provide compile-time type information
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 template <typename T>
@@ -1905,6 +1936,7 @@ Macros can facilitate conditional type selection based on compile-time condition
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 #define SELECT_TYPE(condition, TrueType, FalseType) \
@@ -1962,6 +1994,7 @@ One common use of macros is to generate enumerations and their corresponding str
 #include <iostream>
 
 #define ENUM_ENTRY(name) name,
+
 #define ENUM_TO_STRING(name) case name: return #name;
 
 #define DEFINE_ENUM(EnumName, ENUM_LIST) \
@@ -2050,6 +2083,7 @@ The `STATIC_ASSERT` macro creates a static array with a size based on the condit
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 template <typename T>
@@ -2132,6 +2166,7 @@ Macros can be used to manipulate types, such as generating type aliases, definin
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 #define VECTOR_OF(type) std::vector<type>
@@ -2180,6 +2215,7 @@ The `REAL_TYPE` macro defines a type alias for either `float` or `double` based 
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 template <typename T>
@@ -2243,6 +2279,7 @@ The `FACTORIAL` macro calculates the factorial of a number at compile-time using
 
 ```cpp
 #include <iostream>
+
 #include <utility>
 
 template <std::size_t... Indices>

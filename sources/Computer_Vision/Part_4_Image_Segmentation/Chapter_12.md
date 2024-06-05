@@ -51,6 +51,7 @@ Let's implement Active Contours using OpenCV in C++. We will use OpenCV's built-
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 #include <vector>
 
@@ -176,8 +177,10 @@ After installing the DenseCRF library, we can integrate it with OpenCV to perfor
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 #include <DenseCRF.h>
+
 #include <util.h>
 
 using namespace cv;
@@ -311,6 +314,7 @@ First, we need a pre-trained U-Net model saved as a TensorFlow or ONNX model. We
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/dnn.hpp>
 #include <iostream>
 
@@ -372,6 +376,7 @@ Similarly, we use a pre-trained Mask R-CNN model for segmentation. Ensure you ha
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/dnn.hpp>
 #include <iostream>
 

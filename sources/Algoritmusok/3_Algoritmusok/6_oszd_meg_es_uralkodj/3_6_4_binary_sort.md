@@ -49,6 +49,7 @@ Az alábbiakban bemutatjuk a bináris keresés C++ nyelvű implementációját:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 int binarySearch(const std::vector<int>& array, int value) {
@@ -106,6 +107,7 @@ A bináris keresés egy iteratív algoritmus, így viszonylag egyszerűen megér
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 int binarySearchRecursive(const std::vector<int>& array, int low, int high, int value) {

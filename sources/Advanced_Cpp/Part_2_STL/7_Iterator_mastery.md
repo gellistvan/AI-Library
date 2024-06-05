@@ -41,6 +41,7 @@ Input iterators are used for reading data from a sequence. They support single-p
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 int main() {
@@ -70,6 +71,7 @@ Output iterators are used for writing data to a sequence. They also support sing
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
 
@@ -105,6 +107,7 @@ Forward iterators combine the capabilities of input and output iterators. They s
 
 ```cpp
 #include <iostream>
+
 #include <forward_list>
 
 int main() {
@@ -135,6 +138,7 @@ Bidirectional iterators extend forward iterators by allowing movement in both di
 
 ```cpp
 #include <iostream>
+
 #include <list>
 
 int main() {
@@ -167,6 +171,7 @@ Random access iterators provide the most functionality. They allow movement to a
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 int main() {
@@ -205,6 +210,7 @@ Iterator traits provide a standardized way to access properties of iterators at 
 
 ```cpp
 #include <iostream>
+
 #include <iterator>
 #include <vector>
 
@@ -361,6 +367,7 @@ First, define the `SimpleContainer` class:
 
 ```cpp
 #include <iostream>
+
 #include <algorithm>
 
 template <typename T>
@@ -751,6 +758,7 @@ The `std::reverse_iterator` adapter can be used with any bidirectional or random
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
 
@@ -779,6 +787,7 @@ Let's implement a custom reverse iterator for a simple container:
 
 ```cpp
 #include <iostream>
+
 #include <algorithm>
 
 template <typename T>
@@ -920,8 +929,10 @@ The `std::back_inserter` adapter inserts elements at the end of a container.
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
+
 #include <iterator>
 
 int main() {
@@ -946,8 +957,10 @@ The `std::front_inserter` adapter inserts elements at the front of a container. 
 
 ```cpp
 #include <iostream>
+
 #include <list>
 #include <algorithm>
+
 #include <iterator>
 
 int main() {
@@ -972,8 +985,10 @@ The `std::inserter` adapter inserts elements at a specified position in a contai
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
+
 #include <iterator>
 
 int main() {
@@ -1005,8 +1020,10 @@ The `std::istream_iterator` reads data from an input stream.
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <iterator>
+
 #include <algorithm>
 
 int main() {
@@ -1034,8 +1051,10 @@ The `std::ostream_iterator` writes data to an output stream.
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <iterator>
+
 #include <algorithm>
 
 int main() {
@@ -1059,6 +1078,7 @@ First, define the `TransformIterator` class:
 
 ```cpp
 #include <iterator>
+
 #include <functional>
 
 template <typename
@@ -1103,6 +1123,7 @@ Now, let's use the `TransformIterator` to transform elements in a container:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <cmath>
 
@@ -1148,8 +1169,10 @@ Here’s how to use `std::istream_iterator` to read integers from standard input
 
 ```cpp
 #include <iostream>
+
 #include <iterator>
 #include <vector>
+
 #include <algorithm>
 
 int main() {
@@ -1177,8 +1200,10 @@ You can use `std::istream_iterator` to read data from a file:
 
 ```cpp
 #include <iostream>
+
 #include <fstream>
 #include <iterator>
+
 #include <vector>
 #include <algorithm>
 
@@ -1214,8 +1239,10 @@ Here’s how to use `std::ostream_iterator` to write integers to standard output
 
 ```cpp
 #include <iostream>
+
 #include <iterator>
 #include <vector>
+
 #include <algorithm>
 
 int main() {
@@ -1235,8 +1262,10 @@ You can use `std::ostream_iterator` to write data to a file:
 
 ```cpp
 #include <iostream>
+
 #include <fstream>
 #include <iterator>
+
 #include <vector>
 #include <algorithm>
 
@@ -1267,8 +1296,10 @@ You can filter data from a stream by combining `std::istream_iterator` with `std
 
 ```cpp
 #include <iostream>
+
 #include <iterator>
 #include <vector>
+
 #include <algorithm>
 
 bool is_even(int n) {
@@ -1299,8 +1330,10 @@ You can transform data from a stream using `std::transform`:
 
 ```cpp
 #include <iostream>
+
 #include <iterator>
 #include <vector>
+
 #include <algorithm>
 #include <cmath>
 
@@ -1332,6 +1365,7 @@ Let’s create a custom stream iterator that reads data from a stream and applie
 
 ```cpp
 #include <iostream>
+
 #include <iterator>
 #include <functional>
 
@@ -1398,8 +1432,10 @@ Stream iterators can be combined with other iterator types, such as `std::revers
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
+
 #include <iterator>
 
 int main() {
@@ -1427,6 +1463,7 @@ You can count the number of words in an input stream using `std::istream_iterato
 
 ```cpp
 #include <iostream>
+
 #include <iterator>
 #include <algorithm>
 
@@ -1448,8 +1485,10 @@ You can use `std::ostream_iterator` to write formatted data to an output stream:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <iterator>
+
 #include <algorithm>
 #include <iomanip>
 

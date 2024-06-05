@@ -103,6 +103,7 @@ Let’s consider an example scenario to illustrate how Kerberos works in practic
 
 ```cpp
 #include <iostream>
+
 #include <string>
 #include <ctime>
 
@@ -261,12 +262,15 @@ Az alábbiakban bemutatunk egy egyszerű RADIUS kliens implementációt C++ nyel
 
 ```cpp
 #include <iostream>
+
 #include <cstring>
 #include <sys/socket.h>
+
 #include <netinet/in.h>
 #include <arpa/inet.h>
 
 #define RADIUS_PORT 1812
+
 #define BUFFER_SIZE 4096
 
 struct RadiusPacket {
@@ -410,12 +414,15 @@ Az alábbiakban bemutatunk egy egyszerű RADIUS kliens implementációt C++ nyel
 
 ```cpp
 #include <iostream>
+
 #include <cstring>
 #include <sys/socket.h>
+
 #include <netinet/in.h>
 #include <arpa/inet.h>
 
 #define RADIUS_PORT 1812
+
 #define BUFFER_SIZE 4096
 
 struct RadiusPacket {
@@ -527,8 +534,10 @@ A TACACS+ protokoll egy háromlépcsős folyamatot követ a hitelesítés során
 
 ```cpp
 #include <iostream>
+
 #include <string>
 #include <vector>
+
 #include <cstring>
 #include <openssl/evp.h>
 
@@ -668,6 +677,7 @@ Példa keresési művelet C++ nyelven:
 
 ```cpp
 #include <ldap.h>
+
 #include <iostream>
 
 int main() {
@@ -827,8 +837,10 @@ Az alábbi C++ kód egy egyszerű példát mutat be arra, hogyan lehet megvalós
 
 ```cpp
 #include <iostream>
+
 #include <string>
 #include <openssl/md4.h>
+
 #include <openssl/hmac.h>
 
 // NT hash generálása MD4 segítségével

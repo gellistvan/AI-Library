@@ -23,6 +23,7 @@ Például, ha egész számokat rendezünk, a legkisebb helyiérték az egyesek h
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
 
@@ -94,8 +95,10 @@ Az MSD Radix Sort az algoritmus azon változata, amely a legnagyobb helyiérték
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <string>
+
 #include <algorithm>
 
 // Karakter pozíciójának visszaadása
@@ -300,6 +303,7 @@ Képzeljük el, hogy egy bank számlaszámokat szeretne rendezni. A számlaszám
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
 
@@ -366,8 +370,10 @@ Képzeljük el, hogy egy szótárban lévő szavakat szeretnénk rendezni ábéc
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <string>
+
 #include <algorithm>
 
 // Karakter pozíciójának visszaadása
@@ -451,8 +457,10 @@ A párhuzamos Radix Sort implementációja különféle párhuzamos programozás
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <thread>
+
 #include <algorithm>
 
 void countingSortParallel(std::vector<int>& arr, int exp, int start, int end) {

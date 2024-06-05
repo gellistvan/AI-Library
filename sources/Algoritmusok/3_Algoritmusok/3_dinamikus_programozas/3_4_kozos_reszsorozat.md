@@ -112,6 +112,7 @@ Az alábbiakban bemutatjuk a rekurzív algoritmus C++ nyelvű megvalósítását
 
 ```cpp
 #include <iostream>
+
 #include <string>
 using namespace std;
 
@@ -272,8 +273,10 @@ Az alábbiakban bemutatjuk az LCS algoritmus és a visszafejtés C++ nyelvű meg
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <string>
+
 using namespace std;
 
 int LCS(string X, string Y, vector<vector<int>>& L) {

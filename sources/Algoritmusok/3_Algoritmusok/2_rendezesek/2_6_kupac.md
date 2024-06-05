@@ -40,6 +40,7 @@ Below is a detailed implementation of the Heap Sort algorithm in C++:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 // Function to heapify a subtree rooted with node i, which is an index in array.
@@ -169,6 +170,7 @@ Here's a C++ implementation of the `heapify` function:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 // Function to heapify a subtree rooted with node i, which is an index in array.
@@ -350,6 +352,7 @@ A priority queue is an abstract data type where each element has a priority asso
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 class PriorityQueue {
@@ -426,8 +429,10 @@ Dijkstra's algorithm finds the shortest paths from a source vertex to all other 
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <queue>
+
 #include <limits>
 
 struct Edge {
@@ -500,6 +505,7 @@ Heaps can efficiently solve order statistics problems, such as finding the k-th 
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <queue>
 
@@ -535,6 +541,7 @@ In a multi-tasking operating system, the CPU needs to schedule tasks based on th
 
 ```cpp
 #include <iostream>
+
 #include <queue>
 #include <vector>
 

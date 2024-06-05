@@ -39,6 +39,7 @@ Az alábbiakban bemutatjuk az egyszerű lineáris keresés algoritmusát C++ nye
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 int linearSearch(const std::vector<int>& arr, int target) {
@@ -110,6 +111,7 @@ Az algoritmus időkomplexitása tömbök esetén $O(n)$, mivel az algoritmusnak 
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 int linearSearch(const std::vector<int>& arr, int target) {

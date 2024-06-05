@@ -20,10 +20,13 @@ set(ALL_CHAPTERS
 
 
 #add_combined_book_target(3_1_keresesek ${CMAKE_CURRENT_SOURCE_DIR}/preamble.yml a4 "${1_SEARCH}")
+
 #add_combined_book_target(3_2_rendezesek ${CMAKE_CURRENT_SOURCE_DIR}/preamble.yml a4 "${2_ORDER}")
 #add_combined_book_target(3_3_dinamikus ${CMAKE_CURRENT_SOURCE_DIR}/preamble.yml a4 "${3_DYNAMIC}")
+
 #add_combined_book_target(3_4_moho ${CMAKE_CURRENT_SOURCE_DIR}/preamble.yml a4 "${4_GREEDY}")
 #add_combined_book_target(3_5_backtrack ${CMAKE_CURRENT_SOURCE_DIR}/preamble.yml a4 "${5_BACKTRACK}")
+
 #add_combined_book_target(3_6_oszd_meg ${CMAKE_CURRENT_SOURCE_DIR}/preamble.yml a4 "${6_DIVIDE}")
 #add_combined_book_target(3_7_halozati ${CMAKE_CURRENT_SOURCE_DIR}/preamble.yml a4 "${7_HALOZATI}")
 

@@ -35,6 +35,7 @@ Az Ukkonen algoritmus egy online algoritmus, amely lépésről lépésre építi
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <string>
 
@@ -195,8 +196,10 @@ A Kasai algoritmus a következő lépésekből áll:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <string>
+
 #include <algorithm>
 
 using namespace std;
@@ -288,6 +291,7 @@ A KMP algoritmus előfeldolgozza a mintát, hogy egy részleges megegyezési tá
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <string>
 
@@ -365,8 +369,10 @@ A suffix array egy sorozat, amely egy adott sztring összes suffixának lexikogr
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <string>
+
 #include <algorithm>
 
 using namespace std;
@@ -409,6 +415,7 @@ Az LCP array (Longest Common Prefix array) egy kiegészítő struktúra, amely m
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <string>
 
@@ -476,8 +483,10 @@ Az egyik megközelítés az, hogy megtaláljuk a leggyakrabban ismétlődő sztr
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <string>
+
 #include <unordered_map>
 
 using namespace std;
@@ -540,6 +549,7 @@ A Knuth-Morris-Pratt algoritmus az egyik legismertebb mintaillesztési algoritmu
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <string>
 
@@ -622,8 +632,10 @@ Az LCP array-t gyakran a suffix array-jel együtt használják, mivel a suffix a
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <string>
+
 #include <algorithm>
 
 using namespace std;

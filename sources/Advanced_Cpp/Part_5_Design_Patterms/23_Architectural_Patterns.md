@@ -46,9 +46,11 @@ To manage our microservices, we will use Docker for containerization and Kuberne
 ```cpp
 // ProductService.h
 #ifndef PRODUCT_SERVICE_H
+
 #define PRODUCT_SERVICE_H
 
 #include <string>
+
 #include <vector>
 
 struct Product {
@@ -96,9 +98,11 @@ Product ProductService::getProduct(int productId) {
 ```cpp
 // OrderService.h
 #ifndef ORDER_SERVICE_H
+
 #define ORDER_SERVICE_H
 
 #include <string>
+
 #include <vector>
 
 struct Order {
@@ -141,9 +145,11 @@ void OrderService::createOrder(int productId, int userId) {
 ```cpp
 // UserService.h
 #ifndef USER_SERVICE_H
+
 #define USER_SERVICE_H
 
 #include <string>
+
 #include <vector>
 
 struct User {
@@ -190,6 +196,7 @@ We will create Dockerfiles for each service to containerize them.
 
 ```dockerfile
 # Dockerfile for ProductService
+
 FROM gcc:latest
 
 WORKDIR /app
@@ -203,6 +210,7 @@ CMD ["./ProductService"]
 
 ```dockerfile
 # Dockerfile for OrderService
+
 FROM gcc:latest
 
 WORKDIR /app
@@ -216,6 +224,7 @@ CMD ["./OrderService"]
 
 ```dockerfile
 # Dockerfile for UserService
+
 FROM gcc:latest
 
 WORKDIR /app
@@ -233,6 +242,7 @@ Next, we will create Kubernetes manifests to deploy our microservices.
 
 ```yaml
 # product-service-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -258,6 +268,7 @@ spec:
 
 ```yaml
 # order-service-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -283,6 +294,7 @@ spec:
 
 ```yaml
 # user-service-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -347,9 +359,11 @@ We will start by defining interfaces for our services. These interfaces will ser
 ```cpp
 // ICustomerService.h
 #ifndef I_CUSTOMER_SERVICE_H
+
 #define I_CUSTOMER_SERVICE_H
 
 #include <string>
+
 #include <vector>
 
 struct Customer {
@@ -370,9 +384,11 @@ public:
 ```cpp
 // IProductService.h
 #ifndef I_PRODUCT_SERVICE_H
+
 #define I_PRODUCT_SERVICE_H
 
 #include <string>
+
 #include <vector>
 
 struct Product {
@@ -394,9 +410,11 @@ public:
 ```cpp
 // IOrderService.h
 #ifndef I_ORDER_SERVICE_H
+
 #define I_ORDER_SERVICE_H
 
 #include <string>
+
 #include <vector>
 
 struct Order {
@@ -424,9 +442,11 @@ Next, we will implement the services based on the defined interfaces.
 ```cpp
 // CustomerService.h
 #ifndef CUSTOMER_SERVICE_H
+
 #define CUSTOMER_SERVICE_H
 
 #include "ICustomerService.h"
+
 #include <vector>
 
 class CustomerService : public ICustomerService {
@@ -463,9 +483,11 @@ Customer CustomerService::getCustomer(int customerId) {
 ```cpp
 // ProductService.h
 #ifndef PRODUCT_SERVICE_H
+
 #define PRODUCT_SERVICE_H
 
 #include "IProductService.h"
+
 #include <vector>
 
 class ProductService : public IProductService {
@@ -503,9 +525,11 @@ Product ProductService::getProduct(int productId) {
 ```cpp
 // OrderService.h
 #ifndef ORDER_SERVICE_H
+
 #define ORDER_SERVICE_H
 
 #include "IOrderService.h"
+
 #include <vector>
 
 class OrderService : public IOrderService {
@@ -521,6 +545,7 @@ public:
 ```cpp
 // OrderService.cpp
 #include "OrderService.h"
+
 #include <iostream>
 
 std::vector<Order> OrderService::listOrders() {
@@ -563,6 +588,7 @@ First, download the library from its [GitHub repository](https://github.com/yhir
 ```cpp
 // main.cpp
 #include "CustomerService.h"
+
 #include "httplib.h"
 
 int main() {
@@ -600,6 +626,7 @@ int main() {
 ```cpp
 // main.cpp
 #include "ProductService.h"
+
 #include "httplib.h"
 
 int main() {
@@ -637,6 +664,7 @@ int main() {
 ```cpp
 // main.cpp
 #include "OrderService.h"
+
 #include "httplib.h"
 
 int main() {
@@ -671,9 +699,11 @@ One of the key strengths of SOA is the ability to compose services to build more
 ```cpp
 // CompositeOrderService.h
 #ifndef COMPOSITE_ORDER_SERVICE_H
+
 #define COMPOSITE_ORDER_SERVICE_H
 
 #include "ICustomerService.h"
+
 #include "IProductService.h"
 #include "IOrderService.h"
 
@@ -750,6 +780,7 @@ First, we will define the events that our system will use.
 ```cpp
 // Event.h
 #ifndef EVENT_H
+
 #define EVENT_H
 
 #include <string>
@@ -773,9 +804,11 @@ public:
 ```cpp
 // OrderService.h
 #ifndef ORDER_SERVICE_H
+
 #define ORDER_SERVICE_H
 
 #include "Event.h"
+
 #include <string>
 
 class OrderService {
@@ -789,8 +822,10 @@ public:
 ```cpp
 // OrderService.cpp
 #include "OrderService.h"
+
 #include <iostream>
 #include <amqpcpp.h>
+
 #include <amqpcpp/libevent.h>
 
 void OrderService::createOrder(const std::string& orderId, const std::string& productId) {
@@ -823,9 +858,11 @@ void OrderService::createOrder(const std::string& orderId, const std::string& pr
 ```cpp
 // InventoryService.h
 #ifndef INVENTORY_SERVICE_H
+
 #define INVENTORY_SERVICE_H
 
 #include "Event.h"
+
 #include <amqpcpp.h>
 #include <amqpcpp/libevent.h>
 
@@ -841,6 +878,7 @@ public:
 ```cpp
 // InventoryService.cpp
 #include "InventoryService.h"
+
 #include <iostream>
 #include <event2/event.h>
 
@@ -872,9 +910,11 @@ void InventoryService::start() {
 ```cpp
 // NotificationService.h
 #ifndef NOTIFICATION_SERVICE_H
+
 #define NOTIFICATION_SERVICE_H
 
 #include "Event.h"
+
 #include <amqpcpp.h>
 #include <amqpcpp/libevent.h>
 
@@ -890,6 +930,7 @@ public:
 ```cpp
 // NotificationService.cpp
 #include "NotificationService.h"
+
 #include <iostream>
 #include <event2/event.h>
 
@@ -936,9 +977,11 @@ Event sourcing is a pattern where changes to the application's state are stored 
 ```cpp
 // EventStore.h
 #ifndef EVENT_STORE_H
+
 #define EVENT_STORE_H
 
 #include "Event.h"
+
 #include <vector>
 
 class EventStore {
@@ -964,6 +1007,7 @@ CQRS is a pattern that separates the read and write operations of a system. This
 ```cpp
 // CommandHandler.h
 #ifndef COMMAND_HANDLER_H
+
 #define COMMAND_HANDLER_H
 
 #include <string>
@@ -981,6 +1025,7 @@ public:
 ```cpp
 // QueryHandler.h
 #ifndef QUERY_HANDLER_H
+
 #define QUERY_HANDLER_H
 
 #include <string>
@@ -1037,6 +1082,7 @@ First, we define the core business logic and the associated interfaces (ports).
 ```cpp
 // Product.h
 #ifndef PRODUCT_H
+
 #define PRODUCT_H
 
 #include <string>
@@ -1057,9 +1103,11 @@ public:
 ```cpp
 // IProductRepository.h
 #ifndef I_PRODUCT_REPOSITORY_H
+
 #define I_PRODUCT_REPOSITORY_H
 
 #include "Product.h"
+
 #include <vector>
 
 class IProductRepository {
@@ -1076,9 +1124,11 @@ public:
 ```cpp
 // IProductService.h
 #ifndef I_PRODUCT_SERVICE_H
+
 #define I_PRODUCT_SERVICE_H
 
 #include "Product.h"
+
 #include <vector>
 
 class IProductService {
@@ -1099,9 +1149,11 @@ Next, we implement the core business logic, which depends on the defined interfa
 ```cpp
 // ProductService.h
 #ifndef PRODUCT_SERVICE_H
+
 #define PRODUCT_SERVICE_H
 
 #include "IProductService.h"
+
 #include "IProductRepository.h"
 
 class ProductService : public IProductService {
@@ -1137,9 +1189,11 @@ The persistence adapter interacts with a database to store and retrieve products
 ```cpp
 // InMemoryProductRepository.h
 #ifndef IN_MEMORY_PRODUCT_REPOSITORY_H
+
 #define IN_MEMORY_PRODUCT_REPOSITORY_H
 
 #include "IProductRepository.h"
+
 #include <unordered_map>
 
 class InMemoryProductRepository : public IProductRepository {
@@ -1176,9 +1230,11 @@ The web adapter exposes the product service as RESTful endpoints using a lightwe
 ```cpp
 // WebAdapter.h
 #ifndef WEB_ADAPTER_H
+
 #define WEB_ADAPTER_H
 
 #include "IProductService.h"
+
 #include <httplib.h>
 
 class WebAdapter {
@@ -1258,6 +1314,7 @@ To run this example, follow these steps:
 ```cpp
 // main.cpp
 #include "ProductService.h"
+
 #include "InMemoryProductRepository.h"
 #include "WebAdapter.h"
 
@@ -1280,9 +1337,11 @@ One of the significant benefits of Hexagonal Architecture is the ease of testing
 ```cpp
 // MockProductRepository.h
 #ifndef MOCK_PRODUCT_REPOSITORY_H
+
 #define MOCK_PRODUCT_REPOSITORY_H
 
 #include "IProductRepository.h"
+
 #include <unordered_map>
 
 class MockProductRepository : public IProductRepository {
@@ -1315,6 +1374,7 @@ public:
 ```cpp
 // ProductServiceTest.cpp
 #include "ProductService.h"
+
 #include "MockProductRepository.h"
 #include <cassert>
 
@@ -1355,6 +1415,7 @@ Using dependency injection frameworks can help manage the instantiation and wiri
 ```cpp
 // DependencyInjection.cpp
 #include "ProductService.h"
+
 #include "InMemoryProductRepository.h"
 #include "WebAdapter.h"
 

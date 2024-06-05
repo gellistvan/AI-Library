@@ -28,6 +28,7 @@ First, we define an abstract base class `Shape` that declares a common interface
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <memory>
 
@@ -154,8 +155,10 @@ First, we define a `Character` class that represents a character. This class wil
 
 ```cpp
 #include <iostream>
+
 #include <unordered_map>
 #include <string>
+
 #include <memory>
 
 // Flyweight class
@@ -281,6 +284,7 @@ First, we define an interface for the implementation that declares the platform-
 
 ```cpp
 #include <iostream>
+
 #include <memory>
 
 // Implementation interface
@@ -445,6 +449,7 @@ First, we define an interface that both the real object and the proxy will imple
 
 ```cpp
 #include <iostream>
+
 #include <memory>
 #include <string>
 

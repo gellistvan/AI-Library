@@ -5,6 +5,7 @@
 Az aszimmetrikus kulcsú kriptográfia, más néven nyilvános kulcsú kriptográfia, a modern titkosítás rendkívül fontos és széles körben használt ágazata, amely forradalmasította a biztonságos adatkommunikációt. Míg a hagyományos, szimmetrikus titkosítási módszerek egy egyetlen közös kulcs használatán alapulnak a titkosításhoz és a visszafejtéshez, az aszimmetrikus kriptográfia két külön kulcsot alkalmaz: egy nyilvános kulcsot, amelyet bárki láthat és felhasználhat, valamint egy privát kulcsot, amelyet csak a címzett ismer. Ez a megközelítés számos biztonsági előnyt nyújt, többek között lehetővé teszi a digitális aláírások használatát, amelyek garantálják az üzenetek hitelességét és integritását, valamint támogatják a kulcsmegosztási mechanizmusokat anélkül, hogy titkos csatornákat kellene kialakítani a kulcsok továbbításához. Az alábbiakban részletesen ismertetjük az aszimmetrikus kriptográfia alapelveit, működési mechanizmusait és a gyakorlatban alkalmazott legnépszerűbb algoritmusokat, mint például az RSA, a Diffie-Hellman és az Elliptikus Görbe Kriptográfia (ECC).
 
 ### 3.2.1 RSA (Rivest-Shamir-Adleman)
+
 Az RSA (Rivest-Shamir-Adleman) algoritmus egy olyan aszimmetrikus kulcsú kriptográfiai módszer, amelyet széles körben használnak a biztonságos adatátvitel érdekében. Az RSA különlegessége abban rejlik, hogy két különálló, mégis matematikailag összekapcsolt kulcspárt használ: egy nyilvános kulcsot a titkosításhoz és egy privát kulcsot a dekódoláshoz. Ez a megközelítés lehetővé teszi, hogy a titkos információkat biztonságosan küldjék, anélkül, hogy a küldőnek és a fogadónak előzetesen meg kellene osztania egy közös titkot. Az RSA algoritmus működése erőteljes matematikai alapokon nyugszik, különös tekintettel a prímszámok és az egész számok faktorizációjának nehézségére. A következő alfejezetekben részletesen bemutatjuk az RSA algoritmus működési elvét, kulcsgenerálási folyamatát, valamint a titkosítási és dekódolási lépéseket, amelyek együtt a modern kriptográfia egyik sarokkövét alkotják.
 
 #### Algoritmus működése és matematikai alapjai
@@ -113,8 +114,10 @@ Az RSA algoritmus kulcsgenerálási folyamata a következő lépésekből áll:
 **Példa C++ Kódrészlet:**
 ```cpp
 #include <iostream>
+
 #include <cmath>
 #include <cstdlib>
+
 #include <ctime>
 
 // Funkció a legnagyobb közös osztó meghatározására
@@ -179,6 +182,7 @@ Az üzenet (\(m\)), amit titkosítani szeretnénk, először egy számjegysoroza
 **Példa C++ Kódrészlet:**
 ```cpp
 #include <iostream>
+
 #include <cmath>
 
 // Titkosítási funkció
@@ -210,6 +214,7 @@ A dekódolási folyamat során a titkosított üzenetet (\(c\)) a privát kulccs
 **Példa C++ Kódrészlet:**
 ```cpp
 #include <iostream>
+
 #include <cmath>
 
 // Dekódolási funkció
@@ -279,8 +284,10 @@ Az alábbiakban egy egyszerű C++ implementáció található a Diffie-Hellman k
 
 ```cpp
 #include <iostream>
+
 #include <cmath>
 #include <cstdlib>
+
 #include <ctime>
 
 // Function to return (a^b) % c

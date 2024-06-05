@@ -57,6 +57,7 @@ The following C++ code demonstrates the Harris Corner Detector using OpenCV.
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 using namespace cv;
@@ -172,6 +173,7 @@ The following C++ code demonstrates the Shi-Tomasi Corner Detection using OpenCV
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 using namespace cv;
@@ -272,6 +274,7 @@ FAST is a corner detection method that identifies corners by examining the inten
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 using namespace cv;
@@ -330,6 +333,7 @@ BRIEF is a feature descriptor that describes an image patch using binary strings
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 using namespace cv;
@@ -389,6 +393,7 @@ ORB is a fusion of FAST keypoint detector and BRIEF descriptor with enhancements
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 using namespace cv;

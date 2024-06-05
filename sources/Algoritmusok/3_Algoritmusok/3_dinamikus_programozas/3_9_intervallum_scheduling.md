@@ -58,6 +58,7 @@ Az alábbi C++ kód egy példa a mohó algoritmus implementálására az interva
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
 
@@ -154,6 +155,7 @@ Az alábbi C++ kód szemlélteti a rekurzív megközelítést:
 
 ```cpp
 #include <vector>
+
 #include <algorithm>
 #include <iostream>
 
@@ -271,6 +273,7 @@ Az alábbi C++ kód szemlélteti a dinamikus programozás alkalmazását az inte
 
 ```cpp
 #include <vector>
+
 #include <algorithm>
 #include <iostream>
 

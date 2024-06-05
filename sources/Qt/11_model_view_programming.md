@@ -34,6 +34,7 @@ Typical Usage: Often used for simple list, table, and tree data structures witho
 
 ```cpp
 #include <QStandardItemModel>
+
 #include <QTreeView> 
  
 QStandardItemModel *model = new QStandardItemModel(); 

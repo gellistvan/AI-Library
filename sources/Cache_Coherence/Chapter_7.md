@@ -156,6 +156,7 @@ Consider a real-life scenario where you need to profile and optimize a matrix mu
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 void multiplyMatrices(const std::vector<std::vector<int>>& A,
@@ -217,6 +218,7 @@ Apply loop tiling to improve cache utilization:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
 
@@ -465,8 +467,10 @@ Consider a real-life scenario where multiple threads increment a shared counter.
 
 ```cpp
 #include <iostream>
+
 #include <thread>
 #include <mutex>
+
 #include <vector>
 
 std::mutex mtx;

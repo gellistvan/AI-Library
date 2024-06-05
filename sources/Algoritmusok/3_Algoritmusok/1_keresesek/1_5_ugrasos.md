@@ -44,6 +44,7 @@ Az alábbiakban bemutatjuk az ugrásos keresés egy C++ nyelvű implementációj
 
 ```cpp
 #include <iostream>
+
 #include <cmath>
 
 int jumpSearch(int arr[], int n, int x) {
@@ -113,6 +114,7 @@ Az alábbiakban bemutatjuk az ugrásos keresés algoritmusának részletes imple
 
 ```cpp
 #include <iostream>
+
 #include <cmath>
 #include <algorithm>
 

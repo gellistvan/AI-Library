@@ -26,6 +26,7 @@ A Quick Sort algoritmusának implementációjára számos nyelvet lehet felhaszn
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 // Segédfüggvény a partícionáláshoz

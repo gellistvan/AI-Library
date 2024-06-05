@@ -11,14 +11,19 @@ set(CHAPTERS
     "${CMAKE_CURRENT_SOURCE_DIR}/11_refactoring.md"
     "${CMAKE_CURRENT_SOURCE_DIR}/12_esettanulmanyok.md"
 #    "1"
+
 #    "1"
 #    "1"
+
 #    "1"
 #    "1"
+
 #    "1"
 #    "1"
+
 #    "1"
 #    "1"
+
 #    "1"
 )
 

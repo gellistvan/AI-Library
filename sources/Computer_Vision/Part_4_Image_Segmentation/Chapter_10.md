@@ -29,6 +29,7 @@ OpenCV provides an extensive library for image processing, including functions t
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <queue>
 
 // Structure to hold seed point information
@@ -146,6 +147,7 @@ OpenCV provides built-in functions to perform the watershed algorithm. Below is 
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 // Function to display an image

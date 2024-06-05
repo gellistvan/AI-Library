@@ -40,6 +40,7 @@ where $a, b, d, e$ are the linear transformation parameters, and $c, f$ are the 
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 using namespace cv;
 
 int main() {
@@ -106,6 +107,7 @@ $$
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 using namespace cv;
 
 int main() {
@@ -153,6 +155,7 @@ To rotate around the center of the image, we need to adjust the translation para
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 using namespace cv;
 
 int main() {
@@ -205,6 +208,7 @@ $$
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 using namespace cv;
 
 int main() {
@@ -290,6 +294,7 @@ Let's implement a complete image registration pipeline using ORB for feature det
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/features2d.hpp>
 using namespace cv;
 using namespace std;
@@ -327,6 +332,7 @@ int main() {
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/features2d.hpp>
 using namespace cv;
 using namespace std;
@@ -369,6 +375,7 @@ int main() {
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/features2d.hpp>
 using namespace cv;
 using namespace std;
@@ -476,6 +483,7 @@ Let's implement image warping using affine and perspective transformations.
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 using namespace cv;
 using namespace std;
 
@@ -535,6 +543,7 @@ To implement image morphing, we will use Delaunay triangulation to interpolate t
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <vector>
 using namespace cv;
 using namespace std;
@@ -744,6 +753,7 @@ OpenCV provides convenient functions to apply the Sobel and Prewitt operators fo
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 using namespace cv;
 using namespace std;
 
@@ -786,6 +796,7 @@ OpenCV does not have a direct function for Prewitt operators, but we can impleme
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 using namespace cv;
 using namespace std;
 
@@ -889,6 +900,7 @@ OpenCV provides a convenient function `Canny` to implement the Canny Edge Detect
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 using namespace cv;
 using namespace std;
 
@@ -969,6 +981,7 @@ The Laplacian of Gaussian (LoG) method combines Gaussian smoothing with the Lapl
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 using namespace cv;
 using namespace std;
 
@@ -1029,6 +1042,7 @@ $$
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 using namespace cv;
 using namespace std;
 
@@ -1081,6 +1095,7 @@ First, download the HED model and the prototxt file from the official sources.
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/dnn.hpp>
 using namespace cv;
 using namespace dnn;
@@ -1195,6 +1210,7 @@ The following C++ code demonstrates the Harris Corner Detector using OpenCV.
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 using namespace cv;
@@ -1310,6 +1326,7 @@ The following C++ code demonstrates the Shi-Tomasi Corner Detection using OpenCV
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 using namespace cv;
@@ -1410,6 +1427,7 @@ FAST is a corner detection method that identifies corners by examining the inten
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 using namespace cv;
@@ -1468,6 +1486,7 @@ BRIEF is a feature descriptor that describes an image patch using binary strings
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 using namespace cv;
@@ -1527,6 +1546,7 @@ ORB is a fusion of FAST keypoint detector and BRIEF descriptor with enhancements
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 using namespace cv;
@@ -1625,6 +1645,7 @@ Key points are detected as local extrema in the scale-space.
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/xfeatures2d.hpp>
 
 int main() {
@@ -1672,6 +1693,7 @@ The key points are localized by finding the local maxima of the determinant of t
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/xfeatures2d.hpp>
 
 int main() {
@@ -1715,6 +1737,7 @@ where $I(p_i)$ and $I(p_j)$ are the intensities of the points $p_i$ and $p_j$ in
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/xfeatures2d.hpp>
 
 int main() {
@@ -1792,6 +1815,7 @@ The brute-force matcher compares each descriptor in the first set to all descrip
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/xfeatures2d.hpp>
 
 int main() {
@@ -1831,6 +1855,7 @@ The Fast Library for Approximate Nearest Neighbors (FLANN) is an efficient imple
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/xfeatures2d.hpp>
 #include <opencv2/flann.hpp>
 
@@ -1871,6 +1896,7 @@ Implementing the k-NN approach with the ratio test to filter out poor matches.
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/xfeatures2d.hpp>
 
 int main() {
@@ -1923,6 +1949,7 @@ Cross-check matching involves verifying matches by ensuring that the match found
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/xfeatures2d.hpp>
 
 int main() {
@@ -1997,6 +2024,7 @@ Let's implement RANSAC for robust feature matching using OpenCV. We will use SIF
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/xfeatures2d.hpp>
 
 int main() {
@@ -2112,6 +2140,7 @@ Let's implement RANSAC for robust feature matching using OpenCV. We will use SIF
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/xfeatures2d.hpp>
 
 int main() {
@@ -2223,6 +2252,7 @@ $$ B(x, y) =
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 int main() {
@@ -2276,6 +2306,7 @@ where:
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 int main() {
@@ -2363,6 +2394,7 @@ OpenCV provides a convenient function to implement Otsu's method. Below is a det
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 int main() {
@@ -2405,8 +2437,10 @@ For educational purposes, let's implement Otsu's method from scratch in C++ with
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 #include <vector>
+
 #include <numeric>
 
 double calculateOtsuThreshold(const cv::Mat& image) {
@@ -2529,6 +2563,7 @@ OpenCV provides an extensive library for image processing, including functions t
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <queue>
 
 // Structure to hold seed point information
@@ -2646,6 +2681,7 @@ OpenCV provides built-in functions to perform the watershed algorithm. Below is 
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 // Function to display an image
@@ -2784,6 +2820,7 @@ First, let's look at how to perform K-means clustering using OpenCV:
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 int main() {
@@ -2837,8 +2874,10 @@ For a deeper understanding, here’s how you can implement K-means clustering fr
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 #include <vector>
+
 #include <cmath>
 #include <limits>
 
@@ -3020,6 +3059,7 @@ First, let's see how to perform mean shift segmentation using OpenCV:
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 int main() {
@@ -3056,8 +3096,10 @@ Now, let's look at a custom implementation of the mean shift algorithm:
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 #include <vector>
+
 #include <cmath>
 
 using namespace cv;
@@ -3180,6 +3222,7 @@ OpenCV provides an implementation of graph-based segmentation via the `cv::segme
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/ximgproc/segmentation.hpp>
 #include <iostream>
 
@@ -3221,8 +3264,10 @@ Here is a simplified custom implementation of graph-based segmentation using the
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 #include <vector>
+
 #include <cmath>
 #include <limits>
 
@@ -3402,6 +3447,7 @@ Let's implement Active Contours using OpenCV in C++. We will use OpenCV's built-
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 #include <vector>
 
@@ -3527,8 +3573,10 @@ After installing the DenseCRF library, we can integrate it with OpenCV to perfor
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 #include <DenseCRF.h>
+
 #include <util.h>
 
 using namespace cv;
@@ -3662,6 +3710,7 @@ First, we need a pre-trained U-Net model saved as a TensorFlow or ONNX model. We
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/dnn.hpp>
 #include <iostream>
 
@@ -3723,6 +3772,7 @@ Similarly, we use a pre-trained Mask R-CNN model for segmentation. Ensure you ha
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/dnn.hpp>
 #include <iostream>
 
@@ -3848,6 +3898,7 @@ OpenCV is a powerful library for computer vision that provides various tools and
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 using namespace cv;
@@ -3953,6 +4004,7 @@ OpenCV provides built-in functions for computing HOG features and training an SV
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/ml.hpp>
 #include <iostream>
 
@@ -4122,6 +4174,7 @@ OpenCV's `dnn` module allows the implementation and deployment of deep learning 
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/dnn.hpp>
 #include <iostream>
 
@@ -4226,6 +4279,7 @@ R-CNN is typically not implemented from scratch due to its complexity and the av
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/dnn.hpp>
 #include <iostream>
 
@@ -4296,6 +4350,7 @@ Implementing Fast R-CNN from scratch is complex and typically done using deep le
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/dnn.hpp>
 #include <iostream>
 
@@ -4376,6 +4431,7 @@ Faster R-CNN is typically implemented using frameworks like TensorFlow or PyTorc
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/dnn.hpp>
 #include <iostream>
 
@@ -4481,6 +4537,7 @@ The final prediction combines the class probability map and the individual box c
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/dnn.hpp>
 #include <iostream>
 
@@ -4588,6 +4645,7 @@ SSD is designed to perform object detection in a single shot, without the need f
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/dnn.hpp>
 #include <iostream>
 
@@ -4677,6 +4735,7 @@ RetinaNet addresses the class imbalance problem commonly found in object detecti
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/dnn.hpp>
 #include <iostream>
 
@@ -4787,6 +4846,7 @@ First, we need to extract features from images. We'll use the ORB detector, whic
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/features2d.hpp>
 #include <iostream>
 
@@ -4825,10 +4885,13 @@ Next, we cluster the descriptors using k-means to create a visual vocabulary. Th
 
 ```cpp
 #include <opencv2/core.hpp>
+
 #include <opencv2/imgcodecs.hpp>
 #include <opencv2/highgui.hpp>
+
 #include <opencv2/features2d.hpp>
 #include <opencv2/ml.hpp>
+
 #include <iostream>
 
 using namespace cv;
@@ -4966,8 +5029,10 @@ We start by loading the dataset and preprocessing the images. For simplicity, we
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/dnn.hpp>
 #include <iostream>
+
 #include <vector>
 
 using namespace cv;
@@ -5112,6 +5177,7 @@ We start by loading a pre-trained model. For this example, we'll use a pre-train
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/dnn.hpp>
 #include <iostream>
 
@@ -5295,6 +5361,7 @@ OpenCV provides a rich set of functions to handle epipolar geometry. Below, we w
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <vector>
 #include <iostream>
 ```
@@ -5422,8 +5489,10 @@ OpenCV provides several functions for stereo matching, including the block match
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/calib3d.hpp>
 #include <opencv2/imgproc.hpp>
+
 #include <iostream>
 ```
 
@@ -5563,6 +5632,7 @@ We will use the ORB (Oriented FAST and Rotated BRIEF) detector to find keypoints
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 using namespace cv;
@@ -5704,6 +5774,7 @@ We use ORB to detect and match keypoints, as demonstrated in the previous subcha
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 #include <vector>
 
@@ -5808,6 +5879,7 @@ Bundle adjustment refines the 3D points and camera parameters to minimize the re
 // defining the cost function, and running the solver to minimize the reprojection error.
 
 #include <ceres/ceres.h>
+
 #include <ceres/rotation.h>
 
 // Define the cost function for bundle adjustment
@@ -5918,8 +5990,10 @@ First, we need to define the structure to hold a point in a point cloud:
 
 ```cpp
 #include <vector>
+
 #include <cmath>
 #include <iostream>
+
 #include <opencv2/opencv.hpp>
 
 struct Point3D {
@@ -6023,8 +6097,10 @@ While OpenCV does not natively support ICP, we can implement a basic version in 
 
 ```cpp
 #include <vector>
+
 #include <iostream>
 #include <cmath>
+
 #include <Eigen/Dense>
 #include <opencv2/opencv.hpp>
 
@@ -6184,8 +6260,10 @@ First, include the necessary headers and define the structures:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <cmath>
+
 #include <Eigen/Dense>
 #include <PoissonRecon.h>
 
@@ -6346,6 +6424,7 @@ OpenCV provides a robust implementation of the Lucas-Kanade method for optical f
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 using namespace cv;
@@ -6469,6 +6548,7 @@ While OpenCV does not provide a direct implementation of the Horn-Schunck method
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 #include <vector>
 
@@ -6643,6 +6723,7 @@ Farneback's method approximates the local neighborhood of each pixel using polyn
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 using namespace cv;
@@ -6716,6 +6797,7 @@ The Dual TV-L1 method combines the advantages of Total Variation regularization 
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/optflow.hpp>
 #include <iostream>
 
@@ -6858,6 +6940,7 @@ OpenCV provides a built-in Kalman Filter class that simplifies implementation. B
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 int main() {
@@ -6950,8 +7033,10 @@ Below is a simple implementation of the Particle Filter for 2D tracking:
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 #include <vector>
+
 #include <random>
 
 struct Particle {
@@ -7060,6 +7145,7 @@ OpenCV provides built-in functions for the Mean Shift algorithm. Below is an exa
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 int main() {
@@ -7138,6 +7224,7 @@ OpenCV also provides a built-in function for CAMShift. Below is an example of it
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 int main() {
@@ -7286,8 +7373,10 @@ siamese_network.save('siamese_network.h5')
 **Tracking with OpenCV:**
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <tensorflow/c/c_api.h>
 #include <tensorflow/c/c_api_experimental.h>
+
 #include <iostream>
 
 // Load TensorFlow model
@@ -7364,6 +7453,7 @@ OpenCV provides a built-in implementation of GOTURN in its tracking module. Belo
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/tracking.hpp>
 #include <iostream>
 
@@ -7463,6 +7553,7 @@ First, download the pre-trained Haar cascade XML file for face detection from Op
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 int main() {
@@ -7510,6 +7601,7 @@ OpenCV also provides the `cv::HOGDescriptor` class for HOG feature extraction an
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 int main() {
@@ -7591,8 +7683,10 @@ Here is a C++ code example that demonstrates facial landmark detection using dli
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <dlib/opencv.h>
 #include <dlib/image_processing.h>
+
 #include <dlib/image_io.h>
 #include <iostream>
 
@@ -7694,10 +7788,13 @@ Here is a C++ code example that demonstrates face recognition using dlib and Ope
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <dlib/opencv.h>
 #include <dlib/dnn.h>
+
 #include <dlib/image_processing.h>
 #include <dlib/image_io.h>
+
 #include <iostream>
 
 // Define the ResNet model
@@ -7849,6 +7946,7 @@ Here's the C++ code to perform semantic segmentation using the Deeplabv3 model i
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/dnn.hpp>
 
 using namespace cv;
@@ -7969,8 +8067,10 @@ Here's the C++ code to perform scene classification using the MobileNet model in
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/dnn.hpp>
 #include <iostream>
+
 #include <fstream>
 
 using namespace cv;
@@ -8089,8 +8189,10 @@ Here’s an example of how you might integrate a pre-trained image captioning mo
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/dnn.hpp>
 #include <iostream>
+
 #include <fstream>
 
 using namespace cv;
@@ -8252,6 +8354,7 @@ Here's an example of how to calibrate a camera using OpenCV:
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <vector>
 #include <iostream>
 
@@ -8311,6 +8414,7 @@ Here's an example:
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/aruco.hpp>
 #include <iostream>
 
@@ -8362,6 +8466,7 @@ To render a simple 3D cube on a detected marker, we use the pose estimation data
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/aruco.hpp>
 #include <iostream>
 
@@ -8452,6 +8557,7 @@ Here's an example of feature-based tracking using OpenCV's ORB (Oriented FAST an
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/features2d.hpp>
 #include <iostream>
 
@@ -8540,6 +8646,7 @@ Here's an example of depth estimation using stereo vision:
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 using namespace cv;
@@ -8610,8 +8717,10 @@ Here's a basic implementation of a Visual SLAM pipeline using OpenCV:
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/features2d.hpp>
 #include <opencv2/calib3d.hpp>
+
 #include <iostream>
 
 using namespace cv;
@@ -8714,8 +8823,10 @@ Here’s a simplified implementation of 3D reconstruction using OpenCV’s funct
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/sfm.hpp>
 #include <vector>
+
 #include <iostream>
 
 using namespace cv;
@@ -8770,12 +8881,16 @@ Here’s an example of hand tracking using OpenCV and the MediaPipe framework fo
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <mediapipe/framework/formats/landmark.pb.h>
 #include <mediapipe/framework/packet.h>
+
 #include <mediapipe/framework/port/parse_text_proto.h>
 #include <mediapipe/framework/port/status.h>
+
 #include <mediapipe/framework/calculator.pb.h>
 #include <mediapipe/framework/port/status.h>
+
 #include <iostream>
 
 using namespace cv;
@@ -8852,8 +8967,10 @@ Here’s an example of using a pre-trained deep learning model for object recogn
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <tensorflow/core/public/session.h>
 #include <tensorflow/core/platform/env.h>
+
 #include <iostream>
 
 using namespace cv;
@@ -8961,6 +9078,7 @@ First, we will implement object detection using the HOG feature descriptor and S
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/ml.hpp>
 #include <iostream>
 
@@ -9010,6 +9128,7 @@ Next, we will implement lane detection using the Hough Transform in C++ with Ope
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 using namespace cv;
@@ -9103,6 +9222,7 @@ First, let's implement feature extraction and matching using ORB.
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/features2d.hpp>
 #include <iostream>
 
@@ -9148,8 +9268,10 @@ Next, we will estimate the camera's motion between frames using the matched feat
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/calib3d.hpp>
 #include <opencv2/features2d.hpp>
+
 #include <iostream>
 
 using namespace cv;
@@ -9245,6 +9367,7 @@ We will start by implementing camera calibration using a chessboard pattern.
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 using namespace cv;
@@ -9297,6 +9420,7 @@ Next, we will implement object recognition using ORB features and the FLANN-base
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/features2d.hpp>
 #include <iostream>
 
@@ -9344,6 +9468,7 @@ Finally, we will implement a basic depth estimation for obstacle detection using
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/calib3d.hpp>
 #include <iostream>
 
@@ -9437,6 +9562,7 @@ First, let's load a pre-trained model (e.g., a simple CNN trained on the MNIST d
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/dnn.hpp>
 #include <iostream>
 
@@ -9587,6 +9713,7 @@ First, let's implement real-time image filtering using a simple Gaussian blur fi
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 int main() {
@@ -9630,6 +9757,7 @@ Next, we will implement real-time edge detection using the Sobel operator.
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 int main() {
@@ -9735,6 +9863,7 @@ First, we will use OpenCV's Haar cascade classifier to detect faces in an image.
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 void detectAndDisplay(cv::Mat frame, cv::CascadeClassifier faceCascade) {

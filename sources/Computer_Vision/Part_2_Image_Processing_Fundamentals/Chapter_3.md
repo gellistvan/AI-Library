@@ -55,6 +55,7 @@ OpenCV is a powerful library for image processing. Below are examples of impleme
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 using namespace cv;
 
 int main() {
@@ -81,6 +82,7 @@ int main() {
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 using namespace cv;
 
 int main() {
@@ -107,6 +109,7 @@ int main() {
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 using namespace cv;
 
 int main() {
@@ -172,6 +175,7 @@ OpenCV provides built-in functions for convolution and smoothing operations. Bel
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 using namespace cv;
 
 int main() {
@@ -202,6 +206,7 @@ int main() {
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 using namespace cv;
 
 int main() {
@@ -228,6 +233,7 @@ int main() {
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 using namespace cv;
 
 int main() {
@@ -256,6 +262,7 @@ For a deeper understanding, let's implement convolution from scratch in C++ with
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 using namespace cv;
 
 void customConvolution(const Mat& input, Mat& output, const Mat& kernel) {
@@ -346,6 +353,7 @@ OpenCV provides a straightforward function for histogram equalization called `eq
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 using namespace cv;
 
 int main() {
@@ -374,6 +382,7 @@ For a deeper understanding, let's implement histogram equalization from scratch 
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <vector>
 using namespace cv;
 using namespace std;

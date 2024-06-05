@@ -79,6 +79,7 @@ OpenCV provides convenient functions to apply the Sobel and Prewitt operators fo
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 using namespace cv;
 using namespace std;
 
@@ -121,6 +122,7 @@ OpenCV does not have a direct function for Prewitt operators, but we can impleme
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 using namespace cv;
 using namespace std;
 
@@ -224,6 +226,7 @@ OpenCV provides a convenient function `Canny` to implement the Canny Edge Detect
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 using namespace cv;
 using namespace std;
 
@@ -304,6 +307,7 @@ The Laplacian of Gaussian (LoG) method combines Gaussian smoothing with the Lapl
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 using namespace cv;
 using namespace std;
 
@@ -364,6 +368,7 @@ $$
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 using namespace cv;
 using namespace std;
 
@@ -416,6 +421,7 @@ First, download the HED model and the prototxt file from the official sources.
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/dnn.hpp>
 using namespace cv;
 using namespace dnn;

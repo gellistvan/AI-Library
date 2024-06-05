@@ -285,6 +285,7 @@ Például két DNS szekvencia összehasonlítása során a Levenshtein-távolsá
 
 ```cpp
 #include <iostream>
+
 #include <string>
 #include <vector>
 
@@ -352,8 +353,10 @@ Képzeljük el, hogy egy helyesírás-ellenőrző rendszert kell implementálnun
 
 ```cpp
 #include <iostream>
+
 #include <string>
 #include <vector>
+
 #include <algorithm>
 
 // Function to calculate Levenshtein distance
@@ -423,6 +426,7 @@ A DNS szekvenciák összehasonlítása alapvető fontosságú a genetikai kutat�
 
 ```cpp
 #include <iostream>
+
 #include <string>
 #include <vector>
 

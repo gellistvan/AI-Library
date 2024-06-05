@@ -68,6 +68,7 @@ Az alábbiakban egy Merge Sort algoritmus C++ implementációját láthatjuk:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 // Function to merge two subarrays of arr
@@ -186,6 +187,7 @@ A fenti ábra jól mutatja a tömb felosztásának lépéseit.
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <iterator>
 
@@ -270,6 +272,7 @@ A „oszd meg és uralkodj” stratégia több típusú problémára is alkalmaz
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
 
@@ -329,6 +332,7 @@ Az egyik leggyakrabban használt algoritmuscsoport, ahol az egyesítési technik
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 void merge(std::vector<int>& array, int left, int middle, int right) {
@@ -416,6 +420,7 @@ A Kruskal algoritmus egy tipikus oszd meg és uralkodj típusú algoritmus, amel
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
 
@@ -502,6 +507,7 @@ Az egyesítési technikák hatékonysága jelentős mértékben befolyásolja az
 Az oszd-meg-és-uralkodj (Divide and Conquer) stratégia rendkívül fontos szerepet játszik az algoritmuselmélet és a gyakorlati számítástechnika területén. Az oszd-meg-és-uralkodj algoritmusok teljesítményének elemzése, valamint azok összehasonlítása más megközelítésekkel, mint például a dinamikus programozással (Dynamic Programming), a gráf algoritmusokkal vagy a bonyolultabb keresési stratégiákkal, kritikus fontosságú a hatékony algoritmusok kiválasztásában és alkalmazásában.
 
 #### Teljesítmény elemzése
+
 Az oszd-meg-és-uralkodj algoritmusok teljesítményének elemzése céljából alapvetően három fő lépést azonosíthatunk:
 
 1. **Felbontás (Divide)**: A problémát kisebb részekre bontjuk.

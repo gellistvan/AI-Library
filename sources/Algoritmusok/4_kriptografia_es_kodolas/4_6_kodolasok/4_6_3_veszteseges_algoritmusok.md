@@ -77,6 +77,7 @@ Az alábbiakban bemutatok egy egyszerű példakódot C++ nyelven, amely egy 8x8-
 
 ```cpp
 #include <iostream>
+
 #include <cmath>
 #include <vector>
 
@@ -208,6 +209,7 @@ Az alábbiakban bemutatok egy egyszerű példakódot C++ nyelven, amely egy 32 m
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <cmath>
 
@@ -256,9 +258,11 @@ Az MP3 formátumot számos területen használják, beleértve a digitális zene
 
 
 ### 6.3.3. Videó kompressziós algoritmusok (pl. H.264)
+
 ### Működés és alkalmazások
 
 #### Bevezetés
+
 A videókompresszió modern világunk egyik kulcsfontosságú technológiája, amely lehetővé teszi a nagy felbontású videók hatékony tárolását és továbbítását. Az egyik legelterjedtebb videó kompressziós szabvány, amely széles körben használt mind a professzionális mind az otthoni felhasználásban, a H.264, más néven AVC (Advanced Video Coding). Ez a fejezet mélyreható betekintést nyújt a H.264 működési elveibe, valamint annak gyakorlati alkalmazásaiba.
 
 #### H.264 működési elvei
@@ -266,6 +270,7 @@ A videókompresszió modern világunk egyik kulcsfontosságú technológiája, a
 Az H.264 kompressziós algoritmus számos innovatív technikát alkalmaz a videó adatok hatékony csökkentése érdekében, miközben megőrzi a lehető legjobb vizuális minőséget. A következő szakaszok részletezik ezeket az elveket és technikákat.
 
 ##### 1. **Intraframe tömörítés (I-képkockák)**
+
 Az intraframe tömörítés a képkockákon belüli redundancia csökkentésére összpontosít. Az I-képkockák a videó olyan képkockái, amelyeket teljes mértékben, önállóan tömörítenek, minden más képkocka nélkül. Ez általában egy DCT (Discrete Cosine Transform) alapú megközelítést használ, ahol a képkocka blokkjaira (általában 8x8 vagy 16x16 pixeles blokkok) felosztják, majd ezek a blokkok frekvenciatartományba kerülnek átalakításra.
 
 A blokkok átalakítása után kvantálási lépések következnek, amelyek jelentősen csökkentik a kép adatmennyiségét azáltal, hogy a kevésbé fontos frekvenciakomponensek pontosságát csökkentik. Végül, a blokkadatokat entropia kódolással (például Huffman vagy aritmetikai kódolással) tömörítik tovább az adatok mennyiségének minimalizálása érdekében.
@@ -273,6 +278,7 @@ A blokkok átalakítása után kvantálási lépések következnek, amelyek jele
 ##### Példakód C++ nyelven az DCT transzformációra:
 ```cpp
 #include <iostream>
+
 #include <cmath>
 
 const int N = 8;
@@ -314,11 +320,13 @@ int main() {
 }
 ```
 ##### 2. **Interframe tömörítés (P és B-képkockák)**
+
 Az interframe tömörítés a képkockák közötti redundancia csökkentésére összpontosít. A P-képkockák (prediktív képkockák) egy korábbi I vagy P-képkockából való elmozdulás révén kerülnek tömörítésre. A mozgáskompenzációs technikákat alkalmazzák, ahol az aktuális képkocka blokkjait keresik meg a korábbiakban, és kiszámítják a mozgásvektorokat.
 
 A B-képkockák (biprediktív képkockák) két különböző képkocka (egy korábbi és egy jövőbeli) között végzik el a predikciót. Ez jelentős mennyiségű redundancia csökkentési lehetőséget biztosít.
 
 ##### 3. **Mozgáskompenzáció és mozgásvektorok**
+
 A mozgáskompenzációs eljárás során a képkockák különböző blokkjait vizsgálják, hogy megállapítsák a blokkok elmozdulását. Ennek eredményeképpen mozgásvektorokat hoznak létre, amelyek a blokkok elmozdulását jelzik.
 
 A mozgásvektorok és a maradék (az a rész amit nem lehetett a mozgáskompenzációval kitalálni) δ-al értéket DCT-n és kvantáláson mennek keresztül, hasonlóan az Intra blokkokhoz.
@@ -328,16 +336,21 @@ A mozgásvektorok és a maradék (az a rész amit nem lehetett a mozgáskompenz�
 A H.264 szabvány széleskörű alkalmazása számos területen megfigyelhető, beleértve a következőket:
 
 ##### 1. **Streaming Szolgáltatások**
+
 A H.264 kódolt videók széles körben használják a különböző video streaming platformok, mint például a Netflix, YouTube, és más videószolgáltatások. A H.264 rugalmassága és hatékonysága lehetővé teszi a magas minőségű videók továbbítását az interneten keresztül.
 
 ##### 2. **Blu-ray és fizikai média**
+
 A Blu-ray lemez szabvány a H.264 kódolást használja annak érdekében, hogy nagy kapacitású, magas minőségű videókat tárolhasson. Ez lehetővé teszi akár több órás HD videó tárolását egy lemezen.
 
 ##### 3. **Biztonsági és megfigyelőrendszerek**
+
 A H.264 videótömörítés megnöveli a biztonsági kamerák és megfigyelőrendszerek hatékonyságát azáltal, hogy csökkenti a tárolási és átviteli sávszélesség igényeket, így lehetővé teszi a hosszabb idejű felvételek tárolását és valós idejű monitorozást.
 
 ##### 4. **Videokonferenciák**
+
 A H.264 jelentős szerepet játszik a videokonferencia rendszerekben is, mivel lehetővé teszi a valós idejű, nagy felbontású videó továbbítását alacsony sávszélesség mellett, ezáltal fokozva a kommunikációs élményt.
 
 ##### 5. **Mobil alkalmazások és camcorder-ek**
+
 A H.264 széles körben használják mobil eszközökben és digitális kamerákban annak érdekében, hogy hatékonyan tárolják a nagy felbontású, mozgásban lévő tartalmakat, miközben minimalizálják a fájlméretet.

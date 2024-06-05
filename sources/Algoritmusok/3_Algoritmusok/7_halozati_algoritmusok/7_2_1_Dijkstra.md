@@ -54,6 +54,7 @@ Dijkstra(G, w, s):
 - `Relax(u, v, w)`: Frissíti a csúcs távolságát, ha új rövidebb utat találnak.
 
 #### Pseudokód
+
 Az algoritmus egy részletesebb pseudokód formájában is leírható (nem kódszintű implementáció):
 
 ```markdown
@@ -85,10 +86,13 @@ Az alábbiakban bemutatunk egy részletes implementációt C++ nyelven:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <queue>
+
 #include <utility>
 #include <limits>
+
 #define INF std::numeric_limits<int>::max()
 
 using namespace std;

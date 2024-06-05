@@ -231,6 +231,7 @@ cv::GaussianBlur(frame, frame, cv::Size(5, 5), 1.5);
 ```
 
 #### Displaying Processed Frames 
+
 After processing the frames, they need to be displayed eﬃciently:
 1. Optimize Display Update: To minimize UI updates and ensure smooth rendering, only update the display pixmap if there is a signiﬁcant change or at a regular interval optimized for human perception (e.g., 24-30 frames per second).
 2. Use Double Buﬀering: Utilize double buﬀering techniques to update the image display, which involves preparing the image in a background buﬀer and then swapping it to the display buﬀer.
@@ -329,6 +330,7 @@ In this section, we'll explore a practical application of integrating Qt and Ope
 **Implementing Face Detection: Using OpenCV's Face Detection to Identify Faces in Real-Time**
 
 #### 1. Using Haar Cascades: 
+
 OpenCV provides pre-trained Haar cascade models which are eﬀective for detecting faces. These models are based on Haar-like features that are used for rapid object detection.
 
 **Steps to Implement:**
@@ -366,6 +368,7 @@ void detectAndDisplay(cv::Mat frame) {
 Process frames in a separate thread to keep the UI responsive.
 
 ### 2. Updating UI with Detected Faces: 
+
 After detecting faces, the frames should be converted to `QImage` and displayed in the Qt GUI.
 User Interface Considerations: Enhancing User Experience with Interactive Elements
 

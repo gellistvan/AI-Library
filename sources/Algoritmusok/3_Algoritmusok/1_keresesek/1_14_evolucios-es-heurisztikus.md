@@ -28,8 +28,10 @@ Az alábbiakban egy példát mutatunk be egy egyszerű genetikus algoritmusra C+
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
+
 #include <random>
 #include <ctime>
 
@@ -209,8 +211,10 @@ Az alábbiakban egy egyszerű Hill Climbing algoritmust mutatunk be C++ nyelven.
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
+
 #include <random>
 #include <ctime>
 
@@ -309,8 +313,10 @@ Az alábbiakban egy egyszerű Simulated Annealing algoritmust mutatunk be C++ ny
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <cmath>
+
 #include <random>
 #include <ctime>
 

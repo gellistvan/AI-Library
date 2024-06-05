@@ -53,6 +53,7 @@ OpenCV provides a built-in Kalman Filter class that simplifies implementation. B
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 int main() {
@@ -145,8 +146,10 @@ Below is a simple implementation of the Particle Filter for 2D tracking:
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 #include <vector>
+
 #include <random>
 
 struct Particle {
@@ -255,6 +258,7 @@ OpenCV provides built-in functions for the Mean Shift algorithm. Below is an exa
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 int main() {
@@ -333,6 +337,7 @@ OpenCV also provides a built-in function for CAMShift. Below is an example of it
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 int main() {
@@ -481,8 +486,10 @@ siamese_network.save('siamese_network.h5')
 **Tracking with OpenCV:**
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <tensorflow/c/c_api.h>
 #include <tensorflow/c/c_api_experimental.h>
+
 #include <iostream>
 
 // Load TensorFlow model
@@ -559,6 +566,7 @@ OpenCV provides a built-in implementation of GOTURN in its tracking module. Belo
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/tracking.hpp>
 #include <iostream>
 

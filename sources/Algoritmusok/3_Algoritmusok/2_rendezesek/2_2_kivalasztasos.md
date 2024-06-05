@@ -37,6 +37,7 @@ Az alábbiakban bemutatjuk a kiválasztásos rendezés algoritmusának C++ nyelv
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 void selectionSort(std::vector<int>& arr) {
@@ -189,6 +190,7 @@ A párhuzamos kiválasztásos rendezés implementálása összetettebb feladat, 
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <thread>
 
@@ -348,6 +350,7 @@ Egy egyetemi programozási kurzus során a diákok megtanulják a kiválasztáso
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 void selectionSort(std::vector<int>& arr) {
@@ -395,6 +398,7 @@ Egy beágyazott rendszer, például egy mikrovezérlő, amelynek korlátozott me
 
 ```cpp
 #include <iostream>
+
 #include <array>
 
 void selectionSort(std::array<int, 5>& arr) {
@@ -442,6 +446,7 @@ Egy szenzor adatainak feldolgozása és rendezése egy beágyazott rendszeren.
 
 ```cpp
 #include <iostream>
+
 #include <array>
 
 void selectionSort(std::array<float, 10>& arr) {
@@ -489,6 +494,7 @@ Egy ügyfélszolgálati rendszerben a beérkező kérések fontossági sorrendj�
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <string>
 
@@ -547,6 +553,7 @@ Egy IoT szenzorhálózat, amely különböző érzékelőktől származó adatok
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 struct SensorData {

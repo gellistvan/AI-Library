@@ -43,8 +43,10 @@ Az alábbiakban egy lehetséges C++ implementáció következik. Az implementác
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
+
 #include <utility>
 #include <climits>
 
@@ -215,8 +217,10 @@ Az alábbiakban bemutatjuk a Borůvka algoritmusának egy egyszerű implementác
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
+
 #include <climits>
 using namespace std;
 

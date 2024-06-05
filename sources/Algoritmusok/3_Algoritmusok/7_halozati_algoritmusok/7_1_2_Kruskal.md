@@ -78,6 +78,7 @@ A következő C++ kód egy példa a Kruskal algoritmus működésére:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
 
@@ -264,6 +265,7 @@ Az alábbiakban bemutatjuk a Kruskal algoritmusának egy egyszerű C++ implement
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
 

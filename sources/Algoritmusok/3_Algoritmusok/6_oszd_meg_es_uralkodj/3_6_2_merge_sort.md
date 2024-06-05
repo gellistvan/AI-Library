@@ -71,6 +71,7 @@ Az alábbiakban bemutatjuk a Merge Sort algoritmus implementációját C++ nyelv
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 void merge(std::vector<int>& array, int const left, int const mid, int const right) {
@@ -255,6 +256,7 @@ Következzen egy C++ nyelven készült Merge Sort implementáció:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 void merge(std::vector<int>& arr, int l, int m, int r) {

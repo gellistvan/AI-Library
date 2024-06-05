@@ -24,6 +24,7 @@ Az algoritmus alapvető szerkezete C++ nyelven a következőképpen néz ki:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 // Function to perform partitioning
@@ -107,6 +108,7 @@ A Lomuto partíciózási módszer egyszerű, könnyen érthető és implementál
 
 ```cpp
 #include <vector>
+
 #include <iostream>
 
 int lomutoPartition(std::vector<int>& arr, int low, int high) {
@@ -155,6 +157,7 @@ A Hoare partíciózási algoritmus hatékonyabb és komplexebb, mint a Lomuto m�
 
 ```cpp
 #include <vector>
+
 #include <iostream>
 
 int hoarePartition(std::vector<int>& arr, int low, int high) {
@@ -228,6 +231,7 @@ A három részre osztás technikája különösen hasznos olyan adathalmazok ren
 
 ```cpp
 #include <vector>
+
 #include <iostream>
 
 void threeWayPartition(std::vector<int>& arr, int low, int high, int& lt, int& gt) {
@@ -283,8 +287,10 @@ A random pivot választás célja a gyorsrendezés legrosszabb esetének elkerü
 
 ```cpp
 #include <vector>
+
 #include <iostream>
 #include <cstdlib>
+
 #include <ctime>
 
 int randomizedPartition(std::vector<int>& arr, int low, int high) {
@@ -480,6 +486,7 @@ A következő példakód egy egyszerű gyorsrendezés implementációt mutat be 
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 // Function to partition the array

@@ -54,8 +54,10 @@ Az alábbiakban egy egyszerű példakódot mutatunk be C++ nyelven, amely egy p�
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <thread>
+
 #include <mutex>
 
 std::mutex mtx; // mutex for critical section
@@ -165,10 +167,13 @@ Az alábbiakban egy egyszerű példakódot mutatunk be C++ nyelven, amely egy el
 
 ```cpp
 #include <iostream>
+
 #include <map>
 #include <vector>
+
 #include <cmath>
 #include <mutex>
+
 #include <thread>
 
 class Node {

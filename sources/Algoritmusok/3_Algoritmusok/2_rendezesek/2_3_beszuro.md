@@ -42,6 +42,7 @@ Az alábbiakban bemutatunk egy C++ nyelvű implementációt a beszúró rendezé
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 void insertionSort(std::vector<int>& arr) {
@@ -119,6 +120,7 @@ Az alábbiakban bemutatunk egy C++ nyelvű implementációt a bináris beszúró
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 // Function to perform binary search
@@ -282,6 +284,7 @@ Képzeljük el, hogy van egy alkalmazásunk, amely folyamatosan kap új adatokat
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <string>
 
@@ -339,6 +342,7 @@ Egy online adatokat kezelő rendszer, például egy tőzsdei alkalmazás, ahol a
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 struct Transaction {

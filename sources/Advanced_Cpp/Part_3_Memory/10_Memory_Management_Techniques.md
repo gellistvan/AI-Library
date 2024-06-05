@@ -35,6 +35,7 @@ In C++, manual memory management using raw pointers can often lead to a variety 
 
 ```cpp
 #include <iostream>
+
 #include <memory>
 
 void exampleUniquePtr() {
@@ -58,6 +59,7 @@ In this example, `ptr1` initially owns the integer object. Ownership is then tra
 
 ```cpp
 #include <iostream>
+
 #include <memory>
 
 struct CustomDeleter {
@@ -82,6 +84,7 @@ Here, the `CustomDeleter` struct defines a custom deletion behavior that is used
 
 ```cpp
 #include <iostream>
+
 #include <memory>
 
 void exampleSharedPtr() {
@@ -102,6 +105,7 @@ Cyclic references can cause memory leaks since the reference count never reaches
 
 ```cpp
 #include <iostream>
+
 #include <memory>
 
 struct Node {
@@ -135,6 +139,7 @@ Here, `weak_ptr` prevents the cyclic reference between `node1` and `node2` from 
 
 ```cpp
 #include <iostream>
+
 #include <memory>
 
 void exampleWeakPtr() {
@@ -159,6 +164,7 @@ As demonstrated earlier, `weak_ptr` is crucial in scenarios where cyclic referen
 
 ```cpp
 #include <iostream>
+
 #include <memory>
 
 class Observer : public std::enable_shared_from_this<Observer> {
@@ -205,6 +211,7 @@ The placement `new` operator allows constructing an object at a specific memory 
 
 ```cpp
 #include <iostream>
+
 #include <new> // Required for placement new
 #include <cstdlib> // Required for malloc and free
 
@@ -245,8 +252,10 @@ Placement `new` provides several advantages:
 
 ```cpp
 #include <iostream>
+
 #include <new>
 #include <vector>
+
 #include <cstdlib>
 
 class CustomAllocator {
@@ -309,6 +318,7 @@ When using placement `new`, the destructor must be explicitly called since the m
 
 ```cpp
 #include <iostream>
+
 #include <new>
 #include <cstdlib>
 
@@ -359,6 +369,7 @@ You can construct multiple objects in a contiguous memory block using placement 
 
 ```cpp
 #include <iostream>
+
 #include <new>
 #include <cstdlib>
 
@@ -408,8 +419,10 @@ While standard containers like `std::vector` manage memory automatically, you ca
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <new>
+
 #include <cstdlib>
 
 class Example {
@@ -527,6 +540,7 @@ Use smart pointers or ensure that every `new` operation is paired with a corresp
 
 ```cpp
 #include <iostream>
+
 #include <memory>
 
 void exampleAvoidMemoryLeak() {
@@ -604,6 +618,7 @@ Ensure that all memory accesses are within bounds, and consider using standard c
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 void exampleAvoidBufferOverflow() {
@@ -698,6 +713,7 @@ Here's a basic outline of a custom allocator:
 
 ```cpp
 #include <memory>
+
 #include <cstddef>
 
 template <typename T>
@@ -747,6 +763,7 @@ Let's implement a custom allocator that uses a simple memory pool. This allocato
 
 ```cpp
 #include <iostream>
+
 #include <memory>
 #include <vector>
 
@@ -841,6 +858,7 @@ A stack-based allocator allocates memory from a pre-allocated stack buffer. This
 
 ```cpp
 #include <iostream>
+
 #include <memory>
 #include <vector>
 
@@ -925,6 +943,7 @@ To improve the `PoolAllocator`, you can implement a free list to manage dealloca
 
 ```cpp
 #include <iostream>
+
 #include <memory>
 #include <vector>
 
@@ -1039,6 +1058,7 @@ Let's start with a simple memory pool implementation that manages fixed-size blo
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 class MemoryPool {
@@ -1112,6 +1132,7 @@ To make the memory pool thread-safe, we can use mutexes to synchronize access to
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <mutex>
 
@@ -1185,6 +1206,7 @@ Memory pools can be extended to handle object construction and destruction, maki
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <mutex>
 
@@ -1302,6 +1324,7 @@ Manual memory management with raw pointers is error-prone, leading to issues lik
 
 ```cpp
 #include <iostream>
+
 #include <memory>
 
 void exampleSmartPointers() {
@@ -1328,6 +1351,7 @@ Custom allocators and memory pools can significantly reduce the overhead of dyna
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 template <typename T>
@@ -1374,6 +1398,7 @@ Memory pools provide predictable allocation and deallocation times, which are cr
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 class MemoryPool {
@@ -1439,6 +1464,7 @@ Custom allocators and memory pools can reduce fragmentation by managing memory i
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <mutex>
 
@@ -1526,6 +1552,7 @@ Game engines often require efficient memory management to handle large numbers o
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <mutex>
 
@@ -1609,6 +1636,7 @@ Embedded systems often have limited memory resources and require efficient memor
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <mutex>
 
@@ -1693,6 +1721,7 @@ Network applications often require efficient memory management to handle large n
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <mutex>
 
@@ -1795,8 +1824,10 @@ Let's start with a basic implementation of an object pool that manages a pool of
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <memory>
+
 #include <stdexcept>
 
 class PooledObject {
@@ -1880,8 +1911,10 @@ To make the object pool thread-safe, we can use mutexes to synchronize access to
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <memory>
+
 #include <mutex>
 #include <stdexcept>
 
@@ -1965,8 +1998,10 @@ To handle cases where the pool needs to grow dynamically, we can implement a res
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <memory>
+
 #include <mutex>
 #include <stdexcept>
 
@@ -2068,8 +2103,10 @@ Game development often involves managing numerous objects, such as characters, b
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <memory>
+
 #include <mutex>
 
 class GameEntity {
@@ -2152,8 +2189,10 @@ Network applications often need to manage large numbers of connections and data 
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <memory>
+
 #include <mutex>
 
 class NetworkConnection {
@@ -2236,8 +2275,10 @@ Database applications often need to manage a pool of database connections. Objec
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <memory>
+
 #include <mutex>
 
 class DatabaseConnection {

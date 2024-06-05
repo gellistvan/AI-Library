@@ -159,6 +159,7 @@ A fenti pseudocode C++ nyelvű megvalósítása:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 using namespace std;
 
@@ -262,6 +263,7 @@ Az alábbiakban bemutatjuk a dinamikus programozás megoldás C++ nyelvű implem
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 using namespace std;
 
@@ -373,8 +375,10 @@ A fenti pseudocode C++ nyelvű megvalósítása:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
+
 using namespace std;
 
 struct Item {

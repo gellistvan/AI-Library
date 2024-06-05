@@ -141,6 +141,7 @@ A Dijkstra algoritmus a legrövidebb utat keresi egy csúcsból a gráf összes 
 
 ```cpp
 #include <vector>
+
 #include <queue>
 
 const int INF = 1e9;
@@ -387,6 +388,7 @@ A Kruskal algoritmus futási ideje az élek rendezése miatt $O(E \log E)$, ahol
 
 ```cpp
 #include <vector>
+
 #include <algorithm>
 
 struct Edge {
@@ -457,6 +459,7 @@ A Prim algoritmus futási ideje függ a használt adatstruktúrától. Egy prior
 
 ```cpp
 #include <vector>
+
 #include <queue>
 
 const int INF = 1e9;
@@ -515,6 +518,7 @@ A töredékes hátizsák probléma mohó algoritmussal történő megoldása gyo
 
 ```cpp
 #include <vector>
+
 #include <algorithm>
 
 struct Item {

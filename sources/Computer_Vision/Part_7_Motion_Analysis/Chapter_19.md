@@ -66,6 +66,7 @@ OpenCV provides a robust implementation of the Lucas-Kanade method for optical f
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 using namespace cv;
@@ -189,6 +190,7 @@ While OpenCV does not provide a direct implementation of the Horn-Schunck method
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 #include <vector>
 
@@ -363,6 +365,7 @@ Farneback's method approximates the local neighborhood of each pixel using polyn
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 using namespace cv;
@@ -436,6 +439,7 @@ The Dual TV-L1 method combines the advantages of Total Variation regularization 
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/optflow.hpp>
 #include <iostream>
 

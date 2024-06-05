@@ -35,6 +35,7 @@ Az alábbiakban bemutatunk egy egyszerű, de hatékony hash függvényt C++ nyel
 
 ```cpp
 #include <iostream>
+
 #include <string>
 
 unsigned int simpleHash(const std::string &str, unsigned int tableSize) {
@@ -95,6 +96,7 @@ A lineáris próbálkozás során az ütközés esetén az algoritmus lineárisa
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <string>
 
@@ -188,6 +190,7 @@ Kettős hash-elés során két különböző hash függvényt használunk, az ü
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <string>
 
@@ -273,8 +276,10 @@ Láncolás esetén minden hash tábla pozíció egy láncolt listát tartalmaz, 
 
 ```cpp
 #include <iostream>
+
 #include <list>
 #include <vector>
+
 #include <string>
 
 const int TABLE_SIZE = 101;
@@ -389,8 +394,10 @@ Az alábbi példa bemutatja egy egyszerű hash tábla implementációját C++ ny
 
 ```cpp
 #include <iostream>
+
 #include <list>
 #include <vector>
+
 #include <string>
 
 const int TABLE_SIZE = 101;
@@ -499,8 +506,10 @@ Példa kód C++ nyelven:
 
 ```cpp
 #include <iostream>
+
 #include <list>
 #include <vector>
+
 #include <string>
 
 const int TABLE_SIZE = 101;
@@ -590,6 +599,7 @@ Példa kód C++ nyelven kettős hash-eléssel:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <string>
 
@@ -727,6 +737,7 @@ A szótárak (dictionary) és térképek (map) kulcs-érték párok tárolásár
 
 ```cpp
 #include <iostream>
+
 #include <unordered_map>
 #include <string>
 
@@ -775,8 +786,10 @@ A gyorsítótárak olyan adatszerkezetek, amelyek ideiglenesen tárolnak adatoka
 
 ```cpp
 #include <iostream>
+
 #include <unordered_map>
 #include <list>
+
 #include <string>
 
 class LRUCache {
@@ -841,6 +854,7 @@ Az adatbázisokban a hash táblák használhatók az adatok gyors keresésének 
 
 ```cpp
 #include <iostream>
+
 #include <unordered_map>
 #include <string>
 
@@ -896,6 +910,7 @@ A hash táblák a számítógépes hálózatokban is fontos szerepet játszanak,
 
 ```cpp
 #include <iostream>
+
 #include <unordered_map>
 #include <string>
 
@@ -951,8 +966,10 @@ A hash függvények a kriptográfiában is elengedhetetlenek, például digitál
 
 ```cpp
 #include <iostream>
+
 #include <openssl/sha.h>
 #include <iomanip>
+
 #include <sstream>
 
 std::string sha256(const std::string str) {
@@ -992,6 +1009,7 @@ A hash táblák a játékfejlesztésben is hasznosak, például objektumok gyors
 
 ```cpp
 #include <iostream>
+
 #include <unordered_map>
 #include <string>
 

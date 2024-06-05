@@ -61,8 +61,10 @@ Az alábbiakban bemutatunk egy egyszerű C++ implementációt a Boyer-Moore algo
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <string>
+
 #include <unordered_map>
 using namespace std;
 
@@ -209,8 +211,10 @@ Az alábbiakban bemutatunk egy egyszerű C++ implementációt a KMP algoritmusra
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <string>
+
 using namespace std;
 
 void computePrefixFunction(const string &pattern, vector<int> &prefix) {
@@ -343,6 +347,7 @@ Az alábbiakban bemutatunk egy egyszerű C++ implementációt a Rabin-Karp algor
 
 ```cpp
 #include <iostream>
+
 #include <string>
 using namespace std;
 
@@ -483,6 +488,7 @@ Az alábbiakban bemutatunk egy egyszerű C++ implementációt a Trie adatszerkez
 
 ```cpp
 #include <iostream>
+
 #include <unordered_map>
 using namespace std;
 

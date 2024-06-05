@@ -50,6 +50,7 @@ First, download the pre-trained Haar cascade XML file for face detection from Op
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 int main() {
@@ -97,6 +98,7 @@ OpenCV also provides the `cv::HOGDescriptor` class for HOG feature extraction an
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 int main() {
@@ -178,8 +180,10 @@ Here is a C++ code example that demonstrates facial landmark detection using dli
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <dlib/opencv.h>
 #include <dlib/image_processing.h>
+
 #include <dlib/image_io.h>
 #include <iostream>
 
@@ -281,10 +285,13 @@ Here is a C++ code example that demonstrates face recognition using dlib and Ope
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <dlib/opencv.h>
 #include <dlib/dnn.h>
+
 #include <dlib/image_processing.h>
 #include <dlib/image_io.h>
+
 #include <iostream>
 
 // Define the ResNet model

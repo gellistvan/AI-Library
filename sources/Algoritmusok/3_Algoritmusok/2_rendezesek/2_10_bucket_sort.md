@@ -23,6 +23,7 @@ A következő implementáció bemutatja a Bucket Sort algoritmust C++ nyelven:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
 
@@ -135,6 +136,7 @@ Példa: Ha a teljes adatállomány 1000 elem, és 10 vödröt akarunk létrehozn
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
 
@@ -278,8 +280,10 @@ Az alábbi példa kód egy optimalizált Bucket Sort implementációt mutat be, 
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
+
 #include <thread>
 
 // Rendezési függvény egy-egy vödörre
@@ -389,6 +393,7 @@ Tegyük fel, hogy egy szimuláció eredményeként kapunk egy lebegőpontos szá
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
 
@@ -451,6 +456,7 @@ Egy adatbázisban tárolt tranzakciók rendezése időbélyegek szerint. A köve
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
 
@@ -524,6 +530,7 @@ Egy kép pixeleinek intenzitásértékeit rendezni kell, hogy egyenletes histogr
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
 
@@ -586,8 +593,10 @@ Nagy adatállományok párhuzamos rendezése elosztott rendszerekben. A követke
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
+
 #include <thread>
 
 // Rendezési függvény egy-egy vödörre

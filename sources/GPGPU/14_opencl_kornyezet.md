@@ -270,6 +270,7 @@ Az OpenCL programok fejlesztésének és optimalizálásának folyamata során s
 
 ```c
 #include <CL/cl.h>
+
 #include <stdio.h>
 #include <stdlib.h>
 

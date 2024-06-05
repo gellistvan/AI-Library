@@ -38,10 +38,13 @@ A következő példa bemutat egy C++ nyelvű implementációt a Dinic algoritmus
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <queue>
+
 #include <algorithm>
 #include <climits>
+
 #include <cstring>
 
 using namespace std;
@@ -165,8 +168,10 @@ Az alábbiakban egy mintakódot mutatok C++ nyelven, amely szemlélteti a fentie
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <queue>
+
 #include <climits>
 #include <cstring>
 

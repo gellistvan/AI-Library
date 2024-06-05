@@ -118,6 +118,7 @@ A Thrust könyvtár könnyen integrálható a CUDA-val, lehetővé téve a hibri
 
 ```cpp
 #include <thrust/device_vector.h>
+
 #include <iostream>
 
 // CUDA kernel
@@ -170,6 +171,7 @@ A cuBLAS használatának megkezdése előtt inicializálnunk kell a könyvtárat
 
 ```cpp
 #include <cuda_runtime.h>
+
 #include <cublas_v2.h>
 #include <iostream>
 
@@ -209,6 +211,7 @@ A vektor szorzása egy skalárral egy alapvető művelet, amelyet a `cublasSscal
 
 ```cpp
 #include <cuda_runtime.h>
+
 #include <cublas_v2.h>
 #include <iostream>
 
@@ -256,6 +259,7 @@ A cuBLAS lehetővé teszi mátrixok szorzását skalárokkal is. Ehhez a `cublas
 
 ```cpp
 #include <cuda_runtime.h>
+
 #include <cublas_v2.h>
 #include <iostream>
 
@@ -307,6 +311,7 @@ A mátrix-mátrix szorzás az egyik legfontosabb művelet a lineáris algebrába
 
 ```cpp
 #include <cuda_runtime.h>
+
 #include <cublas_v2.h>
 #include <iostream>
 
@@ -367,6 +372,7 @@ A mátrix transzponálás gyakran szükséges művelet, amelyet a `cublasSgeam` 
 
 
 #include <cublas_v2.h>
+
 #include <iostream>
 
 int main() {
@@ -438,6 +444,7 @@ Az egy dimenziós FFT a leggyakoribb művelet, amelyet a cuFFT segítségével v
 
 ```cpp
 #include <cuda_runtime.h>
+
 #include <cufft.h>
 #include <iostream>
 
@@ -490,6 +497,7 @@ A 2D FFT hasonlóan működik az 1D FFT-hez, de kétdimenziós adathalmazokon ha
 
 ```cpp
 #include <cuda_runtime.h>
+
 #include <cufft.h>
 #include <iostream>
 
@@ -543,6 +551,7 @@ A 3D FFT háromdimenziós adathalmazokon hajt végre Fourier-transzformációt. 
 
 ```cpp
 #include <cuda_runtime.h>
+
 #include <cufft.h>
 #include <iostream>
 
@@ -597,6 +606,7 @@ A cuFFT könyvtár számos további funkciót és optimalizálási lehetőséget
 
 ```cpp
 #include <cuda_runtime.h>
+
 #include <cufft.h>
 #include <iostream>
 
@@ -663,6 +673,7 @@ A cuDNN használatához először inicializálnunk kell a könyvtárat, amihez l
 
 ```cpp
 #include <cuda_runtime.h>
+
 #include <cudnn.h>
 #include <iostream>
 
@@ -698,6 +709,7 @@ A konvolúciós réteg az egyik legfontosabb építőeleme a konvolúciós neur�
 
 ```cpp
 #include <cuda_runtime.h>
+
 #include <cudnn.h>
 #include <iostream>
 
@@ -789,6 +801,7 @@ A pooling réteg egy másik alapvető eleme a konvolúciós neurális hálózato
 
 ```cpp
 #include <cuda_runtime.h>
+
 #include <cudnn.h>
 #include <iostream>
 
@@ -862,6 +875,7 @@ Az aktivációs függvények a neurális hálózatok fontos részei, amelyek nem
 
 ```cpp
 #include <cuda_runtime.h>
+
 #include <cudnn.h>
 #include <iostream>
 
@@ -931,6 +945,7 @@ A visszafelé irányuló gradiens számítás a mélytanulási hálózatok taní
 
 ```cpp
 #include <cuda_runtime.h>
+
 #include <cudnn.h>
 #include <iostream>
 

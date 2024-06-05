@@ -76,6 +76,7 @@ A DES 16 körének megvalósításához 16 körkulcsra van szükség, amelyek ge
 
 ```cpp
 #include <iostream>
+
 #include <bitset>
 
 // Példa C++ kódrészlet a permutációk demonstrálására
@@ -148,6 +149,7 @@ Itt egy egyszerű példakód C++ nyelven, amely bemutatja a brute-force támadá
 
 ```cpp
 #include <iostream>
+
 #include <cstring>
 #include <openssl/des.h>
 
@@ -230,6 +232,7 @@ Az alábbi példakód bemutatja, hogyan lehet a 3DES titkosítást megvalósíta
 
 ```cpp
 #include <openssl/des.h>
+
 #include <cstring>
 #include <iostream>
 

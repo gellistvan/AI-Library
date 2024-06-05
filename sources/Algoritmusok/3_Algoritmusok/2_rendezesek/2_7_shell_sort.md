@@ -24,6 +24,7 @@ Az alábbiakban egy részletes implementáció található a Shell Sort algoritm
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 // Shell Sort function
@@ -109,6 +110,7 @@ Az alábbiakban egy Shell Sort implementáció található C++ nyelven, amely a 
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 // Generate Knuth sequence
@@ -253,6 +255,7 @@ Az alábbiakban egy Shell Sort implementáció található C++ nyelven, amely a 
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 // Generate Sedgewick sequence
@@ -383,6 +386,7 @@ Az alábbiakban egy Shell Sort implementáció található C++ nyelven, amely a 
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <cmath>
 
@@ -473,6 +477,7 @@ Képzeljünk el egy beágyazott rendszert, amely hőmérséklet-érzékelő adat
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 // Shell Sort function using a simple gap sequence
@@ -516,6 +521,7 @@ Egy alkalmazásban, amelyben a felhasználóknak rendezett listákat kell megjel
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <string>
 
@@ -560,6 +566,7 @@ Amikor egy nagy adatbázis rekordjait kell rendezni, például egy könyvtár ka
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <string>
 
@@ -611,6 +618,7 @@ A Knuth sorozat használata hatékony lehet közepes és nagy méretű adathalma
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 // Generate Knuth sequence
@@ -667,6 +675,7 @@ A Sedgewick sorozat különösen hatékony nagy adathalmazok esetén, mivel jobb
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 // Generate Sedgewick sequence

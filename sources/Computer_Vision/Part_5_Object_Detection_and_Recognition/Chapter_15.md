@@ -33,6 +33,7 @@ First, we need to extract features from images. We'll use the ORB detector, whic
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/features2d.hpp>
 #include <iostream>
 
@@ -71,10 +72,13 @@ Next, we cluster the descriptors using k-means to create a visual vocabulary. Th
 
 ```cpp
 #include <opencv2/core.hpp>
+
 #include <opencv2/imgcodecs.hpp>
 #include <opencv2/highgui.hpp>
+
 #include <opencv2/features2d.hpp>
 #include <opencv2/ml.hpp>
+
 #include <iostream>
 
 using namespace cv;
@@ -212,8 +216,10 @@ We start by loading the dataset and preprocessing the images. For simplicity, we
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/dnn.hpp>
 #include <iostream>
+
 #include <vector>
 
 using namespace cv;
@@ -358,6 +364,7 @@ We start by loading a pre-trained model. For this example, we'll use a pre-train
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/dnn.hpp>
 #include <iostream>
 

@@ -28,6 +28,7 @@ $$
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 using namespace cv;
 
 int main() {
@@ -93,6 +94,7 @@ where $\text{C}_{\max}$ and $\text{C}_{\min}$ are the maximum and minimum values
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 using namespace cv;
 
 int main() {
@@ -175,6 +177,7 @@ $$
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 using namespace cv;
 
 int main() {
@@ -225,6 +228,7 @@ $$
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 using namespace cv;
 
 int main() {
@@ -299,6 +303,7 @@ where $(\text{C}_{\max})$ and $(\text{C}_{\min})$ are the maximum and minimum va
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 using namespace cv;
 
 int main() {
@@ -344,6 +349,7 @@ where:
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 using namespace cv;
 
 void contrastEnhancement(const Mat& input, Mat& output, double alpha, int minOutput) {
@@ -394,6 +400,7 @@ Segmentation often involves creating a mask by thresholding in a color space tha
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 using namespace cv;
 
 int main() {
@@ -467,6 +474,7 @@ Let's simulate a multispectral image with three bands: Red, Green, and Near-Infr
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 using namespace cv;
 using namespace std;
 
@@ -511,6 +519,7 @@ Let's simulate a hyperspectral image with five bands.
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <vector>
 using namespace cv;
 using namespace std;
@@ -567,6 +576,7 @@ PCA reduces the dimensionality of hyperspectral data by transforming it into a s
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/ml/ml.hpp>
 using namespace cv;
 using namespace cv::ml;

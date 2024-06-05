@@ -52,6 +52,7 @@ Példa a kulcselőállításra 128-bit esetén:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 std::vector<uint32_t> expandKey(const std::vector<uint8_t>& key) {
@@ -153,6 +154,7 @@ Az alábbiakban egy egyszerű C++ példakód található, amely bemutatja az AES
 
 ```cpp
 #include <openssl/aes.h>
+
 #include <iostream>
 #include <cstring>
 
@@ -263,6 +265,7 @@ A Blowfish algoritmus implementációja viszonylag egyszerű, köszönhetően az
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <cstdint>
 
@@ -344,6 +347,7 @@ Twofish egy nagy sebességű blokkokat titkosító algoritmus, amelyet a híres 
 #### Algoritmus működése
 
 ##### Kulcsütemezés
+
 A Twofish algoritmus kulcsütemezése egy összetett folyamat, amely kiterjeszti az eredeti titkosítási kulcsot több részletre, és ezekből állítja elő a leképezési függvényen alapuló kör-kulcsokat. A főbb lépések az alábbiak:
 
 1. **Kulcstáblázatok generálása:**
