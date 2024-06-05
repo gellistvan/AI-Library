@@ -55,6 +55,7 @@ int main(int argc, char *argv[]) {
 ``` 
 
 #### Thread Safety
+
 Thread safety is critical when dealing with data that might be accessed from multiple threads. Common issues include race conditions and data corruption, which can occur if multiple threads read and write to the same data without proper synchronization.
 
 **Ensuring Thread Safety:**

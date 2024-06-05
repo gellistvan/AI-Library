@@ -9,6 +9,7 @@ Chapter 15, **Additional Resources**, serves as a vital toolkit for both beginne
 ### Instruction Set Quick Reference
 
 #### Introduction
+
 The ARM instruction set is a collection of instructions that ARM processors understand and execute. These instructions are the fundamental building blocks for writing programs in assembly language. Understanding these instructions is critical for anyone who wants to program ARM processors at a low level. This subchapter provides a detailed summary of the ARM instruction set, serving as a quick reference guide for both beginners and seasoned developers. The instructions are grouped into categories based on their functionality, and each instruction is described with its syntax, operation, and example usage.
 
 #### Categories of ARM Instructions
@@ -219,6 +220,7 @@ Synchronization instructions are used to ensure memory operations are completed 
 ### List of Assembler Directives
 
 #### Introduction
+
 Assembler directives, also known as pseudo-operations or pseudo-ops, are commands that provide instructions to the assembler itself, rather than to the CPU. They control various aspects of the assembly process, such as the organization of code and data, the definition of constants and variables, the inclusion of external files, and the generation of debugging information. This subchapter provides a detailed and comprehensive list of assembler directives used in ARM assembly language, explaining their syntax, functionality, and providing examples of their use. Understanding these directives is crucial for managing and optimizing the assembly process effectively.
 
 #### Categories of Assembler Directives

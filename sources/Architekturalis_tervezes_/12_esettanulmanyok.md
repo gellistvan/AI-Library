@@ -60,6 +60,7 @@ Az Amazon az egyik legnagyobb online kereskedelmi platform, amely az évek sorá
 - **Rendszerintegritás és megbízhatóság**: A gyakori változtatások növelik a hibák és a leállások kockázatát, ami elfogadhatatlan egy ilyen nagy volumenű szolgáltatás esetében.
 
 ##### Megoldások:
+
 Az Amazon bevezette a Continuous Deployment és a DevOps módszertanokat, amelyek lehetővé tették a gyors és biztonságos frissítéseket, valamint a rendszer folyamatos fejlesztését és karbantartását.
 
 - **Microservices architektúra**: Az Amazon szétbontotta monolitikus alkalmazását mikroszolgáltatásokra, amely lehetővé tette az egyes komponensek független fejlesztését, tesztelését és telepítését.

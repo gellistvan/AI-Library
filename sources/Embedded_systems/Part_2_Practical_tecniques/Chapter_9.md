@@ -2,6 +2,7 @@
 
 
 ## 9. Real-Time Operating Systems (RTOS) and C++
+
 In the ever-evolving landscape of embedded systems, the integration of Real-Time Operating Systems (RTOS) with C++ has become crucial for building robust, efficient, and scalable applications. This chapter delves into the essential aspects of RTOS integration, providing techniques for seamless incorporation into your C++ projects. You will explore task management and scheduling, ensuring your code harmonizes with task schedulers to optimize performance. Furthermore, we will discuss synchronization and inter-task communication, covering the use of mutexes, semaphores, and other mechanisms to maintain data integrity and facilitate smooth inter-process interactions. Through practical insights and examples, this chapter aims to equip you with the knowledge to leverage RTOS capabilities effectively in your embedded systems programming.
 
 ### 9.1. Integrating with an RTOS

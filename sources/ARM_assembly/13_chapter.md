@@ -44,6 +44,7 @@ The bootloader must correctly configure the memory map and manage memory protect
 #### 3. Bootloader Design and Requirements
 
 ##### 3.1 Design Considerations
+
 When designing a bootloader, consider the following:
 - **Minimalistic and Efficient**: Bootloaders should be small and efficient, minimizing the time from power-on to OS startup.
 - **Robust and Reliable**: They must handle failures gracefully and provide recovery options.
@@ -61,12 +62,14 @@ A typical ARM bootloader performs the following tasks:
 #### 4. Bootloader Development Steps
 
 ##### 4.1 Development Environment
+
 Set up a development environment with the following tools:
 - **Cross-Compiler**: ARM GCC toolchain for compiling ARM code.
 - **Debugger**: GDB or other ARM-compatible debuggers.
 - **Emulator/Simulator**: QEMU or hardware development board (e.g., Raspberry Pi, STM32).
 
 ##### 4.2 Assembly Language Basics
+
 Bootloaders are often written in assembly language for precise control over hardware. Here are some basic ARM assembly instructions:
 - **MOV**: Move data between registers.
 - **LDR/STR**: Load/store data from/to memory.
@@ -75,6 +78,7 @@ Bootloaders are often written in assembly language for precise control over hard
 - **MRS/MSR**: Read/write special registers.
 
 ##### 4.3 Initializing the Stack
+
 The stack is critical for function calls and interrupts. Initialize it by setting the stack pointer (SP):
 ```assembly
     LDR R0, =_stack_top   ; Load stack top address
@@ -83,6 +87,7 @@ The stack is critical for function calls and interrupts. Initialize it by settin
 Define `_stack_top` in the linker script to point to the end of RAM.
 
 ##### 4.4 Configuring the Vector Table
+
 The vector table contains addresses of exception and interrupt handlers. Typically located at address 0x00000000, it must be set up early:
 ```assembly
     LDR R0, =_vector_table
@@ -92,6 +97,7 @@ The vector table contains addresses of exception and interrupt handlers. Typical
 The vector table includes entries for reset, undefined instructions, software interrupts (SWI), prefetch aborts, data aborts, and IRQ/FIQ.
 
 ##### 4.5 Clock and Power Management
+
 Initialize the system clock and power settings:
 ```assembly
     ; Example for an STM32F4 microcontroller
@@ -108,6 +114,7 @@ wait_hse_ready:
 ```
 
 ##### 4.6 UART Initialization for Debugging
+
 Enable UART for debug output:
 ```assembly
     ; Example for a generic UART initialization
@@ -135,6 +142,7 @@ wait_fifo:
 ```
 
 ##### 4.7 Loading the Kernel
+
 Load the kernel from non-volatile storage (e.g., Flash, SD card) to RAM:
 ```assembly
 load_kernel:
@@ -150,6 +158,7 @@ copy_kernel:
 ```
 
 ##### 4.8 Jumping to the Kernel
+
 Transfer control to the loaded kernel:
 ```assembly
     LDR R0, =KERNEL_RAM_BASE
@@ -300,9 +309,11 @@ An operating system is a software layer that manages hardware resources and prov
 System initialization is the first step in OS development. It involves setting up the CPU, memory, and essential hardware components to prepare the system for running user applications.
 
 ##### 2.1 Bootloader
+
 The bootloader, discussed in the previous chapter, loads the OS kernel into memory and transfers control to it. The bootloader must set up the initial stack and ensure that the system is in a known state.
 
 ##### 2.2 Kernel Entry Point
+
 The kernel entry point is the first function executed by the kernel. It typically performs basic hardware initialization and sets up the kernel environment.
 ```assembly
 .section .text
@@ -335,6 +346,7 @@ _stack_top = 0x20002000
 Memory management is a crucial aspect of OS development. It involves managing the allocation, deallocation, and protection of memory spaces used by the OS and applications.
 
 ##### 3.1 Memory Layout
+
 Define a memory layout for the OS, including regions for the kernel, user applications, and peripheral devices.
 ```assembly
 MEMORY
@@ -353,6 +365,7 @@ SECTIONS
 ```
 
 ##### 3.2 Paging and Segmentation
+
 Implement paging and segmentation to manage memory efficiently and provide isolation between processes.
 
 **Paging**:
@@ -396,6 +409,7 @@ gdt_end:
 Process management involves creating, scheduling, and terminating processes. A process is an instance of a running program, including its code, data, and execution context.
 
 ##### 4.1 Process Control Block (PCB)
+
 The PCB is a data structure that stores information about a process, such as its state, program counter, registers, and memory allocation.
 ```assembly
 PCB:
@@ -410,6 +424,7 @@ PCB:
 ```
 
 ##### 4.2 Context Switching
+
 Context switching involves saving the state of the current process and restoring the state of the next process to be executed.
 ```assembly
 save_context:
@@ -432,6 +447,7 @@ restore_context:
 ```
 
 ##### 4.3 Process Scheduling
+
 Process scheduling determines the order in which processes are executed. Implement a simple round-robin scheduler.
 ```assembly
 scheduler:
@@ -461,6 +477,7 @@ num_processes:
 Interrupts are signals that temporarily halt the CPU's current execution to handle external or internal events. Proper interrupt handling is essential for responsive systems.
 
 ##### 5.1 Interrupt Vector Table
+
 Set up the interrupt vector table with addresses of interrupt service routines (ISRs).
 ```assembly
 _vector_table:
@@ -475,6 +492,7 @@ _vector_table:
 ```
 
 ##### 5.2 Interrupt Service Routine (ISR)
+
 An ISR handles the specific interrupt and performs necessary actions before returning control to the interrupted process.
 ```assembly
 irq_handler:
@@ -508,6 +526,7 @@ handle_irq:
 Input/Output (I/O) operations enable communication between the OS and hardware devices. Implement basic I/O routines for essential peripherals.
 
 ##### 6.1 UART for Serial Communication
+
 Initialize UART for serial communication and implement basic read/write functions.
 ```assembly
 uart_init:
@@ -542,6 +561,7 @@ uart_getc:
 ```
 
 ##### 6.2 GPIO for General-Purpose I/O
+
 Initialize GPIO and implement basic read/write functions for digital I/O pins.
 ```assembly
 gpio_init:
@@ -569,6 +589,7 @@ gpio_read:
 A file system organizes and manages files on a storage device. Implement a simple file system to handle basic file operations.
 
 ##### 7.1 File System Initialization
+
 Initialize the file system, including setting up storage and directory structures.
 ```assembly
 fs_init:
@@ -587,6 +608,7 @@ ROOT_DIR:
 ```
 
 ##### 7.2 File Operations
+
 Implement basic file operations such as create, read, write, and delete.
 ```assembly
 file_create:
@@ -623,6 +645,7 @@ file_delete:
 Security and access control protect data and resources from unauthorized access and ensure system integrity.
 
 ##### 8.1 User Authentication
+
 Implement basic user authentication mechanisms to verify user identities.
 ```assembly
 user_authenticate:
@@ -637,6 +660,7 @@ credentials:
 ```
 
 ##### 8.2 Access Control Lists (ACLs)
+
 Implement ACLs to manage permissions for files and resources.
 ```assembly
 acl_check:
