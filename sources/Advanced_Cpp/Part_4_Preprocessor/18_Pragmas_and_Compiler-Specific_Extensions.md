@@ -197,6 +197,7 @@ Macros are preprocessor directives that define constant values or code snippets 
 
 ```c
 #define MAX(a, b) ((a) > (b) ? (a) : (b))
+
 #define PI 3.14159
 ```
 
@@ -311,6 +312,7 @@ One of the most effective ways to ensure portability is to strictly adhere to th
 ```c
 // Example of adhering to C11 standard
 #include <stdio.h>
+
 #include <stdlib.h>
 
 int main() {
@@ -343,6 +345,7 @@ If you must use compiler-specific features, isolate them in separate headers or 
 ```c
 // gcc_specific.h
 #ifdef __GNUC__
+
 void gccSpecificFunction() {
     // GCC-specific code
 }
@@ -350,6 +353,7 @@ void gccSpecificFunction() {
 
 // msvc_specific.h
 #ifdef _MSC_VER
+
 void msvcSpecificFunction() {
     // MSVC-specific code
 }
@@ -357,6 +361,7 @@ void msvcSpecificFunction() {
 
 // main.c
 #include "gcc_specific.h"
+
 #include "msvc_specific.h"
 
 int main() {
@@ -405,6 +410,7 @@ Using cross-platform libraries can abstract away many of the differences between
 ```cpp
 // Example using Boost for cross-platform threading
 #include <boost/thread.hpp>
+
 #include <iostream>
 
 void threadFunction() {
@@ -457,6 +463,7 @@ Different platforms may have different endianness (byte order). Always consider 
 
 ```c
 #include <stdint.h>
+
 #include <arpa/inet.h> // For htonl and ntohl
 
 uint32_t convertToNetworkOrder(uint32_t hostOrder) {
@@ -477,15 +484,19 @@ Avoid using platform-specific APIs directly. Instead, use abstraction layers or 
 ```c
 // Avoid platform-specific APIs like this
 #ifdef _WIN32
+
 #include <windows.h>
 #else
+
 #include <unistd.h>
 #endif
 
 void sleepForSeconds(int seconds) {
 #ifdef _WIN32
+
 Sleep(seconds * 1000); // Windows-specific sleep function
 #else
+
 sleep(seconds); // POSIX-specific sleep function
 #endif
 }

@@ -122,6 +122,7 @@ Az alábbiakban bemutatjuk a mátrix lánc szorzás rekurzív algoritmusának im
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <limits.h>
 
@@ -375,6 +376,7 @@ Az alábbiakban bemutatjuk a mátrix lánc szorzás dinamikus programozási algo
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <limits.h>
 

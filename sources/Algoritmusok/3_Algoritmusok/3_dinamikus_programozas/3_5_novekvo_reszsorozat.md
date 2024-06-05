@@ -7,6 +7,7 @@ A leghosszabb növekvő részsorozat (LIS) problémája egy alapvető feladat a 
 ### 3.4.1. Definíció és alkalmazások
 
 #### Definíció
+
 A leghosszabb növekvő részsorozat (Longest Increasing Subsequence, LIS) egy alapvető probléma a kombinatorikus optimalizálás területén. Tekintsünk egy $A = [a_1, a_2, \ldots, a_n]$ véges hosszúságú számsorozatot, ahol $a_i \in \mathbb{R}$. Egy $S = [a_{i_1}, a_{i_2}, \ldots, a_{i_k}]$ sorozat az $A$ részsorozata, ha $1 \leq i_1 < i_2 < \ldots < i_k \leq n$. Az $S$ sorozat növekvő, ha minden $1 \leq j < k$ esetén $a_{i_j} < a_{i_{j+1}}$. A LIS probléma célja megtalálni az $A$ leghosszabb olyan részsorozatát, amely növekvő.
 
 Formálisan, a LIS probléma a következőképpen írható le:
@@ -15,9 +16,11 @@ Formálisan, a LIS probléma a következőképpen írható le:
 **Kimenet:** Egy leghosszabb $S = [a_{i_1}, a_{i_2}, \ldots, a_{i_k}]$ részsorozat, amely növekvő.
 
 #### Példák
+
 Például, ha az input sorozat $A = [10, 22, 9, 33, 21, 50, 41, 60, 80]$, akkor a leghosszabb növekvő részsorozat az $[10, 22, 33, 50, 60, 80]$, amelynek hossza 6. Megjegyzendő, hogy a leghosszabb növekvő részsorozat nem feltétlenül egyértelmű; egy másik lehetséges LIS lehetne $[10, 22, 33, 41, 60, 80]$.
 
 #### Matematikai Megfogalmazás
+
 Tekintsük az $LIS(A)$ függvényt, amely megadja a $A$ sorozat leghosszabb növekvő részsorozatának hosszát. A probléma megoldása során olyan $S$ sorozatot keresünk, amely maximalizálja a hosszúságát, azaz:
 
 $$
@@ -25,6 +28,7 @@ LIS(A) = \max\{|S| \mid S \text{ növekvő részsorozat } A \text{-ban}\}
 $$
 
 #### Alkalmazások
+
 A LIS probléma számos gyakorlati alkalmazással bír különböző területeken:
 
 1. **Bioinformatika:**
@@ -44,6 +48,7 @@ A LIS probléma számos gyakorlati alkalmazással bír különböző területeke
     - **Jellemzők Kivonása:** A hosszú növekvő részsorozatok azonosítása segíthet az adatok jellemzőinek kivonásában, amelyeket később különböző prediktív modellekben használhatunk.
 
 #### Matematikai Alkalmazások
+
 1. **Számelmélet:**
     - **Rendteremtési Problémák:** A LIS kapcsolódik olyan számelméleti problémákhoz, mint például a rendteremtési problémák, ahol egy adott permutációban a leghosszabb rendezett részsorozatot keressük.
     - **Young-diagramok:** A LIS hasznos eszköz a Young-diagramokkal kapcsolatos kutatásokban, amelyek fontos szerepet játszanak a kombinatorikus optimalizálásban és a szimmetrikus csoportok elméletében.
@@ -59,6 +64,7 @@ A LIS probléma megoldása számos algoritmikus megközelítést igényelhet, am
 A leghosszabb növekvő részsorozat (LIS) problémájának rekurzív megközelítése egy egyszerű, mégis hatékony módja a probléma megoldásának, különösen kisebb méretű bemenetek esetén. A rekurzió alapötlete, hogy a probléma megoldását kisebb részproblémákra bontjuk, és ezek megoldásával érjük el a teljes probléma megoldását.
 
 #### Rekurzív Megközelítés Alapjai
+
 A rekurzív megközelítés során a LIS probléma úgy oldható meg, hogy minden egyes elemre meghatározzuk a leghosszabb növekvő részsorozat hosszát, amely az adott elemmel végződik. Az általános gondolatmenet a következő:
 
 1. **Alapötlet:**
@@ -127,6 +133,7 @@ A teljes algoritmus a fenti két részből áll össze. A `lis` függvény hívj
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
 
@@ -167,6 +174,7 @@ int main() {
 ```
 
 #### Rekurzív Megoldás Elemzése
+
 A rekurzív megoldás érthető és könnyen megvalósítható, de több szempontból is figyelmet igényel, különösen nagyobb méretű bemenetek esetén.
 
 1. **Időbeli Komplexitás:**
@@ -179,12 +187,14 @@ A rekurzív megoldás érthető és könnyen megvalósítható, de több szempon
    - A rekurzív megoldás hatékonysága javítható memoizációval, amely során a korábban kiszámított eredményeket tároljuk és újra felhasználjuk. Ez jelentősen csökkentheti az ismétlődő számítások számát, és ezáltal javíthatja az algoritmus időbeli komplexitását.
 
 #### Rekurzív Megoldás Memoizációval
+
 A memoizáció egy olyan technika, amely során a korábban kiszámított eredményeket tároljuk egy adatstruktúrában (pl. vektorban vagy térképen), és újra felhasználjuk azokat a későbbi hívások során. Ezzel jelentősen csökkenthetjük az ismétlődő számítások számát és javíthatjuk az algoritmus hatékonyságát.
 
 Az alábbiakban bemutatjuk a memoizációval kiegészített rekurzív megoldást:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
 
@@ -230,6 +240,7 @@ int main() {
 A memoizációval kiegészített rekurzív megoldás időbeli komplexitása $O(n^2)$, mivel minden egyes elemre egyszer kiszámítjuk a LIS hosszát, és az eredményeket újra felhasználjuk. Ez jelentős javulás a tisztán rekurzív megoldás exponenciális időbeli komplexitásához képest.
 
 #### Összegzés
+
 A rekurzív megközelítés egy intuitív és egyszerű módja a leghosszabb növekvő részsorozat problémájának megoldására, különösen kisebb méretű bemenetek esetén. Azonban nagyobb bemenetek esetén a tisztán rekurzív megoldás nem hatékony az exponenciális időbeli komplexitás miatt. A memoizáció alkalmazásával jelentősen javíthatjuk az algoritmus hatékonyságát, csökkentve az időbeli komplexitást $O(n^2)$-re. A következő alfejezetben bemutatjuk a dinamikus programozási megközelítést, amely további optimalizálási lehetőségeket kínál a LIS probléma megoldására.
 
 ### 3.4.3. Megoldás dinamikus programozással
@@ -289,6 +300,7 @@ Az alábbiakban bemutatjuk a dinamikus programozási megközelítés C++ nyelvű
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
 
@@ -351,6 +363,7 @@ Az alábbiakban bemutatjuk a "patience sorting" technikán alapuló megoldást:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
 

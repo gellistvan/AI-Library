@@ -3,6 +3,7 @@
 # 7. Hálózati algoritmusok
 
 # 7.1. Minimális feszítőfa 
+
 A hálózatok tervezése és elemzése területén az egyik legfontosabb és leggyakrabban használt eszköz a minimális feszítőfa algoritmus. Ezek az algoritmusok ahhoz nyújtanak alapvető segítséget, hogy egy hálózat minden pontját úgy kössük össze, hogy a kapcsolatok összköltsége a lehető legkisebb legyen. Legyen szó távközlési hálózatokról, útvonaltervezésről vagy éppen elektromos hálózatok kialakításáról, a minimális feszítőfa algoritmusok biztosítják, hogy a kívánt csomópontok minden esetben hatékony és költségtakarékos módon legyenek összekapcsolva. Ebben a fejezetben megismerhetjük a legfontosabb minimális feszítőfa algoritmusokat, beleértve Prim és Kruskal algoritmusait, valamint betekintést nyerhetünk ezek matematikai hátterébe és gyakorlati alkalmazásukba is.
 
 ## 7.1.1. Prim algoritmusa
@@ -72,8 +73,10 @@ Az alábbiakban bemutatjuk a Prim algoritmus C++ nyelvű implementációját. A 
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <queue>
+
 #include <climits>
 
 using namespace std;
@@ -209,8 +212,10 @@ A következő C++ kód valósítja meg a Prim algoritmust egy ilyen hálózat te
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <queue>
+
 #include <climits>
 
 using namespace std;

@@ -64,6 +64,7 @@ Bár a kriptográfiai hash függvények implementációja igen bonyolult és nag
 
 ```cpp
 #include <iostream>
+
 #include <string>
 
 unsigned int simpleHashFunction(std::string input) {
@@ -117,6 +118,7 @@ Az alábbiakban egy egyszerű hash függvény C++ implementációját mutatjuk b
 
 ```cpp
 #include <iostream>
+
 #include <string>
 
 class SimpleHash {

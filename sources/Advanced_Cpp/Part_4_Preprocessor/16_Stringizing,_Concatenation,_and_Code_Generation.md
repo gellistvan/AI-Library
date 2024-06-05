@@ -69,6 +69,7 @@ The `#` operator can be particularly powerful when combined with the token-pasti
 #include <iostream>
 
 #define CONCAT(a, b) a##b
+
 #define STRINGIZE(x) #x
 #define MAKE_VAR_NAME(prefix, name) STRINGIZE(CONCAT(prefix, name))
 
@@ -120,6 +121,7 @@ In unit testing, it is often helpful to include the expression being tested in t
 
 ```cpp
 #include <iostream>
+
 #include <cassert>
 
 #define ASSERT_EQ(expected, actual) \
@@ -219,6 +221,7 @@ As mentioned in the previous section, the `##` operator can be effectively combi
 #include <iostream>
 
 #define STRINGIZE(x) #x
+
 #define CONCAT(a, b) a##b
 #define MAKE_VAR_STRING(prefix, name) STRINGIZE(CONCAT(prefix, name))
 
@@ -333,6 +336,7 @@ In some scenarios, token pasting may not work as expected due to the complexitie
 #include <iostream>
 
 #define CONCAT(a, b) a##b
+
 #define MAKE_VAR(name) CONCAT(var_, name)
 
 int main() {
@@ -350,6 +354,7 @@ Here, `MAKE_VAR(1)` expands to `var_1`, which is used to declare and initialize 
 #include <iostream>
 
 #define NAME 1
+
 #define CONCAT(a, b) a##b
 #define MAKE_VAR(name) CONCAT(var_, name)
 
@@ -408,6 +413,7 @@ Automating the generation of test cases can save time and ensure consistency. St
 
 ```cpp
 #include <iostream>
+
 #include <cassert>
 
 #define TEST_CASE(name, expr) \
@@ -465,6 +471,7 @@ Stringizing and token pasting can be used to create lookup tables and reduce cod
 
 ```cpp
 #include <iostream>
+
 #include <map>
 
 #define DEFINE_ERROR(code, message) { code, #message }
@@ -490,6 +497,7 @@ Token pasting can automate the generation of boilerplate code for data structure
 
 ```cpp
 #include <iostream>
+
 #include <string>
 
 #define DEFINE_GETTER(type, name) \
@@ -530,6 +538,7 @@ State machines are common in many applications, and token pasting can help simpl
 #include <iostream>
 
 #define STATE_INIT 0
+
 #define STATE_RUNNING 1
 #define STATE_STOPPED 2
 
@@ -578,6 +587,7 @@ One common application of code generation is creating boilerplate code for data 
 
 ```cpp
 #include <iostream>
+
 #include <string>
 
 #define DEFINE_GETTER(type, name) \
@@ -650,8 +660,10 @@ In command-based systems, generating dispatch functions for handling various com
 
 ```cpp
 #include <iostream>
+
 #include <string>
 #include <unordered_map>
+
 #include <functional>
 
 #define COMMAND_HANDLER(name) void handle_##name(const std::string& args)
@@ -757,6 +769,7 @@ Serialization is a common requirement in many applications, and macros can help 
 
 ```cpp
 #include <iostream>
+
 #include <sstream>
 #include <string>
 
@@ -833,6 +846,7 @@ Getters and setters are often repeated for each member variable in a class. Macr
 
 ```cpp
 #include <iostream>
+
 #include <string>
 
 #define DEFINE_GETTER_SETTER(type, name) \
@@ -866,6 +880,7 @@ Constructors often involve repetitive initialization of member variables. Macros
 
 ```cpp
 #include <iostream>
+
 #include <string>
 
 #define DEFINE_CONSTRUCTOR(className, ...) \
@@ -874,6 +889,7 @@ Constructors often involve repetitive initialization of member variables. Macros
     }
 
 #define INIT_MEMBERS(...) INIT_MEMBER(__VA_ARGS__)
+
 #define INIT_MEMBER(type, name) this->name##_ = name;
 
 class Person {
@@ -904,6 +920,7 @@ File handling typically involves opening, reading/writing, and closing files. Ma
 
 ```cpp
 #include <iostream>
+
 #include <fstream>
 #include <string>
 
@@ -996,8 +1013,10 @@ Command handlers are often used in command-line tools and interactive applicatio
 
 ```cpp
 #include <iostream>
+
 #include <string>
 #include <unordered_map>
+
 #include <functional>
 
 #define DEFINE_COMMAND_HANDLER(command) \
@@ -1047,6 +1066,7 @@ Serialization and deserialization functions can be tedious to write for each cla
 
 ```cpp
 #include <iostream>
+
 #include <sstream>
 #include <string>
 
@@ -1121,6 +1141,7 @@ One common use case for code generation is the creation of CRUD (Create, Read, U
 
 ```cpp
 #include <iostream>
+
 #include <string>
 #include <unordered_map>
 
@@ -1172,6 +1193,7 @@ State machines are widely used in various applications, from game development to
 
 ```cpp
 #include <iostream>
+
 #include <unordered_map>
 #include <functional>
 
@@ -1215,8 +1237,10 @@ Command-line parsers are essential for many applications, and macros can help ge
 
 ```cpp
 #include <iostream>
+
 #include <string>
 #include <unordered_map>
+
 #include <functional>
 
 #define DEFINE_COMMAND_LINE_PARSER(parser, ...) \
@@ -1262,6 +1286,7 @@ Event systems are commonly used in GUI applications, game development, and other
 
 ```cpp
 #include <iostream>
+
 #include <unordered_map>
 #include <functional>
 
@@ -1305,6 +1330,7 @@ Type-safe containers are crucial for ensuring that collections of objects are ma
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 #define DEFINE_TYPE_SAFE_CONTAINER(container, type) \

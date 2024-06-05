@@ -34,6 +34,7 @@ The implementation of SSO involves conditionally using different storage mechani
 
 ```cpp
 #include <iostream>
+
 #include <cstring>
 #include <utility>
 
@@ -161,8 +162,10 @@ Let's explore a practical example that demonstrates the performance benefits of 
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <chrono>
+
 #include <cstring>
 
 class SSOString {
@@ -313,6 +316,7 @@ One common approach to resizing buffers is to double their size whenever they be
 
 ```cpp
 #include <iostream>
+
 #include <cstring>
 
 class DynamicBuffer {
@@ -380,8 +384,10 @@ Memory-mapped files allow a file to be mapped directly into the address space of
 
 ```cpp
 #include <iostream>
+
 #include <sys/mman.h>
 #include <fcntl.h>
+
 #include <unistd.h>
 #include <sys/stat.h>
 
@@ -439,8 +445,10 @@ Scatter-Gather I/O allows multiple non-contiguous memory buffers to be read from
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <sys/uio.h>
+
 #include <fcntl.h>
 #include <unistd.h>
 
@@ -496,6 +504,7 @@ SIMD operations allow multiple data elements to be processed simultaneously, lev
 
 ```cpp
 #include <iostream>
+
 #include <immintrin.h>
 #include <cstring>
 
@@ -541,6 +550,7 @@ Buffer pooling involves reusing a pool of pre-allocated buffers to reduce the ov
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <queue>
 
@@ -611,6 +621,7 @@ A logging system often handles a large number of log messages, many of which are
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <cstring>
 
@@ -760,10 +771,13 @@ Zero-copy techniques can significantly improve the performance of network commun
 
 ```cpp
 #include <iostream>
+
 #include <sys/socket.h>
 #include <netinet/in.h>
+
 #include <unistd.h>
 #include <cstring>
+
 #include <vector>
 
 void exampleZeroCopyNetworkCommunication() {
@@ -844,6 +858,7 @@ SIMD (Single Instruction, Multiple Data) operations can be used to efficiently t
 
 ```cpp
 #include <iostream>
+
 #include <immintrin.h>
 #include <vector>
 

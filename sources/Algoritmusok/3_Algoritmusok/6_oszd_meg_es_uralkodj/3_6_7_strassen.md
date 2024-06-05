@@ -84,6 +84,7 @@ Az alábbiakban bemutatjuk a Strassen algoritmus egy C++ nyelvű implementáció
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 // Define a type for the matrix.

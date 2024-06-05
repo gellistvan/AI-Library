@@ -28,6 +28,7 @@ String copies can be expensive. To avoid unnecessary copies, use references and 
 
 ```cpp
 #include <iostream>
+
 #include <string>
 
 void print_string(const std::string& str) {
@@ -45,6 +46,7 @@ int main() {
 
 ```cpp
 #include <iostream>
+
 #include <string>
 
 std::string create_greeting() {
@@ -67,6 +69,7 @@ Concatenating strings in a loop can lead to multiple allocations and deallocatio
 
 ```cpp
 #include <iostream>
+
 #include <string>
 
 int main() {
@@ -94,6 +97,7 @@ int main() {
 
 ```cpp
 #include <iostream>
+
 #include <string_view>
 
 int main() {
@@ -113,6 +117,7 @@ Using `std::string_view` in function parameters can avoid unnecessary string cop
 
 ```cpp
 #include <iostream>
+
 #include <string_view>
 
 void print_string_view(std::string_view str_view) {
@@ -138,6 +143,7 @@ int main() {
 
 ```cpp
 #include <iostream>
+
 #include <string_view>
 
 int main() {
@@ -162,6 +168,7 @@ Efficient string handling often involves combining `std::string` and `std::strin
 
 ```cpp
 #include <iostream>
+
 #include <string>
 #include <string_view>
 
@@ -199,8 +206,10 @@ Splitting strings is a common operation. Using `std::string_view` can make this 
 
 ```cpp
 #include <iostream>
+
 #include <string>
 #include <string_view>
+
 #include <vector>
 
 std::vector<std::string_view> split_string(std::string_view str, char delimiter) {
@@ -238,6 +247,7 @@ Searching within strings is another frequent operation. Use efficient algorithms
 
 ```cpp
 #include <iostream>
+
 #include <string>
 #include <string_view>
 
@@ -267,6 +277,7 @@ While `std::string_view` is powerful, it is important to be aware of its pitfall
 
 ```cpp
 #include <iostream>
+
 #include <string_view>
 
 std::string_view get_substring() {
@@ -299,6 +310,7 @@ Efficient string and `std::string_view` operations are essential for writing hig
 
 ```cpp
 #include <bitset>
+
 #include <iostream>
 
 int main() {
@@ -328,6 +340,7 @@ One of the most common use cases for `std::bitset` is managing flags or bitmasks
 
 ```cpp
 #include <bitset>
+
 #include <iostream>
 
 const int FLAG_A = 0;
@@ -370,8 +383,10 @@ int main() {
 
 ```cpp
 #include <bitset>
+
 #include <iostream>
 #include <vector>
+
 #include <random>
 
 int main() {
@@ -402,6 +417,7 @@ int main() {
 
 ```cpp
 #include <bitset>
+
 #include <iostream>
 
 int main() {
@@ -430,6 +446,7 @@ The Sieve of Eratosthenes is a classic algorithm for finding all prime numbers u
 
 ```cpp
 #include <bitset>
+
 #include <iostream>
 #include <cmath>
 
@@ -470,8 +487,10 @@ This example provides a simplified illustration of how `std::bitset` can be used
 
 ```cpp
 #include <bitset>
+
 #include <iostream>
 #include <map>
+
 #include <string>
 
 int main() {
@@ -509,6 +528,7 @@ In graph algorithms, `std::bitset` can be used to represent adjacency matrices e
 
 ```cpp
 #include <bitset>
+
 #include <iostream>
 #include <vector>
 
@@ -546,6 +566,7 @@ int main() {
 
 ```cpp
 #include <bitset>
+
 #include <iostream>
 
 const int BITSET_SIZE = 64
@@ -591,6 +612,7 @@ A `std::pair` can be created using the `std::make_pair` function or directly via
 
 ```cpp
 #include <iostream>
+
 #include <utility>
 
 int main() {
@@ -617,6 +639,7 @@ int main() {
 
 ```cpp
 #include <iostream>
+
 #include <map>
 
 int main() {
@@ -640,6 +663,7 @@ C++17 introduced structured bindings, which allow you to unpack `std::pair` dire
 
 ```cpp
 #include <iostream>
+
 #include <utility>
 
 int main() {
@@ -666,6 +690,7 @@ A `std::tuple` can be created using the `std::make_tuple` function or directly v
 
 ```cpp
 #include <iostream>
+
 #include <tuple>
 
 int main() {
@@ -693,6 +718,7 @@ In addition to `std::get`, `std::tuple` elements can be accessed using structure
 
 ```cpp
 #include <iostream>
+
 #include <tuple>
 
 int main() {
@@ -712,6 +738,7 @@ int main() {
 
 ```cpp
 #include <iostream>
+
 #include <tuple>
 
 int main() {
@@ -735,6 +762,7 @@ int main() {
 
 ```cpp
 #include <iostream>
+
 #include <tuple>
 
 std::tuple<int, double, std::string> get_values() {
@@ -760,6 +788,7 @@ Tuples can be used in template programming to pass multiple arguments of differe
 
 ```cpp
 #include <iostream>
+
 #include <tuple>
 
 template <typename... Args>
@@ -786,6 +815,7 @@ Tuples provide a range of functions for manipulation, including concatenation, s
 
 ```cpp
 #include <iostream>
+
 #include <tuple>
 
 int main() {
@@ -810,6 +840,7 @@ You can slice tuples using helper functions.
 
 ```cpp
 #include <iostream>
+
 #include <tuple>
 
 template <std::size_t... Is, typename Tuple>
@@ -855,6 +886,7 @@ One way to optimize `std::vector` usage is by reserving capacity upfront using `
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 int main() {
@@ -880,6 +912,7 @@ After removing elements, you might want to reduce the capacity of a vector to ma
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 int main() {
@@ -906,6 +939,7 @@ int main() {
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <memory>
 
@@ -946,6 +980,7 @@ int main() {
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <string>
 
@@ -978,6 +1013,7 @@ int main() {
 
 ```cpp
 #include <iostream>
+
 #include <array>
 
 int main() {
@@ -1001,6 +1037,7 @@ int main() {
 
 ```cpp
 #include <iostream>
+
 #include <array>
 
 constexpr int array_sum(const std::array<int, 5>& arr) {
@@ -1029,6 +1066,7 @@ int main() {
 
 ```cpp
 #include <iostream>
+
 #include <array>
 #include <algorithm>
 
@@ -1055,6 +1093,7 @@ In some cases, you may need the dynamic resizing capabilities of `std::vector` a
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <array>
 
@@ -1086,6 +1125,7 @@ Frequent reallocations can degrade performance. Use `reserve` with `std::vector`
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 int main() {
@@ -1111,6 +1151,7 @@ Minimize unnecessary copying by using `emplace_back` or move semantics.
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <string>
 
@@ -1137,6 +1178,7 @@ int main() {
 
 ```cpp
 #include <iostream>
+
 #include <array>
 #include <algorithm>
 
@@ -1162,6 +1204,7 @@ int main() {
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 int main() {
@@ -1213,6 +1256,7 @@ The C++ Standard Template Library (STL) provides several containers optimized fo
 
 ```cpp
 #include <iostream>
+
 #include <list>
 
 int main() {
@@ -1250,6 +1294,7 @@ One of the powerful features of `std::list` is its ability to splice, which allo
 
 ```cpp
 #include <iostream>
+
 #include <list>
 
 int main() {
@@ -1294,6 +1339,7 @@ int main() {
 
 ```cpp
 #include <iostream>
+
 #include <deque>
 
 int main() {
@@ -1331,6 +1377,7 @@ int main() {
 
 ```cpp
 #include <iostream>
+
 #include <deque>
 
 class CircularBuffer {
@@ -1389,6 +1436,7 @@ int main() {
 
 ```cpp
 #include <iostream>
+
 #include <forward_list>
 
 int main() {
@@ -1424,6 +1472,7 @@ int main() {
 
 ```cpp
 #include <iostream>
+
 #include <forward_list>
 
 int main() {

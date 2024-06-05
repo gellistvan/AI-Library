@@ -233,6 +233,7 @@ A metóduskivonás célja, hogy egy hosszú és bonyolult metódusból kisebb, �
 **Példa**:
 ```python
 # Eredeti kód
+
 def print_owing():
     outstanding = 0.0
 
@@ -250,6 +251,7 @@ def print_owing():
     print(f"amount: {outstanding}")
 
 # Refaktorizált kód
+
 def print_owing():
     print_banner()
     outstanding = calculate_outstanding()
@@ -278,6 +280,7 @@ Az inline-olás az a folyamat, amikor egy metódus tartalmát visszahelyezzük a
 **Példa**:
 ```python
 # Eredeti kód
+
 def get_rating():
     return more_than_five_late_deliveries()
 
@@ -285,6 +288,7 @@ def more_than_five_late_deliveries():
     return number_of_late_deliveries > 5
 
 # Refaktorizált kód
+
 def get_rating():
     return number_of_late_deliveries > 5
 ```
@@ -296,6 +300,7 @@ Ez a minta az ideiglenes változók eltávolítását és helyettesítését jav
 **Példa**:
 ```python
 # Eredeti kód
+
 def calculate_total():
     base_price = quantity * item_price
     if base_price > 1000:
@@ -304,6 +309,7 @@ def calculate_total():
         return base_price * 0.98
 
 # Refaktorizált kód
+
 def calculate_total():
     if base_price() > 1000:
         return base_price() * 0.95
@@ -321,10 +327,12 @@ Ez a minta azt javasolja, hogy vezessünk be magyarázó változókat a komplex 
 **Példa**:
 ```python
 # Eredeti kód
+
 def price():
     return quantity * item_price - max(0, quantity - 500) * item_price * 0.05 + min(quantity * item_price * 0.1, 100)
 
 # Refaktorizált kód
+
 def price():
     base_price = quantity * item_price
     quantity_discount = max(0, quantity - 500) * item_price * 0.05
@@ -339,6 +347,7 @@ Az osztálykivonás akkor hasznos, ha egy osztály túl sok felelősséget lát 
 **Példa**:
 ```python
 # Eredeti kód
+
 class Person:
     def __init__(self, name, office_area_code, office_number):
         self.name = name
@@ -349,6 +358,7 @@ class Person:
         return f"({self.office_area_code}) {self.office_number}"
 
 # Refaktorizált kód
+
 class Person:
     def __init__(self, name, office_telephone):
         self.name = name
@@ -373,6 +383,7 @@ A metódus áthelyezése során egy metódust áthelyezünk egy másik osztályb
 **Példa**:
 ```python
 # Eredeti kód
+
 class Account:
     def __init__(self, account_type, days_overdrawn):
         self.account_type = account_type
@@ -393,6 +404,7 @@ class AccountType:
         self.is_premium = is_premium
 
 # Refaktorizált kód
+
 class Account:
     def __init__(self, account_type, days_overdrawn):
         self.account_type = account_type
@@ -423,11 +435,13 @@ Ez a minta azt javasolja, hogy ha egy metódus sok paramétert fogad, akkor ezek
 **Példa**:
 ```python
 # Eredeti kód
+
 def book_flight(customer_name, customer_age, flight_number, departure, arrival):
     # Book flight logic
     pass
 
 # Refaktorizált kód
+
 class Customer:
     def __init__(self, name, age):
         self.name = name

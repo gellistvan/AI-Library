@@ -50,10 +50,13 @@ Az alábbiakban egy egyszerű C++ példakódot mutatunk be az RSA alapú digitá
 
 ```cpp
 #include <iostream>
+
 #include <string>
 #include <openssl/bn.h>
+
 #include <openssl/rsa.h>
 #include <openssl/pem.h>
+
 #include <openssl/err.h>
 #include <openssl/sha.h>
 
@@ -180,10 +183,13 @@ Az alábbiakban egy egyszerű C++ példakódot mutatunk be a DSA alapú digitál
 
 ```cpp
 #include <iostream>
+
 #include <openssl/bn.h>
 #include <openssl/dsa.h>
+
 #include <openssl/pem.h>
 #include <openssl/sha.h>
+
 #include <sstream>
 #include <iomanip>
 
@@ -310,10 +316,13 @@ Az alábbiakban egy egyszerű C++ példakódot mutatunk be az ECDSA alapú digit
 
 ```cpp
 #include <iostream>
+
 #include <openssl/ecdsa.h>
 #include <openssl/obj_mac.h>
+
 #include <openssl/sha.h>
 #include <sstream>
+
 #include <iomanip>
 
 using namespace std;

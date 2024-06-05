@@ -20,6 +20,7 @@ A fa szerkezet C++-ban történő implementálásakor a csúcsokat gyakran egy o
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 // Csúcs osztály definíciója
@@ -120,6 +121,7 @@ Az alábbi példában bemutatjuk egy általános fa struktúra megvalósításá
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 class Node {
@@ -1131,6 +1133,7 @@ Egy AVL fa csomópontjának definíciója C++ nyelven az alábbiak szerint néz 
 
 ```cpp
 #include <iostream>
+
 #include <algorithm>
 
 using namespace std;
@@ -1779,6 +1782,7 @@ Az alábbiakban egy teljes példa található egy AVL fa használatára, beleér
 
 ```cpp
 #include <iostream>
+
 #include <algorithm>
 
 using namespace std;
@@ -1995,6 +1999,7 @@ Az alábbiakban bemutatjuk a beszúrási, törlési és keresési műveletek imp
 
 ```cpp
 #include <iostream>
+
 #include <algorithm>
 
 using namespace std;
@@ -2283,6 +2288,7 @@ Az alábbiakban bemutatunk egy egyszerű C++ osztályt egy piros-fekete fa csom�
 
 ```cpp
 #include <iostream>
+
 using namespace std;
 
 enum Color { RED, BLACK };
@@ -2874,6 +2880,7 @@ Az alábbiakban bemutatunk egy egyszerű C++ osztályt, amely megvalósít egy A
 
 ```cpp
 #include <iostream>
+
 using namespace std;
 
 struct Node {
@@ -3061,6 +3068,7 @@ Az alábbiakban bemutatunk egy egyszerű B±fa implementációt C++ nyelven:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
 
@@ -3244,6 +3252,7 @@ Az alábbiakban bemutatunk egy részletes példát a B±fa implementációjára 
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
 
@@ -3465,6 +3474,7 @@ Az NTFS fájlrendszerben a könyvtárstruktúra B±fákat használ a fájlok és
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
 

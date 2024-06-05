@@ -18,6 +18,7 @@ A Netflix, a világ egyik legnagyobb streaming szolgáltatója, az egyik legisme
 - **Megelőző karbantartás**: Egyes részek frissítése gyakran az egész rendszer újratelepítését igényelte, ami növelte a leállások kockázatát.
 
 ##### Megoldások:
+
 A Netflix a mikroszolgáltatások bevezetése mellett döntött, amely lehetővé tette a rendszer modulárisabb és skálázhatóbb felépítését. Az egyes szolgáltatások különálló komponensekként működnek, amelyek függetlenül fejleszthetők, telepíthetők és skálázhatók.
 
 - **Szolgáltatás-orientált architektúra**: Az egyes funkciókat különálló szolgáltatásokba szervezték, mint például a felhasználói kezelést, a tartalomkezelést és a streaming szolgáltatást.
@@ -39,6 +40,7 @@ A Twitter egy másik példa arra, hogyan lehet egy meglévő rendszert átalakí
 - **Rendszerstabilitás**: A gyakori rendszerleállások és lassulások jelentős problémát jelentettek.
 
 ##### Megoldások:
+
 A Twitter átalakította adatinfrastruktúráját, hogy jobban kezelje a terhelést és növelje a rendszer megbízhatóságát.
 
 - **Cassandra bevezetése**: Az Apache Cassandrát választották elsődleges adatbázis-rendszerüknek, amely jobban támogatta a horizontális skálázást és a nagy mennyiségű adat kezelését.
@@ -60,6 +62,7 @@ Az Amazon az egyik legnagyobb online kereskedelmi platform, amely az évek sorá
 - **Rendszerintegritás és megbízhatóság**: A gyakori változtatások növelik a hibák és a leállások kockázatát, ami elfogadhatatlan egy ilyen nagy volumenű szolgáltatás esetében.
 
 ##### Megoldások:
+
 Az Amazon bevezette a Continuous Deployment és a DevOps módszertanokat, amelyek lehetővé tették a gyors és biztonságos frissítéseket, valamint a rendszer folyamatos fejlesztését és karbantartását.
 
 - **Microservices architektúra**: Az Amazon szétbontotta monolitikus alkalmazását mikroszolgáltatásokra, amely lehetővé tette az egyes komponensek független fejlesztését, tesztelését és telepítését.

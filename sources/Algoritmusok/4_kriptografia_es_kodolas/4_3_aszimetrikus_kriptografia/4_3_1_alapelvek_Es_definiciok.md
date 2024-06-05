@@ -44,8 +44,10 @@ Az alábbiakban egy egyszerű RSA titkosítási/dekódolási példa C++ nyelven:
 
 ```cpp
 #include <iostream>
+
 #include <cmath>
 #include <utility>
+
 #include <vector>
 
 // Function to compute (base^exp) % mod
@@ -146,6 +148,7 @@ Válasszunk két különálló nagy prím számot, általában \( p \) és \( q 
 
 ```c++
 #include <iostream>
+
 #include <cmath>
 
 bool isPrime(long number) {
@@ -180,16 +183,16 @@ std::cout << "Modulus n: " << n << std::endl;
 
 3. **Euler's Totient**:
 
-Számítsuk ki Euler's totient (φ) értéket, amely \( (p-1) \times (q-1) \).
+Számítsuk ki Euler's totient ($\phi$) értéket, amely \( (p-1) \times (q-1) \).
 
 ```c++
 long phi = (p - 1) * (q - 1);
-std::cout << "Euler's Totient φ: " << phi << std::endl;
+std::cout << "Euler's Totient $\phi$: " << phi << std::endl;
 ```
 
 4. **Nyilvános kulcs**:
 
-Válasszuk ki az "e" nyilvános kulcsot, amely 1 és φ között található, és relatív prím φ-hoz.
+Válasszuk ki az "e" nyilvános kulcsot, amely 1 és $\phi$ között található, és relatív prím $\phi$-hoz.
 
 ```c++
 long e = 3; // Often chosen e is 3, 17, or 65537
@@ -201,7 +204,7 @@ std::cout << "Public key e: " << e << std::endl;
 
 5. **Privát kulcs**:
 
-Számítsuk ki az "d" privát kulcsot, amely az "e" multiplikatív inverze modulo φ-hoz.
+Számítsuk ki az "d" privát kulcsot, amely az "e" multiplikatív inverze modulo $\phi$-hoz.
 
 ```c++
 long d = 0;

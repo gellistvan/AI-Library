@@ -20,6 +20,7 @@ When performing mathematical operations in C++, the naive approach often involve
 
 ```cpp
 #include <vector>
+
 #include <iostream>
 
 std::vector<int> add(const std::vector<int>& a, const std::vector<int>& b) {
@@ -86,6 +87,7 @@ We define a template class to represent vectors and another class to represent t
 
 ```cpp
 #include <vector>
+
 #include <iostream>
 
 // Forward declaration of Vector class
@@ -251,6 +253,7 @@ We start by defining a basic vector class that will serve as the foundation for 
 
 ```cpp
 #include <vector>
+
 #include <iostream>
 
 template<typename T>
@@ -685,6 +688,7 @@ Consider the traditional approach to vector addition:
 
 ```cpp
 #include <vector>
+
 #include <iostream>
 
 std::vector<int> add(const std::vector<int>& a, const std::vector<int>& b) {
@@ -783,6 +787,7 @@ Consider the following example using traditional C++ code:
 
 ```cpp
 #include <vector>
+
 #include <iostream>
 
 std::vector<int> add(const std::vector<int>& a, const std::vector<int>& b) {
@@ -916,6 +921,7 @@ Expression templates are widely used in linear algebra libraries to optimize mat
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 // Template class to represent matrix multiplication
@@ -1012,6 +1018,7 @@ Expression templates are used in symbolic computation to manipulate and simplify
 
 ```cpp
 #include <iostream>
+
 #include <cmath>
 
 template<typename L, typename R>
@@ -1067,6 +1074,7 @@ Solving differential equations often involves complex mathematical expressions t
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <cmath>
 

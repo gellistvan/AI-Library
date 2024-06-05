@@ -192,6 +192,7 @@ Az alábbi C++ kód demonstrálja a Tim Sort működését:
 
 ```cpp
 #include <vector>
+
 #include <iostream>
 #include <algorithm>
 
@@ -288,6 +289,7 @@ A Pythonban a Tim Sort alkalmazása rendkívül egyszerű. A beépített rendez�
 
 ```python
 # List sorting in Python using Tim Sort
+
 arr = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
 arr.sort()  # This uses Tim Sort internally
 print(arr)
@@ -337,6 +339,7 @@ Az alábbiakban egy példakódot találunk a Tim Sort C++-ban történő impleme
 
 ```cpp
 #include <vector>
+
 #include <iostream>
 #include <algorithm>
 

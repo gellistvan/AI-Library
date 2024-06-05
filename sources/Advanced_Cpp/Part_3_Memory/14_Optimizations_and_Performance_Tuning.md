@@ -31,6 +31,7 @@ Optimizing code for cache efficiency involves understanding how data is accessed
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <chrono>
 
@@ -74,6 +75,7 @@ Consider a matrix multiplication example. By ensuring that data is accessed in a
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 void matrixMultiply(const std::vector<std::vector<int>>& A, const std::vector<std::vector<int>>& B, std::vector<std::vector<int>>& C) {
@@ -114,6 +116,7 @@ In this example, the matrix multiplication accesses elements of matrix B in a co
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <chrono>
 
@@ -168,8 +171,10 @@ Using alignment specifiers, we can align data structures to cache line boundarie
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <thread>
+
 #include <atomic>
 #include <chrono>
 
@@ -219,8 +224,10 @@ Comparing the performance of arrays and linked lists demonstrates the importance
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <list>
+
 #include <chrono>
 
 void sumArray(const std::vector<int>& array) {
@@ -271,6 +278,7 @@ Consider a 2D array where elements are accessed in a column-major order. By chan
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <chrono>
 
@@ -345,6 +353,7 @@ Manual loop unrolling involves explicitly rewriting the loop to include multiple
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <chrono>
 
@@ -387,6 +396,7 @@ Many modern compilers can automatically perform loop unrolling when optimization
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <chrono>
 
@@ -436,8 +446,10 @@ Manual vectorization involves explicitly using SIMD intrinsics to perform vector
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <immintrin.h>
+
 #include <chrono>
 
 void sumArray(const std::vector<int>& array) {
@@ -491,6 +503,7 @@ Many modern compilers can automatically vectorize loops when optimization flags 
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <chrono>
 
@@ -526,6 +539,7 @@ In this example, the `#pragma omp simd` directive suggests to the compiler to ve
 Modern compilers can automatically vectorize loops if they detect opportunities for parallel processing. Let's revisit the array summation example with compiler auto-vectorization.
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <chrono>
 
@@ -562,8 +576,10 @@ Combining loop unrolling and vectorization can further enhance performance by re
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <immintrin.h>
+
 #include <chrono>
 
 void sumArray(const std::vector<int>& array) {
@@ -680,6 +696,7 @@ Let's consider a practical example to illustrate the benefits of PGO. We'll opti
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <chrono>
 
@@ -738,10 +755,12 @@ To measure the performance improvement from PGO, we can compare the execution ti
 
 ```sh
 # Compile and run the non-optimized version
+
 g++ -o matrix_non_optimized matrix_pgo.cpp
 ./matrix_non_optimized
 
 # Compile, profile, and run the PGO-optimized version
+
 g++ -fprofile-generate -o matrix_pgo_instrumented matrix_pgo.cpp
 ./matrix_pgo_instrumented
 g++ -fprofile-use -o matrix_pgo_optimized matrix_pgo.cpp
@@ -766,6 +785,7 @@ For more accurate profiling data, consider using multiple profiling runs with di
 ./matrix_pgo_instrumented workload2
 
 # Final optimization using combined profiling data
+
 g++ -fprofile-use -o matrix_pgo_optimized matrix_pgo.cpp
 ```
 
@@ -826,6 +846,7 @@ The following example demonstrates basic SIMD operations using SSE intrinsics.
 
 ```cpp
 #include <iostream>
+
 #include <xmmintrin.h> // SSE intrinsics
 
 void sseExample() {
@@ -870,6 +891,7 @@ The following example demonstrates matrix multiplication using AVX intrinsics.
 
 ```cpp
 #include <iostream>
+
 #include <immintrin.h> // AVX intrinsics
 
 void avxMatrixMultiply(const float* A, const float* B, float* C, size_t N) {
@@ -921,6 +943,7 @@ The following example demonstrates data shuffling using AVX intrinsics.
 
 ```cpp
 #include <iostream>
+
 #include <immintrin.h> // AVX intrinsics
 
 void avxShuffleExample() {
@@ -958,6 +981,7 @@ The following example demonstrates blending data from two AVX registers.
 
 ```cpp
 #include <iostream>
+
 #include <immintrin.h> // AVX intrinsics
 
 void avxBlendExample() {
@@ -1003,6 +1027,7 @@ Ensure data is properly aligned for SIMD operations. Many SIMD instructions requ
 
 ```cpp
 #include <iostream>
+
 #include <immintrin.h>
 #include <vector>
 
@@ -1051,6 +1076,7 @@ When processing data with SIMD intrinsics, handle the remainder elements that do
 
 ```cpp
 #include <iostream>
+
 #include <immintrin.h>
 #include <vector>
 

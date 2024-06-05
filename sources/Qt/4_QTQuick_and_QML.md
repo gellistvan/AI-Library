@@ -138,6 +138,7 @@ Rectangle {
 
 ```cpp
 #include <QGuiApplication>
+
 #include <QQmlApplicationEngine>
 
 int main(int argc, char *argv[])
@@ -175,8 +176,10 @@ Here's how you might expose a C++ object to QML:
 
 ```cpp
 #include <QGuiApplication>
+
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
+
 #include <QDebug>
 
 class MyObject : public QObject {
@@ -234,9 +237,11 @@ ApplicationWindow {
 ```
 
 #### 2. Calling C++ Functions from QML
+
 You can enhance the interaction capabilities of your QML UI by calling C++ functions directly from QML. This is typically done by exposing C++ methods as public slots or Q_INVOKABLE functions.
 
 #### Example:
+
 Modify the `MyObject` class to include a callable function:
 ```cpp
 class MyObject : public QObject {
@@ -257,6 +262,7 @@ Button {
 ``` 
 
 #### 3. Registering Custom C++ Types in QML
+
 To use custom C++ types as QML types, you can register them using `qmlRegisterType()`. This allows you to instantiate your C++ classes as QML objects.
 **Example:**
 Here's how you might register a custom type and use it directly in QML:
@@ -293,6 +299,7 @@ MyCustomType {
 
 ```cpp
 #include <QGuiApplication>
+
 #include <QQmlApplicationEngine>
 #include <QQmlContext> 
  
@@ -342,6 +349,7 @@ This architecture is a cornerstone of QML's approach to displaying collections o
 -   **Delegate**: This is a template for creating items in the view. Each item in the view is instantiated from the delegate, which defines how each data item should be displayed.
 
 #### Example: Using ListView with a Model and Delegate
+
 Let's consider an example where we use a `ListView` to display a list of names. We'll use a simple ListModel as our data source, and a Component to define how each item should look.
 
 ```cpp

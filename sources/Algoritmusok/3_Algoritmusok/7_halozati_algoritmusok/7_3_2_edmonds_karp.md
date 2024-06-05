@@ -24,8 +24,10 @@ Az algoritmus részletes implementációját C++ nyelven az alábbiakban mutatju
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <queue>
+
 #include <limits>
 #include <cstring>
 
@@ -176,10 +178,13 @@ Az Edmonds-Karp algoritmus C++ nyelvű implementációja a következőképpen n�
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <queue>
+
 #include <limits.h>
 #include <algorithm>
+
 #include <cstring>
 
 using namespace std;

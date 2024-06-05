@@ -80,6 +80,7 @@ C++11 introduced a rich set of type traits in the `<type_traits>` header, which 
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 // Function enabled only for integral types
@@ -112,6 +113,7 @@ C++11 introduced the `decltype` and `auto` keywords, which simplify type declara
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 // Function to add two values
@@ -162,6 +164,7 @@ C++20 introduced concepts, which provide a way to specify constraints on templat
 
 ```cpp
 #include <iostream>
+
 #include <concepts>
 
 template<typename T>
@@ -196,6 +199,7 @@ Combining these modern C++ features, let's implement a compile-time matrix multi
 
 ```cpp
 #include <iostream>
+
 #include <array>
 
 // Compile-time matrix multiplication
@@ -382,6 +386,7 @@ Compile-time data structures can be implemented using `constexpr` and `consteval
 
 ```cpp
 #include <iostream>
+
 #include <array>
 
 // Compile-time vector class
@@ -485,6 +490,7 @@ A concept is a compile-time predicate that specifies requirements for types. You
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 // Define a concept to check if a type is integral
@@ -511,6 +517,7 @@ Concepts can be used to constrain function templates, providing more precise con
 
 ```cpp
 #include <iostream>
+
 #include <concepts>
 
 // Define a concept to check if a type is arithmetic
@@ -541,6 +548,7 @@ You can combine multiple concepts to create more specific constraints. This can 
 
 ```cpp
 #include <iostream>
+
 #include <concepts>
 
 // Define concepts for integral and floating-point types
@@ -577,6 +585,7 @@ Ranges provide a unified interface for working with sequences of elements. They 
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <ranges>
 
@@ -608,6 +617,7 @@ Range adaptors are a key feature of the Ranges library. They allow you to create
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <ranges>
 
@@ -641,8 +651,10 @@ The Ranges library also provides a set of range-based algorithms that work seaml
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <ranges>
+
 #include <algorithm>
 
 // Function to demonstrate range algorithms
@@ -685,8 +697,10 @@ Concepts and ranges can be combined to create powerful, expressive, and type-saf
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <ranges>
+
 #include <concepts>
 
 // Define a concept to check if a type is a range of integral elements
@@ -725,6 +739,7 @@ Concepts and ranges can be applied to various practical scenarios to improve cod
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <ranges>
 
@@ -774,6 +789,7 @@ C++23 continues to expand the capabilities of `constexpr`, allowing more complex
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 // Constexpr function to calculate Fibonacci sequence
@@ -807,6 +823,7 @@ C++23 introduces several new type traits and improves existing ones, making type
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 // Custom type trait to check if a type is a const pointer
@@ -835,6 +852,7 @@ C++23 introduces enhancements to template syntax, making templates more flexible
 
 ```cpp
 #include <iostream>
+
 #include <concepts>
 
 // Define a concept for numeric types
@@ -863,6 +881,7 @@ C++23 introduces several new components in the standard library that enhance met
 
 ```cpp
 #include <iostream>
+
 #include <ranges>
 #include <algorithm>
 
@@ -899,6 +918,7 @@ Combining the new `constexpr` capabilities and enhanced type traits, we can impl
 
 ```cpp
 #include <iostream>
+
 #include <array>
 
 // Compile-time matrix multiplication
@@ -948,6 +968,7 @@ C++23 and beyond provide more tools for advanced type manipulations, allowing de
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 // Define a concept for copyable types

@@ -61,8 +61,10 @@ Ha részletes példakódot szeretnénk megvizsgálni, nézzük meg a Data Encryp
 
 ```cpp
 #include <iostream>
+
 #include <bitset>
 #include <string>
+
 #include <array>
 
 // Placeholder for S-box
@@ -163,8 +165,10 @@ A titkosítási folyamat során minden blokk belső állapota attól függ, hogy
 
 ```cpp
 #include <openssl/aes.h>
+
 #include <openssl/rand.h>
 #include <iostream>
+
 #include <cstring>
 
 void handleErrors(void) {
@@ -223,8 +227,10 @@ int main() {
 
 ```cpp
 #include <openssl/rc4.h>
+
 #include <openssl/rand.h>
 #include <iostream>
+
 #include <cstring>
 
 void handleErrors(void) {

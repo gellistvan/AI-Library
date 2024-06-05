@@ -32,6 +32,7 @@ Ez az algoritmus garantálja, hogy az adott permutációból a következő lexik
 
 ```cpp
 #include <algorithm>
+
 #include <vector>
 #include <iostream>
 
@@ -122,6 +123,7 @@ Az alábbi C++ kód példaként szolgálhat Heap algoritmusának implementálás
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 void heapPermutation(std::vector<int>& a, int size, int n) {
@@ -170,6 +172,7 @@ Az alábbi C++ kód bemutatja az SJT algoritmus implementálását:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 void printPermutation(const std::vector<int>& a) {

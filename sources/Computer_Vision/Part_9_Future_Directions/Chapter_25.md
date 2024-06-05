@@ -53,6 +53,7 @@ First, let's load a pre-trained model (e.g., a simple CNN trained on the MNIST d
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/dnn.hpp>
 #include <iostream>
 
@@ -203,6 +204,7 @@ First, let's implement real-time image filtering using a simple Gaussian blur fi
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 int main() {
@@ -246,6 +248,7 @@ Next, we will implement real-time edge detection using the Sobel operator.
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 int main() {
@@ -351,6 +354,7 @@ First, we will use OpenCV's Haar cascade classifier to detect faces in an image.
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 void detectAndDisplay(cv::Mat frame, cv::CascadeClassifier faceCascade) {

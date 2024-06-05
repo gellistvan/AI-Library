@@ -92,6 +92,7 @@ A professzionális profilozó eszközök, mint például az NVIDIA Visual Profil
 
 ```sh
 # Példa a Visual Profiler futtatására
+
 nvprof ./my_opencl_program
 ```
 

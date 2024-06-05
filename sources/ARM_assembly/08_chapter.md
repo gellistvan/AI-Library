@@ -465,6 +465,7 @@ Consider a C program that uses dynamic memory allocation to manage an array:
 
 ```c
 #include <stdlib.h>
+
 #include <stdio.h>
 
 int main() {

@@ -33,8 +33,10 @@ Atomic operations are fundamental to the C++ memory model. They ensure that oper
 
 ```cpp
 #include <iostream>
+
 #include <atomic>
 #include <thread>
+
 #include <vector>
 
 std::atomic<int> counter(0);
@@ -76,6 +78,7 @@ Memory ordering defines the sequence in which memory operations are performed an
 
 ```cpp
 #include <iostream>
+
 #include <atomic>
 #include <thread>
 
@@ -112,8 +115,10 @@ Synchronization mechanisms, such as mutexes and condition variables, ensure visi
 
 ```cpp
 #include <iostream>
+
 #include <mutex>
 #include <thread>
+
 #include <vector>
 
 std::mutex mtx;
@@ -161,8 +166,10 @@ Atomic variables, provided by the `<atomic>` header, support atomic operations a
 
 ```cpp
 #include <iostream>
+
 #include <atomic>
 #include <thread>
+
 #include <vector>
 
 std::atomic<int> atomicCounter(0);
@@ -205,6 +212,7 @@ Memory orderings in C++ define the visibility and ordering guarantees of memory 
 
 ```cpp
 #include <iostream>
+
 #include <atomic>
 #include <thread>
 
@@ -241,8 +249,10 @@ Synchronization primitives, such as mutexes, condition variables, and atomic ope
 
 ```cpp
 #include <iostream>
+
 #include <mutex>
 #include <condition_variable>
+
 #include <thread>
 
 std::mutex mtx;
@@ -291,8 +301,10 @@ Understanding the C++ memory model is crucial for writing correct and efficient 
 
 ```cpp
 #include <iostream>
+
 #include <atomic>
 #include <thread>
+
 #include <vector>
 
 std::atomic<int> sharedCounter(0);
@@ -348,8 +360,10 @@ Relaxed memory order is suitable for scenarios where atomicity is required, but 
 
 ```cpp
 #include <iostream>
+
 #include <atomic>
 #include <thread>
+
 #include <vector>
 
 std::atomic<int> relaxedCounter(0);
@@ -397,6 +411,7 @@ Acquire-Release memory order is suitable for scenarios where synchronization bet
 
 ```cpp
 #include <iostream>
+
 #include <atomic>
 #include <thread>
 
@@ -443,6 +458,7 @@ Sequential consistency is suitable for scenarios where strong synchronization an
 
 ```cpp
 #include <iostream>
+
 #include <atomic>
 #include <thread>
 
@@ -489,6 +505,7 @@ A spinlock is a simple synchronization primitive that repeatedly checks a condit
 
 ```cpp
 #include <iostream>
+
 #include <atomic>
 #include <thread>
 
@@ -541,6 +558,7 @@ Sequential consistency can be used to ensure data integrity in scenarios where m
 
 ```cpp
 #include <iostream>
+
 #include <atomic>
 #include <thread>
 

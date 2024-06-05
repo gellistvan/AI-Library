@@ -43,6 +43,7 @@ Az alábbiakban bemutatunk egy egyszerű Min-Heap implementációt C++ nyelven, 
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <stdexcept>
 
@@ -164,6 +165,7 @@ A Min-Heap egy olyan bináris fa, amelyben minden csomópont értéke kisebb vag
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <stdexcept>
 
@@ -267,6 +269,7 @@ A Max-Heap egy olyan bináris fa, amelyben minden csomópont értéke nagyobb va
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <stdexcept>
 
@@ -397,6 +400,7 @@ A beszúrás művelet célja egy új elem hozzáadása a halomhoz úgy, hogy a h
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <stdexcept>
 
@@ -458,6 +462,7 @@ A törlés művelet célja egy elem eltávolítása a halomból. A leggyakrabban
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <stdexcept>
 
@@ -550,6 +555,7 @@ A heapify művelet célja egy csomópont és annak gyermekei közötti helyes ha
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <stdexcept>
 
@@ -687,6 +693,7 @@ A halomépítés során az eredeti tömbből Max-Heap vagy Min-Heap épül. Ezt 
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
 
@@ -793,6 +800,7 @@ A halmokkal megvalósított prioritási sorok lehetővé teszik a beszúrás és
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <stdexcept>
 
@@ -899,6 +907,7 @@ A Max-prioritási sor megvalósítása hasonló a Min-prioritási soréhoz, de a
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <stdexcept>
 

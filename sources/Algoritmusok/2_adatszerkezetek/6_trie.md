@@ -106,6 +106,7 @@ A beszúrási művelet célja egy új sztring hozzáadása a trie-hez. Az algori
 
 ```cpp
 #include <iostream>
+
 #include <unordered_map>
 
 class TrieNode {
@@ -287,8 +288,10 @@ A tömörített trie implementálása C++ nyelven hasonló a hagyományos trie-h
 
 ```cpp
 #include <iostream>
+
 #include <unordered_map>
 #include <string>
+
 #include <vector>
 
 class CompressedTrieNode {
@@ -431,8 +434,10 @@ A trie egyik legnagyobb előnye a prefix keresés hatékonysága. A prefix keres
 
 ```cpp
 #include <iostream>
+
 #include <unordered_map>
 #include <vector>
+
 #include <string>
 
 class TrieNode {

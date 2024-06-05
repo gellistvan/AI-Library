@@ -90,8 +90,10 @@ Ha példakódot írunk, C++ nyelven a SHA-256 algoritmushoz, azt az OpenSSL kön
 
 ```cpp
 #include <openssl/sha.h>
+
 #include <iostream>
 #include <iomanip>
+
 #include <cstring>
 
 int main() {
@@ -118,6 +120,7 @@ Ez a kódrészlet bemutatja az SHA-256 alkalmazását egy string "Hello, World!"
 Az SHA-2 család tagjai napjaink legbiztonságosabb hash algoritmusai közé tartoznak. Tekintettel a hosszú távú biztonsági fenyegetésekre, az SHA-2 család robosztussága és integritása biztosítja, hogy továbbra is széles körben használják a modern számítástechnikában és digitális adatvédelemben.
 
 ### SHA-3 (Keccak)
+
 Az SHA-3 (Secure Hash Algorithm 3), amelyet a Keccak algoritmusként is ismerünk, a Secure Hash Algorithm család legújabb tagja, amelyet az NIST (National Institute of Standards and Technology) 2015-ben fogadott el szabványként. Az SHA-3 új, innovatív megközelítést kínál a hash függvények területén, különösen a biztonság és rugalmasság tekintetében. Ellentétben elődeivel, mint például az SHA-1 és az SHA-2, az SHA-3 nem a Merkle-Damgård konstrukcióra épül, hanem a szivacsépítési módszert alkalmazza, amely lehetővé teszi változatos alkalmazások széles körű támogatását. Ebben a fejezetben megvizsgáljuk az SHA-3 működési mechanizmusát, a szivacsépítési módszer előnyeit, valamint azt, hogyan alkalmazható különböző iparágakban és technológiai megoldásokban az adatintegritás és a biztonság érdekében.
 
 #### A Keccak működése

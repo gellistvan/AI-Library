@@ -40,6 +40,7 @@ A stable quicksort algoritmus egyik módja, hogy az egyenlő elemek esetén nem 
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
 
@@ -142,6 +143,7 @@ Az alábbiakban bemutatunk egy stabil quicksort implementációt C++ nyelven. Ez
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <tuple>
 
@@ -273,6 +275,7 @@ A quicksort stabilizálásának egyik módja, hogy az egyenlő elemek esetén az
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <tuple>
 

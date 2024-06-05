@@ -16,6 +16,7 @@ Az NVIDIA Ampere architektúrája jelentős előrelépést hozott a GPU technol�
 
 ```cpp
 #include <cuda_runtime.h>
+
 #include <cublas_v2.h>
 #include <iostream>
 
@@ -56,6 +57,7 @@ A Hopper architektúra az NVIDIA következő nagy dobása, amely még nagyobb te
 
 ```cpp
 #include <cuda_runtime.h>
+
 #include <mpi.h>
 #include <iostream>
 
@@ -116,6 +118,7 @@ A CUDA platform folyamatosan bővül új könyvtárakkal, eszközökkel és API-
 
 ```cpp
 #include <cuda_runtime.h>
+
 #include <iostream>
 
 __global__ void simpleKernel(float* data, int size) {
@@ -173,6 +176,7 @@ vel a kutatók képesek nagy méretű kvantumrendszerek szimulációját elvége
 
 ```cpp
 #include <cuda_runtime.h>
+
 #include <iostream>
 
 __global__ void quantumSimulationKernel(float* state, int numQubits) {

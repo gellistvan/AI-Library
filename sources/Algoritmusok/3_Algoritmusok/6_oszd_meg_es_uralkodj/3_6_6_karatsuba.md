@@ -37,6 +37,7 @@ Az alábbiakban bemutatom, hogyan implementálható a Karatsuba algoritmus C++ n
 
 ```cpp
 #include <iostream>
+
 #include <string>
 #include <cmath>
 
@@ -252,8 +253,10 @@ Ezen elemzés azt mutatja, hogy a Karatsuba algoritmus hatékonyabb, mint a hagy
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <string>
+
 #include <cmath>
 
 // Function to add two large numbers

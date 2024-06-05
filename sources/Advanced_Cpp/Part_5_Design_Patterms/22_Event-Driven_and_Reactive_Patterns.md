@@ -34,8 +34,10 @@ First, let's define a base class for events. Each event will inherit from this b
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <string>
+
 #include <memory>
 
 class Event {
@@ -214,8 +216,10 @@ The command model includes classes for commands and a handler to process these c
 
 ```cpp
 #include <iostream>
+
 #include <unordered_map>
 #include <memory>
+
 #include <stdexcept>
 
 // Command base class
@@ -379,6 +383,7 @@ In C++, we can implement the Observer pattern using a subject class that maintai
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <memory>
 
@@ -455,8 +460,10 @@ In C++, we can implement the Pub-Sub pattern using a message broker that manages
 
 ```cpp
 #include <iostream>
+
 #include <unordered_map>
 #include <vector>
+
 #include <functional>
 #include <string>
 
@@ -582,10 +589,13 @@ To implement the Reactor pattern in C++, we need to create a Reactor class that 
 
 ```cpp
 #include <iostream>
+
 #include <unordered_map>
 #include <functional>
+
 #include <sys/epoll.h>
 #include <unistd.h>
+
 #include <stdexcept>
 #include <cstring>
 
@@ -668,10 +678,13 @@ Next, we need to implement concrete event handlers. For example, we can create a
 
 ```cpp
 #include <sys/types.h>
+
 #include <sys/socket.h>
 #include <netinet/in.h>
+
 #include <arpa/inet.h>
 #include <unistd.h>
+
 #include <cstring>
 
 class EchoServer : public EventHandler {

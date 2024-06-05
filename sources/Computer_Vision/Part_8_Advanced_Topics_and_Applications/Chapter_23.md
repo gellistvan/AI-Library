@@ -64,6 +64,7 @@ Here's an example of how to calibrate a camera using OpenCV:
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <vector>
 #include <iostream>
 
@@ -123,6 +124,7 @@ Here's an example:
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/aruco.hpp>
 #include <iostream>
 
@@ -174,6 +176,7 @@ To render a simple 3D cube on a detected marker, we use the pose estimation data
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/aruco.hpp>
 #include <iostream>
 
@@ -264,6 +267,7 @@ Here's an example of feature-based tracking using OpenCV's ORB (Oriented FAST an
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/features2d.hpp>
 #include <iostream>
 
@@ -352,6 +356,7 @@ Here's an example of depth estimation using stereo vision:
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 using namespace cv;
@@ -422,8 +427,10 @@ Here's a basic implementation of a Visual SLAM pipeline using OpenCV:
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/features2d.hpp>
 #include <opencv2/calib3d.hpp>
+
 #include <iostream>
 
 using namespace cv;
@@ -526,8 +533,10 @@ Here’s a simplified implementation of 3D reconstruction using OpenCV’s funct
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/sfm.hpp>
 #include <vector>
+
 #include <iostream>
 
 using namespace cv;
@@ -582,12 +591,16 @@ Here’s an example of hand tracking using OpenCV and the MediaPipe framework fo
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <mediapipe/framework/formats/landmark.pb.h>
 #include <mediapipe/framework/packet.h>
+
 #include <mediapipe/framework/port/parse_text_proto.h>
 #include <mediapipe/framework/port/status.h>
+
 #include <mediapipe/framework/calculator.pb.h>
 #include <mediapipe/framework/port/status.h>
+
 #include <iostream>
 
 using namespace cv;
@@ -664,8 +677,10 @@ Here’s an example of using a pre-trained deep learning model for object recogn
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <tensorflow/core/public/session.h>
 #include <tensorflow/core/platform/env.h>
+
 #include <iostream>
 
 using namespace cv;

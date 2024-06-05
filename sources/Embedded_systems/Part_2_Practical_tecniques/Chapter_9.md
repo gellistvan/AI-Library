@@ -2,6 +2,7 @@
 
 
 ## 9. Real-Time Operating Systems (RTOS) and C++
+
 In the ever-evolving landscape of embedded systems, the integration of Real-Time Operating Systems (RTOS) with C++ has become crucial for building robust, efficient, and scalable applications. This chapter delves into the essential aspects of RTOS integration, providing techniques for seamless incorporation into your C++ projects. You will explore task management and scheduling, ensuring your code harmonizes with task schedulers to optimize performance. Furthermore, we will discuss synchronization and inter-task communication, covering the use of mutexes, semaphores, and other mechanisms to maintain data integrity and facilitate smooth inter-process interactions. Through practical insights and examples, this chapter aims to equip you with the knowledge to leverage RTOS capabilities effectively in your embedded systems programming.
 
 ### 9.1. Integrating with an RTOS
@@ -16,19 +17,24 @@ To begin with RTOS integration, you need to set up a suitable development enviro
 
 ```cmake
 # CMakeLists.txt
+
 cmake_minimum_required(VERSION 3.16)
 project(EmbeddedRTOS CXX)
 
 # Set C++ standard
+
 set(CMAKE_CXX_STANDARD 17)
 
 # Include FreeRTOS source files
+
 add_subdirectory(freertos)
 
 # Add your application source files
+
 add_executable(my_app main.cpp)
 
 # Link FreeRTOS to your application
+
 target_link_libraries(my_app PRIVATE FreeRTOS::FreeRTOS)
 ```
 
@@ -36,6 +42,7 @@ target_link_libraries(my_app PRIVATE FreeRTOS::FreeRTOS)
 
 ```cpp
 #include <FreeRTOS.h>
+
 #include <task.h>
 #include <iostream>
 
@@ -294,6 +301,7 @@ Creating and managing tasks in an RTOS involves defining task functions, setting
 
 ```cpp
 #include <FreeRTOS.h>
+
 #include <task.h>
 #include <iostream>
 
@@ -593,8 +601,10 @@ Mutexes (Mutual Exclusion Objects) are used to prevent multiple tasks from acces
 
 ```cpp
 #include <FreeRTOS.h>
+
 #include <task.h>
 #include <semphr.h>
+
 #include <iostream>
 
 SemaphoreHandle_t xMutex;
@@ -772,8 +782,10 @@ Event groups allow multiple tasks to synchronize based on the occurrence of mult
 
 ```cpp
 #include <FreeRTOS.h>
+
 #include <task.h>
 #include <event_groups.h>
+
 #include <iostream>
 
 EventGroupHandle_t xEventGroup;
@@ -832,8 +844,10 @@ Message buffers and stream buffers are used for communication between tasks, esp
 
 ```cpp
 #include <FreeRTOS.h>
+
 #include <task.h>
 #include <message_buffer.h>
+
 #include <iostream>
 #include <string>
 

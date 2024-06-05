@@ -3,8 +3,10 @@ This chapter will guide students through essential classes, the object model, ev
 ### 2.1: Qt Core Classes
 
 #### Core Classes Overview
+
 Qt provides a wide range of core classes that handle non-GUI tasks necessary for application development. These classes include data handling, ﬁle I/O, threading, and more. Each class is designed to oﬀer ﬂexibility and robust functionality to the Qt framework.
 #### QString
+
 Manages immutable Unicode character strings and provides numerous functions for string manipulation, such as slicing, concatenation, conversion, and comparison.
 
 **Key Properties and Usage:**
@@ -28,6 +30,7 @@ double temp = 24.5;
 QString text = s + ": " + QString::number(temp); 
 ```
 #### QVariant
+
 Holds a single value of a variety of data types.
 
 **Key Properties and Usage:**
@@ -58,6 +61,7 @@ qDebug() << "Now a string?" << v.canConvert<QString>();
 
 ```cpp
 #include <QCoreApplication>
+
 #include <QObject> 
  
 class Application : public QObject { 
@@ -85,6 +89,7 @@ slot.
 
 ```cpp
 #include <QCoreApplication>
+
 #include <QObject> 
  
 class MyObject : public QObject { 
@@ -117,10 +122,12 @@ The event loop is a core part of Qt applications, handling all events from the w
 * `slots`: Methods that can be called in response to signals.
 
 #### QEventLoop
+
 The `QEventLoop` is a crucial part of the Qt framework that manages an event loop within a Qt application. An event loop is a programming construct that waits for and dispatches events or messages in a program. It's an integral part of any Qt application because it handles all events from the window system and other sources, such as timers and network sockets.
 In a typical Qt application, the event loop is started using the `exec()` method of a `QEventLoop` or `QApplication` object. This loop continues running until `exit()` is called on the respective object, processing incoming events and ensuring that your application remains responsive. The `QEventLoop` can be used to create local event loops in specific parts of your application, which can be useful for handling tasks that require a focused, uninterrupted sequence of operations while still processing events.
 
 #### Signals and Slots
+
 Signals and slots are a mechanism in Qt used for communication between objects and are one of the key features of Qt's event-driven architecture. They make it easy to implement the Observer pattern while avoiding boilerplate code.
 
 **Signals**
@@ -162,6 +169,7 @@ In this example, clicking the button would automatically call `mySlot()` on `obj
 **Example 1**: A simple timer that uses signals and slots.
 ```cpp
 #include <QTimer>
+
 #include <QCoreApplication>
 #include <QDebug> 
  
@@ -185,6 +193,7 @@ int main(int argc, char *argv[]) {
 
 ```cpp
 #include <QObject>
+
 #include <QTimer>
 #include <QDebug> 
  
@@ -215,6 +224,7 @@ int main(int argc, char *argv[]) {
 Qt's approach to memory management, which centers on the parent-child hierarchy among QObject instances, is indeed crucial for effective resource management in Qt applications.
 
 #### Parent-Child Relationship in QObject
+
 In Qt, memory management of objects (especially QObject derived objects) can be simplified using parent-child relationships. When a QObject is created, you can specify another QObject as its parent. The parent takes responsibility for deleting its children when it itself is deleted. This is an essential feature for avoiding memory leaks, especially in large applications with complex UIs.
 
 Here’s what happens in a parent-child relationship:
@@ -222,12 +232,14 @@ Here’s what happens in a parent-child relationship:
 * **Hierarchy**: This relationship also defines an object hierarchy or a tree structure, which is useful for organizing objects in, for example, a graphical user interface.
 
 #### Using new and delete
+
 In C++, new and delete are used for direct memory management:
 
 * **new**: This operator allocates memory on the heap for an object and returns a pointer to it. When you use new, you are responsible for manually managing the allocated memory and must eventually release it using delete.
 * **delete**: This operator deallocates memory and calls the destructor of the object.
 
 #### Automatic Deletion through Parent-Child Hierarchy
+
 Qt enhances C++ memory management with the parent-child mechanism, which provides automatic memory management:
 * **Automatic Deletion**: When you create a QObject with a parent, you typically use new to allocate it, but you do not need to explicitly delete it. The parent QObject will automatically call delete on it once the parent itself is being destroyed.
 * **Safety in UI Components**: This is particularly useful in UI applications where widgets often have nested child widgets. By setting the parent-child relationship appropriately, you can ensure that all child widgets are deleted when the parent widget is closed, thus preventing memory leaks.
@@ -235,6 +247,7 @@ Qt enhances C++ memory management with the parent-child mechanism, which provide
 
 ```cpp
 #include <QWidget>
+
 #include <QPushButton>
 
 int main(int argc, char *argv[]) {

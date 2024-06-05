@@ -14,6 +14,7 @@ Az OpenCL programok futtatása előtt ki kell választani a megfelelő platformo
 
 ```c
 #include <CL/cl.h>
+
 #include <stdio.h>
 
 int main() {

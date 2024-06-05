@@ -8,6 +8,7 @@
 A modern információs társadalomban a biztonságos kommunikáció és az adatok védelme minden korábbinál fontosabb szerepet játszik. A kriptográfia, a rejtjelezés tudománya, a matematikai és informatikai módszereket ötvözve kínál megoldásokat arra, hogy megóvjuk az érzékeny információkat az illetéktelen hozzáféréstől. Ebben a fejezetben áttekintést nyújtunk a kriptográfia alapjairól, ismertetve annak történetét, alapelemeit és különböző módszereit, amelyek révén a titkosítás lehetővé vált a kommunikációs hálózatok világában. Bemutatjuk az alapvető fogalmakat, mint a szimmetrikus és aszimmetrikus kulcskódolás, hash függvények és digitális aláírások, melyek mindegyike kulcsfontosságú a digitális biztonság szempontjából. Célunk, hogy az olvasó átfogó képet kapjon a kriptográfiai technikákról és azok alkalmazásairól, elősegítve ezzel a biztonságos adatkezelési módszerek megértését és használatát.
 
 ## 1. Kriptográfia története
+
 A kriptográfia, az információk titkosításának és védelmének művészete és tudománya, évezredekre nyúlik vissza a történelemben. Az emberek már az ókortól kezdve alkalmaztak különféle titkosítási módszereket, hogy megvédjék üzeneteiket a kíváncsi szemek elől, katonai, diplomáciai és kereskedelmi célokra egyaránt. E fejezet során megismerhetjük mind az ősi titkosítási módszereket, amelyek megalapozták a kriptográfia fejlődését, mind a modern kriptográfia kialakulását, amely a 20. századi technológiai innovációkkal és matematikai áttörésekkel forradalmasította az információbiztonságot. A kriptográfia, amely egykor csupán rejtjelző eljárásokat jelentett, mára komplex algoritmusok és protokollok széles körét öleli fel, amelyek nélkülözhetetlenek a digitális kor adatvédelmében.
 
 ### Ősi titkosítási módszerek
@@ -26,6 +27,7 @@ A Cézár-kód C++ kóddal történő implementálása:
 
 ```cpp
 #include <iostream>
+
 #include <string>
 
 std::string caesarCipher(const std::string &text, int shift) {
@@ -68,6 +70,7 @@ A Szkíta titkosítás elvét C++ kóddal mutatjuk be:
 
 ```cpp
 #include <iostream>
+
 #include <string>
 #include <cmath>
 
@@ -183,8 +186,10 @@ Bár a modern kriptográfia egy rendkívül komplex és matematikaigényes tudom
 
 ```cpp
 #include <iostream>
+
 #include <cmath>
 #include <cstdlib>
+
 #include <ctime>
 
 long long gcd(long long a, long long b) {

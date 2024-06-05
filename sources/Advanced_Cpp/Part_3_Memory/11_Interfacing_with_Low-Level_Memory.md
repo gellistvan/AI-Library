@@ -41,8 +41,10 @@ On Unix/Linux systems, the `mmap` function is used to map files into memory. Her
 
 ```cpp
 #include <iostream>
+
 #include <sys/mman.h>
 #include <fcntl.h>
+
 #include <unistd.h>
 #include <sys/stat.h>
 
@@ -102,8 +104,10 @@ Memory-mapped files can facilitate inter-process communication by allowing multi
 
 ```cpp
 #include <iostream>
+
 #include <sys/mman.h>
 #include <fcntl.h>
+
 #include <unistd.h>
 #include <cstring>
 
@@ -195,8 +199,10 @@ Memory-mapped files are particularly useful for working with large files, as the
 
 ```cpp
 #include <iostream>
+
 #include <sys/mman.h>
 #include <fcntl.h>
+
 #include <unistd.h>
 #include <sys/stat.h>
 
@@ -271,6 +277,7 @@ The `mmap` system call maps files or devices into memory, allowing applications 
 
 ```c
 #include <sys/mman.h>
+
 void* mmap(void* addr, size_t length, int prot, int flags, int fd, off_t offset);
 ```
 
@@ -289,8 +296,10 @@ To illustrate the basic usage of `mmap`, let's create a simple example that maps
 
 ```cpp
 #include <iostream>
+
 #include <sys/mman.h>
 #include <fcntl.h>
+
 #include <unistd.h>
 #include <sys/stat.h>
 
@@ -350,8 +359,10 @@ Memory-mapped files can be used for inter-process communication by mapping the s
 
 ```cpp
 #include <iostream>
+
 #include <sys/mman.h>
 #include <fcntl.h>
+
 #include <unistd.h>
 #include <cstring>
 
@@ -443,6 +454,7 @@ Anonymous mappings are useful when you need a block of memory that is not backed
 
 ```cpp
 #include <iostream>
+
 #include <sys/mman.h>
 #include <unistd.h>
 
@@ -482,8 +494,10 @@ The `mmap` system call allows you to specify the desired memory protection for t
 
 ```cpp
 #include <iostream>
+
 #include <sys/mman.h>
 #include <unistd.h>
+
 #include <cstring>
 
 void exampleMemoryProtection() {
@@ -534,8 +548,10 @@ Using `mmap` for file I/O can significantly improve performance for large files 
 
 ```cpp
 #include <iostream>
+
 #include <sys/mman.h>
 #include <fcntl.h>
+
 #include <unistd.h>
 #include <sys/stat.h>
 
@@ -583,8 +599,10 @@ In this example, we map a file into memory and read its contents into a string e
 
 ```cpp
 #include <iostream>
+
 #include <sys/mman.h>
 #include <fcntl.h>
+
 #include <unistd.h>
 #include <cstring>
 
@@ -748,6 +766,7 @@ This example demonstrates the use of specialized processor instructions, such as
 
 ```cpp
 #include <iostream>
+
 #include <array>
 
 void exampleCpuid() {
@@ -782,8 +801,10 @@ Inline assembly can perform atomic operations that are crucial for multi-threade
 
 ```cpp
 #include <iostream>
+
 #include <atomic>
 #include <thread>
+
 #include <vector>
 
 std::atomic<int> counter(0);
@@ -827,6 +848,7 @@ This example demonstrates how to read from a hardware register, such as the Time
 
 ```cpp
 #include <iostream>
+
 #include <cstdint>
 
 uint64_t readTSC() {
@@ -912,6 +934,7 @@ On x86 architectures, SIMD instructions are provided through intrinsics defined 
 
 ```cpp
 #include <iostream>
+
 #include <xmmintrin.h> // Header file for SSE intrinsics
 
 void exampleVectorAddition() {
@@ -955,6 +978,7 @@ Intrinsics can be used for more advanced operations, such as cryptographic funct
 
 ```cpp
 #include <iostream>
+
 #include <immintrin.h> // Header file for AVX intrinsics
 
 void exampleMatrixMultiplication() {
@@ -1000,8 +1024,10 @@ GCC provides a set of built-in functions that allow direct access to certain pro
 
 ```cpp
 #include <iostream>
+
 #include <atomic>
 #include <thread>
+
 #include <vector>
 
 std::atomic<int> counter(0);
@@ -1060,6 +1086,7 @@ Microsoft Visual C++ (MSVC) also provides intrinsics and built-in functions spec
 
 ```cpp
 #include <iostream>
+
 #include <intrin.h> // Header file for MSVC intrinsics
 
 void exampleBitManipulation() {
@@ -1122,6 +1149,7 @@ The following example demonstrates how to configure a basic DMA transfer in a hy
 
 ```cpp
 #include <iostream>
+
 #include <cstdint>
 
 // Hypothetical DMA controller registers
@@ -1194,6 +1222,7 @@ Scatter-gather DMA allows for non-contiguous memory transfers by chaining multip
 
 ```cpp
 #include <iostream>
+
 #include <cstdint>
 #include <vector>
 
@@ -1274,10 +1303,13 @@ Double buffering with DMA involves using two buffers to overlap data processing 
 
 ```cpp
 #include <iostream>
+
 #include <cstdint>
 #include <thread>
+
 #include <vector>
 #include <mutex>
+
 #include <condition_variable>
 
 // Hypothetical DMA controller registers

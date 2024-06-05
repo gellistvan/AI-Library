@@ -37,10 +37,13 @@ Lássunk egy példát az RSA-algoritmus alkalmazására a digitális aláírásb
 
 ```cpp
 #include <openssl/rsa.h>
+
 #include <openssl/pem.h>
 #include <openssl/err.h>
+
 #include <openssl/sha.h>
 #include <iostream>
+
 #include <fstream>
 
 void generate_rsa_keypair() {

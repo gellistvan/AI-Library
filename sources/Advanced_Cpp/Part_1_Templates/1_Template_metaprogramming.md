@@ -215,6 +215,7 @@ Consider the following simple example where we use SFINAE to determine if a type
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 // Primary template handles non-integral types
@@ -240,6 +241,7 @@ SFINAE is extremely useful for function overloading based on type traits. For in
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 // Function enabled only for integral types
@@ -272,6 +274,7 @@ Consider the following example where we enable a function only if the type is bo
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 // Function enabled only for signed integral types
@@ -298,6 +301,7 @@ Consider a template class that provides different `print` functions depending on
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 // Helper trait to detect the presence of a 'print' member function
@@ -360,6 +364,7 @@ Here’s an example that combines SFINAE with concepts:
 
 ```cpp
 #include <iostream>
+
 #include <concepts>
 
 template<typename T>
@@ -512,6 +517,7 @@ Here’s an example of using variadic templates with perfect forwarding to imple
 
 ```cpp
 #include <iostream>
+
 #include <memory>
 
 // Factory function using variadic templates and perfect forwarding
@@ -544,6 +550,7 @@ Here’s an example of using variadic templates to implement a function that che
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 // Helper struct to check if all types are the same
@@ -598,6 +605,7 @@ Consider the following example where we define a general `Max` template to find 
 
 ```cpp
 #include <iostream>
+
 #include <cstring>
 
 // General template for finding the maximum of two values
@@ -692,6 +700,7 @@ Consider the following example where we define a simple type trait to check if a
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 // Primary template: T is not a pointer
@@ -718,6 +727,7 @@ Template specialization can also be used to provide custom implementations for s
 
 ```cpp
 #include <iostream>
+
 #include <memory>
 
 // General template for custom allocator
@@ -773,6 +783,7 @@ Consider the following example where we use SFINAE and template specialization t
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 // General template for printing values
@@ -996,6 +1007,7 @@ Consider a compile-time vector implemented using `constexpr`:
 
 ```cpp
 #include <iostream>
+
 #include <array>
 
 // Compile-time vector class
@@ -1280,6 +1292,7 @@ Sorting algorithms can also be implemented at compile time using template metapr
 
 ```cpp
 #include <iostream>
+
 #include <array>
 
 // Base case for empty array
@@ -1360,6 +1373,7 @@ and logic. Let's implement a compile-time matrix multiplication algorithm.
 
 ```cpp
 #include <iostream>
+
 #include <array>
 
 // Compile-time matrix multiplication
@@ -1417,6 +1431,7 @@ A typical metafunction is a template that uses `typedef` or `using` to define it
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 // Metafunction to remove const qualifier
@@ -1449,6 +1464,7 @@ Let's create a simple metafunction class that adds a pointer to a given type:
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 // Metafunction class to add a pointer to a type
@@ -1474,6 +1490,7 @@ Metafunction classes can be used to create more advanced type manipulations and 
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 // Metafunction class to remove pointer if present
@@ -1511,6 +1528,7 @@ Metafunctions and metafunction classes can be combined to create more complex an
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 // Metafunction class to add a pointer to a type
@@ -1562,6 +1580,7 @@ The `std::enable_if` utility is a common use case of metafunctions. It condition
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 // Function enabled only for integral types
@@ -1592,6 +1611,7 @@ Let's implement a custom metafunction class that selects a type based on a compi
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 // Custom metafunction class to select a type based on a condition
@@ -1666,6 +1686,7 @@ Type traits are typically implemented as templates that inherit from `std::true_
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 // Custom type trait to check if a type is integral
@@ -1701,6 +1722,7 @@ The C++ standard library provides a rich set of type traits that can be used to 
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 // Function to demonstrate type traits
@@ -1740,6 +1762,7 @@ Type manipulations involve transforming types to obtain new types. This can be d
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 // Function to demonstrate removing const
@@ -1764,6 +1787,7 @@ In this example, the `remove_const_demo` function uses `std::remove_const` to ob
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 // Function to demonstrate adding pointer
@@ -1788,6 +1812,7 @@ In this example, the `add_pointer_demo` function uses `std::add_pointer` to obta
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 // Function to demonstrate removing reference
@@ -1814,6 +1839,7 @@ While the standard library provides many type traits and manipulations, there ar
 
 ```cpp
 #include <iostream>
+
 #include <memory>
 #include <type_traits>
 
@@ -1857,6 +1883,7 @@ Type traits can be combined to create more complex type manipulations. Let's cre
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 // Type trait to add a pointer if not already a pointer
@@ -1898,6 +1925,7 @@ Substitution Failure Is Not An Error (SFINAE) is a technique that relies on type
 
 cpp
 #include <iostream>
+
 #include <type_traits>
 
 // Function enabled only for integral types

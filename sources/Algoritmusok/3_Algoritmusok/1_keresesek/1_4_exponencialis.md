@@ -40,6 +40,7 @@ Bár a példakód nem kötelező, bemutatunk egy egyszerű C++ implementációt 
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 using namespace std;
 
@@ -139,8 +140,10 @@ Az alábbiakban bemutatunk egy példakódot, amely az exponenciális keresés al
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
+
 using namespace std;
 
 // Binary Search function

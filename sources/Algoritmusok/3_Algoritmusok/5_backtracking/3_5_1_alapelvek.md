@@ -136,6 +136,7 @@ Az alábbi példa az utazó ügynök problémát (TSP) mutatja be, ahol bounding
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <limits.h>
 
@@ -179,9 +180,11 @@ Az alábbi C++ kód egy konkrét példát mutat be egy Sudoku rejtvény megoldá
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 #define UNASSIGNED 0
+
 #define N 9
 
 using namespace std;
@@ -312,6 +315,7 @@ Az alábbi C++ kód bemutatja az N-királynők probléma megoldását, amelyben 
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
 

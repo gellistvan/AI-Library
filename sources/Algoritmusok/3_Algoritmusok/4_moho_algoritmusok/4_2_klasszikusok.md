@@ -38,8 +38,10 @@ Az alábbiakban egy Prim algoritmus implementációját láthatjuk C++ nyelven:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <queue>
+
 #include <utility>
 #include <functional>
 
@@ -181,6 +183,7 @@ Az alábbiakban egy Kruskal algoritmus implementációját láthatjuk C++ nyelve
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
 
@@ -342,10 +345,13 @@ Az alábbiakban egy Dijkstra algoritmus implementációját láthatjuk C++ nyelv
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <queue>
+
 #include <utility>
 #include <functional>
+
 #include <limits>
 
 using namespace std;
@@ -525,6 +531,7 @@ Az alábbiakban egy példa implementáció C++ nyelven:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
 
@@ -630,8 +637,10 @@ Az alábbiakban egy Huffman kódolás implementációját láthatjuk C++ nyelven
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <queue>
+
 #include <unordered_map>
 
 using namespace std;
@@ -754,6 +763,7 @@ Az eredményül kapott Huffman kódok a következők lehetnek:
 A Huffman kódolás egy hatékony és optimális módszer az adattömörítésre, amely a mohó algoritmusok alapelveire épül. Az algoritmus garantálja a legrövidebb átlagos kódhosszúságot a karakterek gyakorisági eloszlása alapján. A gyakorlati alkalmazások széles köre és a hatékony implementáció teszi a Huffman kódolást a modern adatfeldolgozás és adattömörítés egyik alapvető eszközévé.
 
 ### 4.2.6. Interval Scheduling
+
 #### **Maximális számú nem átfedő intervallum kiválasztása**
 
 #### **Alapelvek és implementáció**
@@ -787,6 +797,7 @@ Az alábbiakban egy példa implementáció C++ nyelven:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
 

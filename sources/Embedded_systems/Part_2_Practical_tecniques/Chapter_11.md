@@ -63,6 +63,7 @@ Here's an example of adjusting the clock frequency on an AVR microcontroller:
 
 ```cpp
 #include <avr/io.h>
+
 #include <avr/power.h>
 
 void setClockFrequency(uint8_t frequency) {
@@ -150,6 +151,7 @@ Here’s an example of using interrupts instead of polling for a button press on
 
 ```cpp
 #include <avr/io.h>
+
 #include <avr/interrupt.h>
 
 // Initialize the button
@@ -184,6 +186,7 @@ Here’s a simplified example of using a low-power wireless communication module
 
 ```cpp
 #include <Wire.h>
+
 #include <LowPower.h>
 
 void setup() {
@@ -231,6 +234,7 @@ Using a cryptographic library like Mbed TLS, you can implement a secure boot pro
 
 ```cpp
 #include "mbedtls/sha256.h"
+
 #include "mbedtls/rsa.h"
 #include "mbedtls/pk.h"
 
@@ -280,6 +284,7 @@ int main() {
 
 ```cpp
 #include "mbedtls/aes.h"
+
 #include "mbedtls/md.h"
 
 // Function to decrypt firmware
@@ -357,8 +362,10 @@ Using Mbed TLS to establish a secure connection:
 
 ```cpp
 #include "mbedtls/net_sockets.h"
+
 #include "mbedtls/ssl.h"
 #include "mbedtls/entropy.h"
+
 #include "mbedtls/ctr_drbg.h"
 #include "mbedtls/debug.h"
 
@@ -424,9 +431,11 @@ Cppcheck is a static analysis tool for C/C++ code that helps identify vulnerabil
 
 ```cppbash
 # Install cppcheck (on Ubuntu)
+
 sudo apt-get install cppcheck
 
 # Run cppcheck on your code
+
 cppcheck --enable=all --inconclusive --std=c++11 path/to/your/code
 ```
 
@@ -484,6 +493,7 @@ Here is the code to read data from the DHT11 sensor and send it to ThingSpeak:
 
 ```cpp
 #include <ESP8266WiFi.h>
+
 #include <DHT.h>
 #include <ThingSpeak.h>
 
@@ -498,6 +508,7 @@ const char* writeAPIKey = "YOUR_WRITE_API_KEY";
 
 // DHT sensor setup
 #define DHTPIN 2 // GPIO2 (D4 on NodeMCU)
+
 #define DHTTYPE DHT11
 DHT dht(DHTPIN, DHTTYPE);
 
@@ -579,6 +590,7 @@ To connect your IoT device to AWS IoT Core, follow these steps:
 
 ```cpp
 #include <ESP8266WiFi.h>
+
 #include <PubSubClient.h>
 #include <ArduinoJson.h>
 
@@ -610,6 +622,7 @@ const char* topic = "your/topic";
 
 // DHT sensor setup
 #define DHTPIN 2 // GPIO2 (D4 on NodeMCU)
+
 #define DHTTYPE DHT11
 DHT dht(DHTPIN, DHTTYPE);
 
@@ -705,8 +718,10 @@ To perform OTA updates on an ESP8266, you can use the ArduinoOTA library:
 
 ```cpp
 #include <ESP8266WiFi.h>
+
 #include <ESP8266mDNS.h>
 #include <WiFiUdp.h>
+
 #include <ArduinoOTA.h>
 
 // Wi-Fi credentials

@@ -46,6 +46,7 @@ Az alábbiakban bemutatjuk a ternary search algoritmus egy lehetséges implement
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 int ternarySearch(const std::vector<int>& arr, int left, int right, int key) {
@@ -111,6 +112,7 @@ A rekurzív megközelítés a keresési intervallumot három részre osztja mind
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 int ternarySearchRecursive(const std::vector<int>& arr, int left, int right, int key) {

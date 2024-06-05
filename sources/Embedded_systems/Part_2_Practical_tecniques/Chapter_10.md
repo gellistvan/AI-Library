@@ -369,6 +369,7 @@ Lambdas are particularly useful when working with the STL algorithms, providing 
 
 ```cpp
 #include <algorithm>
+
 #include <vector>
 #include <iostream>
 
@@ -392,6 +393,7 @@ int main() {
 
 ```cpp
 #include <algorithm>
+
 #include <vector>
 #include <iostream>
 
@@ -442,6 +444,7 @@ Higher-order functions are functions that take other functions as arguments or r
 
 ```cpp
 #include <iostream>
+
 #include <functional>
 
 std::function<int(int)> makeAdder(int addend) {
@@ -466,6 +469,7 @@ Currying is the process of breaking down a function that takes multiple argument
 
 ```cpp
 #include <iostream>
+
 #include <functional>
 
 std::function<std::function<int(int)>(int)> curryAdd() {
@@ -497,8 +501,10 @@ Lambdas can be used to create concise and expressive timer callbacks.
 
 ```cpp
 #include <iostream>
+
 #include <functional>
 #include <thread>
+
 #include <chrono>
 
 void setTimer(int delay, std::function<void()> callback) {
@@ -523,6 +529,7 @@ Lambdas can simplify event handling code, making it more readable.
 
 ```cpp
 #include <iostream>
+
 #include <functional>
 #include <vector>
 
@@ -628,6 +635,7 @@ Modern C++ introduces lambdas, which provide a concise way to define inline sign
 
 ```cpp
 #include <iostream>
+
 #include <functional>
 #include <vector>
 
@@ -658,6 +666,7 @@ The Observer pattern is a common design pattern for event management. It defines
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <functional>
 
@@ -718,6 +727,7 @@ In embedded systems, it’s common to use event queues and dispatchers to manage
 
 ```cpp
 #include <iostream>
+
 #include <queue>
 #include <functional>
 
@@ -787,8 +797,10 @@ In more complex embedded systems, an RTOS can manage tasks and events, providing
 
 ```cpp
 #include <FreeRTOS.h>
+
 #include <task.h>
 #include <queue.h>
+
 #include <iostream>
 
 struct Event {

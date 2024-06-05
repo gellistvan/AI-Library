@@ -294,6 +294,7 @@ Sensors allow microcontrollers to interact with the physical world by measuring 
 #include <DHT.h>
 
 #define DHTPIN 2 // Digital pin connected to the DHT sensor
+
 #define DHTTYPE DHT11 // DHT11 sensor type
 
 DHT dht(DHTPIN, DHTTYPE);
@@ -421,10 +422,12 @@ Advanced labs involve more complex integrations and use of additional hardware i
 **Code**:
 ```cpp
 #include <Wire.h>
+
 #include <LiquidCrystal_I2C.h>
 #include <DHT.h>
 
 #define DHTPIN 2
+
 #define DHTTYPE DHT11
 
 DHT dht(DHTPIN, DHTTYPE);

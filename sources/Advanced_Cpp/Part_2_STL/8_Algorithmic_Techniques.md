@@ -30,6 +30,7 @@ In-place algorithms modify the input data directly without requiring significant
 
 ```cpp
 #include <algorithm>
+
 #include <iostream>
 #include <vector>
 
@@ -54,6 +55,7 @@ int main() {
 
 ```cpp
 #include <algorithm>
+
 #include <iostream>
 #include <vector>
 
@@ -88,6 +90,7 @@ Out-of-place algorithms, in contrast, create a new copy of the data structure an
 
 ```cpp
 #include <algorithm>
+
 #include <iostream>
 #include <vector>
 
@@ -119,6 +122,7 @@ int main() {
 
 ```cpp
 #include <algorithm>
+
 #include <iostream>
 #include <vector>
 
@@ -174,6 +178,7 @@ Consider a scenario where you need to process a large dataset but want to preser
 
 ```cpp
 #include <algorithm>
+
 #include <iostream>
 #include <vector>
 
@@ -236,6 +241,7 @@ The `std::for_each` algorithm applies a function to each element in a range.
 
 ```cpp
 #include <algorithm>
+
 #include <iostream>
 #include <vector>
 
@@ -260,6 +266,7 @@ The `std::find` algorithm searches for an element equal to a given value.
 
 ```cpp
 #include <algorithm>
+
 #include <iostream>
 #include <vector>
 
@@ -283,6 +290,7 @@ The `std::count` algorithm counts the number of elements equal to a given value.
 
 ```cpp
 #include <algorithm>
+
 #include <iostream>
 #include <vector>
 
@@ -314,6 +322,7 @@ The `std::copy` algorithm copies elements from one range to another.
 
 ```cpp
 #include <algorithm>
+
 #include <iostream>
 #include <vector>
 
@@ -339,6 +348,7 @@ The `std::transform` algorithm applies a function to each element in a range and
 
 ```cpp
 #include <algorithm>
+
 #include <iostream>
 #include <vector>
 
@@ -364,6 +374,7 @@ The `std::replace` algorithm replaces elements equal to a given value with anoth
 
 ```cpp
 #include <algorithm>
+
 #include <iostream>
 #include <vector>
 
@@ -388,6 +399,7 @@ The `std::fill` algorithm fills a range with a specified value.
 
 ```cpp
 #include <algorithm>
+
 #include <iostream>
 #include <vector>
 
@@ -412,6 +424,7 @@ The `std::remove` and `std::remove_if` algorithms remove elements that satisfy a
 
 ```cpp
 #include <algorithm>
+
 #include <iostream>
 #include <vector>
 
@@ -451,6 +464,7 @@ In practice, non-modifying and modifying algorithms are often used together to a
 
 ```cpp
 #include <algorithm>
+
 #include <iostream>
 #include <vector>
 
@@ -478,6 +492,7 @@ int main() {
 
 ```cpp
 #include <algorithm>
+
 #include <iostream>
 #include <vector>
 
@@ -540,6 +555,7 @@ The key advantage of sorted ranges is that they allow algorithms to perform oper
 
 ```cpp
 #include <algorithm>
+
 #include <iostream>
 #include <vector>
 
@@ -567,6 +583,7 @@ int main() {
 
 ```cpp
 #include <algorithm>
+
 #include <iostream>
 #include <vector>
 
@@ -594,6 +611,7 @@ int main() {
 
 ```cpp
 #include <algorithm>
+
 #include <iostream>
 #include <vector>
 
@@ -621,6 +639,7 @@ int main() {
 
 ```cpp
 #include <algorithm>
+
 #include <iostream>
 #include <vector>
 
@@ -646,6 +665,7 @@ int main() {
 
 ```cpp
 #include <algorithm>
+
 #include <iostream>
 #include <vector>
 
@@ -674,6 +694,7 @@ int main() {
 
 ```cpp
 #include <algorithm>
+
 #include <iostream>
 #include <vector>
 
@@ -703,6 +724,7 @@ These algorithms perform set operations on sorted ranges, treating the ranges as
 
 ```cpp
 #include <algorithm>
+
 #include <iostream>
 #include <vector>
 
@@ -729,6 +751,7 @@ int main() {
 
 ```cpp
 #include <algorithm>
+
 #include <iostream>
 #include <vector>
 
@@ -755,6 +778,7 @@ int main() {
 
 ```cpp
 #include <algorithm>
+
 #include <iostream>
 #include <vector>
 
@@ -783,6 +807,7 @@ int main() {
 
 ```cpp
 #include <algorithm>
+
 #include <iostream>
 #include <vector>
 
@@ -831,6 +856,7 @@ Partitioning algorithms rearrange elements in a range based on a predicate, divi
 
 ```cpp
 #include <algorithm>
+
 #include <iostream>
 #include <vector>
 
@@ -861,6 +887,7 @@ int main() {
 
 ```cpp
 #include <algorithm>
+
 #include <iostream>
 #include <vector>
 
@@ -891,6 +918,7 @@ int main() {
 
 ```cpp
 #include <algorithm>
+
 #include <iostream>
 #include <vector>
 
@@ -921,6 +949,7 @@ Permutation algorithms rearrange elements in all possible orders or specific ord
 
 ```cpp
 #include <algorithm>
+
 #include <iostream>
 #include <vector>
 
@@ -946,6 +975,7 @@ int main() {
 
 ```cpp
 #include <algorithm>
+
 #include <iostream>
 #include <vector>
 
@@ -971,6 +1001,7 @@ int main() {
 
 ```cpp
 #include <algorithm>
+
 #include <iostream>
 #include <vector>
 
@@ -997,6 +1028,7 @@ Partitioning and permutation algorithms can be combined to achieve complex data 
 
 ```cpp
 #include <algorithm>
+
 #include <iostream>
 #include <vector>
 

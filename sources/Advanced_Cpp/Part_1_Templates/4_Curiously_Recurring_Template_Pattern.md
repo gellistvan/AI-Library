@@ -212,6 +212,7 @@ CRTP can be combined with other template metaprogramming techniques to perform c
 
 ```cpp
 #include <iostream>
+
 #include <array>
 
 template <typename Derived>
@@ -395,6 +396,7 @@ CRTP can be combined with other template metaprogramming techniques to perform c
 
 ```cpp
 #include <iostream>
+
 #include <array>
 
 template <typename Derived>
@@ -538,6 +540,7 @@ CRTP can be used to implement policy-based design, where behaviors are defined b
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
 

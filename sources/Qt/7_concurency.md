@@ -20,6 +20,7 @@ In Qt, you don't subclass `QThread` itself for your processing work. Instead, yo
 **Example:** Here’s how you can set up a worker class and run it in a separate thread:
 ```cpp
 #include <QObject>
+
 #include <QThread>
 #include <QDebug>
 
@@ -55,6 +56,7 @@ int main(int argc, char *argv[]) {
 ``` 
 
 #### Thread Safety
+
 Thread safety is critical when dealing with data that might be accessed from multiple threads. Common issues include race conditions and data corruption, which can occur if multiple threads read and write to the same data without proper synchronization.
 
 **Ensuring Thread Safety:**
@@ -65,6 +67,7 @@ Thread safety is critical when dealing with data that might be accessed from mul
 **Example of Using Mutex: ** Here's an example showing how to use `QMutex` to protect shared data:
 ```cpp
 #include <QMutex>
+
 #include <QThread>
 #include <QDebug>
 
@@ -103,6 +106,7 @@ Thread Pool Management: Automatically handles thread allocation and management.
 
 ```cpp
 #include <QCoreApplication>
+
 #include <QtConcurrent/QtConcurrent> 
  
 void myFunction() { 
@@ -126,6 +130,7 @@ Concurrency introduces synchronization challenges, such as data races and deadlo
 
 ```cpp
 #include <QMutex>
+
 #include <QThread>
 #include <QDebug> 
  

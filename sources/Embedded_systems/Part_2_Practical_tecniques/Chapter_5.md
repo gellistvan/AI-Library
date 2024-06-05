@@ -50,6 +50,7 @@ Dynamic memory allocation occurs during runtime when the exact amount of memory 
 
 ```cpp
 #include <vector>
+
 #include <iostream>
 
 void processSensorData() {
@@ -94,6 +95,7 @@ A memory pool is a block of memory allocated at startup, from which smaller bloc
 
 ```cpp
 #include <cstddef>
+
 #include <array>
 #include <cassert>
 
@@ -148,6 +150,7 @@ An object pool is a specific type of memory pool that not only manages memory bu
 
 ```cpp
 #include <vector>
+
 #include <memory>
 
 template <typename T>

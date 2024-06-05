@@ -79,6 +79,7 @@ Az alábbi C++ kód bemutatja a backtracking algoritmus egy lehetséges implemen
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 using namespace std;
 
@@ -165,6 +166,7 @@ A prunning technika, más néven metszés, azt jelenti, hogy megszabadulunk azok
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 using namespace std;
 
@@ -234,6 +236,7 @@ A bit-manipuláció hatékony módszer a támadási pozíciók nyilvántartásá
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 using namespace std;
 
@@ -303,6 +306,7 @@ Az alábbi C++ kód egy egyszerű konzolos megjelenítést mutat be, amely vizua
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 using namespace std;
 

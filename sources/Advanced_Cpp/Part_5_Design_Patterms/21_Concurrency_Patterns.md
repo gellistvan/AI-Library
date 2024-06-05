@@ -30,10 +30,13 @@ The Proxy class provides an interface for clients to interact with the Active Ob
 
 ```cpp
 #include <iostream>
+
 #include <future>
 #include <queue>
+
 #include <thread>
 #include <condition_variable>
+
 #include <functional>
 
 class ActiveObject {
@@ -211,10 +214,13 @@ The Monitor Object class encapsulates the shared resource and provides synchroni
 
 ```cpp
 #include <iostream>
+
 #include <thread>
 #include <mutex>
+
 #include <condition_variable>
 #include <vector>
+
 #include <chrono>
 
 class MonitorObject {
@@ -404,12 +410,16 @@ The Asynchronous Layer will handle non-blocking operations and push tasks to a q
 
 ```cpp
 #include <iostream>
+
 #include <thread>
 #include <mutex>
+
 #include <condition_variable>
 #include <queue>
+
 #include <functional>
 #include <atomic>
+
 #include <chrono>
 
 class AsyncLayer {
@@ -595,12 +605,16 @@ The Thread Pool Manager class manages the lifecycle of worker threads and the ta
 
 ```cpp
 #include <iostream>
+
 #include <thread>
 #include <mutex>
+
 #include <condition_variable>
 #include <queue>
+
 #include <functional>
 #include <vector>
+
 #include <atomic>
 
 class ThreadPool {

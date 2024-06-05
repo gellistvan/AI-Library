@@ -31,9 +31,11 @@ void c_function() {
 ```c
 // c_library.h
 #ifndef C_LIBRARY_H
+
 #define C_LIBRARY_H
 
 #ifdef __cplusplus
+
 extern "C" {
 #endif
 
@@ -51,6 +53,7 @@ void c_function();
 ```cpp
 // main.cpp
 #include <iostream>
+
 #include "c_library.h"
 
 int main() {
@@ -81,9 +84,11 @@ extern "C" void cpp_function() {
 ```c
 // cpp_library.h
 #ifndef CPP_LIBRARY_H
+
 #define CPP_LIBRARY_H
 
 #ifdef __cplusplus
+
 extern "C" {
 #endif
 
@@ -119,9 +124,11 @@ When interoperating between C and C++, special attention must be paid to data ty
 ```c
 // c_struct.h
 #ifndef C_STRUCT_H
+
 #define C_STRUCT_H
 
 #ifdef __cplusplus
+
 extern "C" {
 #endif
 
@@ -144,6 +151,7 @@ void print_point(Point p);
 ```c
 // c_struct.c
 #include "c_struct.h"
+
 #include <stdio.h>
 
 void print_point(Point p) {
@@ -156,6 +164,7 @@ void print_point(Point p) {
 ```cpp
 // main.cpp
 #include <iostream>
+
 extern "C" {
     #include "c_struct.h"
 }
@@ -211,9 +220,11 @@ extern "C" {
 ```c
 // cpp_class.h
 #ifndef CPP_CLASS_H
+
 #define CPP_CLASS_H
 
 #ifdef __cplusplus
+
 extern "C" {
 #endif
 
@@ -490,6 +501,7 @@ When binding C++ with Python, it is essential to handle exceptions correctly. Bo
 ```cpp
 // example_exception.cpp
 #include <pybind11/pybind11.h>
+
 #include <stdexcept>
 
 namespace py = pybind11;
@@ -563,6 +575,7 @@ Emscripten is a toolchain that compiles C++ code to WebAssembly. It provides a c
 
 ```sh
 # Install Emscripten SDK
+
 git clone https://github.com/emscripten-core/emsdk.git
 cd emsdk
 ./emsdk install latest
@@ -578,6 +591,7 @@ Create a simple C++ function to be called from JavaScript.
 
 ```cpp
 #include <emscripten.h>
+
 #include <iostream>
 
 extern "C" {
@@ -794,6 +808,7 @@ Emscripten can catch C++ exceptions and convert them to JavaScript errors.
 
 ```cpp
 #include <emscripten.h>
+
 #include <stdexcept>
 #include <iostream>
 
@@ -857,6 +872,7 @@ In Node.js, exceptions thrown by C++ code can be caught and handled in JavaScrip
 
 ```cpp
 #include <nan.h>
+
 #include <stdexcept>
 
 void RiskyFunction(const Nan::FunctionCallbackInfo<v8::Value>& info) {
@@ -927,11 +943,13 @@ Create a Rust library with functions to be called from C++.
 
 ```rust
 #[no_mangle]
+
 pub extern "C" fn add(a: i32, b: i32) -> i32 {
     a + b
 }
 
 #[no_mangle]
+
 pub extern "C" fn greet(name: *const std::os::raw::c_char) {
     let c_str = unsafe { std::ffi::CStr::from_ptr(name) };
     let r_str = c_str.to_str().unwrap();
@@ -949,6 +967,7 @@ Compile the Rust code to a static library using Cargo.
 cargo new --lib rust_lib
 cd rust_lib
 # Add the above Rust code to src/lib.rs
+
 cargo build --release
 ```
 
@@ -962,6 +981,7 @@ Create a C++ program that links to the Rust library.
 
 ```cpp
 #include <iostream>
+
 #include <cstring>
 
 // Function prototypes
@@ -1020,6 +1040,7 @@ Create a C++ library with functions to be called from Rust.
 
 ```cpp
 #include <iostream>
+
 #include <cstring>
 
 extern "C" {
@@ -1113,6 +1134,7 @@ Define a common structure in both C++ and Rust, ensuring compatible memory layou
 
 ```cpp
 #ifndef COMPLEX_DATA_H
+
 #define COMPLEX_DATA_H
 
 extern "C" {
@@ -1131,6 +1153,7 @@ extern "C" {
 
 ```cpp
 #include "complex_data.h"
+
 #include <iostream>
 
 void print_point(Point p) {
@@ -1148,6 +1171,7 @@ g++ -shared -o libcomplex_data.so -fPIC complex_data.cpp
 
 ```rust
 #[repr(C)]
+
 pub struct Point {
     x: i32,
     y: i32,
@@ -1178,6 +1202,7 @@ use std::ffi::CString;
 use std::os::raw::c_char;
 
 #[no_mangle]
+
 pub extern "C" fn rust_allocate_string(s: *const c_char) -> *mut c_char {
     let c_str = unsafe { std::ffi::CStr::from_ptr(s) };
     let r_str = c_str.to_str().unwrap();
@@ -1186,6 +1211,7 @@ pub extern "C" fn rust_allocate_string(s: *const c_char) -> *mut c_char {
 }
 
 #[no_mangle]
+
 pub extern "C" fn rust_deallocate_string(s: *mut c_char) {
     unsafe {
         if s.is_null() {
@@ -1200,6 +1226,7 @@ pub extern "C" fn rust_deallocate_string(s: *mut c_char) {
 
 ```cpp
 #include <iostream>
+
 #include <cstring>
 
 extern "C" {

@@ -67,8 +67,10 @@ Az alábbi C++ kód egy egyszerű példa az elliptikus görbék pontösszeadás�
 
 ```cpp
 #include <iostream>
+
 #include <stdexcept>
 #include <tuple>
+
 #include <cmath>
 
 struct Point {
@@ -200,6 +202,7 @@ Példakód a fenti ElGamal ECC sémához C++ nyelven:
 
 ```cpp
 #include <iostream>
+
 #include <cassert>
 #include "ecc_library.h" // Choose a proper ECC library
 

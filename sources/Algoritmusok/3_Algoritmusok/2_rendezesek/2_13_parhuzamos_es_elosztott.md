@@ -23,8 +23,10 @@ A quicksort egy oszd meg és uralkodj típusú algoritmus, amely egy pivot eleme
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
+
 #include <future>
 #include <thread>
 
@@ -88,8 +90,10 @@ A mergesort szintén egy oszd meg és uralkodj típusú algoritmus, amely két r
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
+
 #include <future>
 #include <thread>
 
@@ -178,6 +182,7 @@ A bitonikus rendezés kiválóan alkalmas párhuzamosításra, mivel a bitonikus
 
 ```cpp
 #include <algorithm>
+
 #include <vector>
 #include <omp.h>
 
@@ -238,6 +243,7 @@ A párhuzamos vödör rendezés legnagyobb előnye, hogy a vödrök rendezése p
 
 ```cpp
 #include <vector>
+
 #include <algorithm>
 #include <omp.h>
 

@@ -30,6 +30,7 @@ Let’s start by defining a simple custom allocator. This allocator will use the
 
 ```cpp
 #include <memory>
+
 #include <iostream>
 
 template <typename T>
@@ -104,6 +105,7 @@ Here is an implementation of a simple pool allocator:
 
 ```cpp
 #include <cstddef>
+
 #include <vector>
 
 template <typename T>
@@ -218,6 +220,7 @@ One of the simplest ways to extend STL containers is by subclassing. This method
 
 ```cpp
 #include <vector>
+
 #include <iostream>
 
 template <typename T>
@@ -246,6 +249,7 @@ Another approach to extending STL containers involves using custom traits. Trait
 
 ```cpp
 #include <type_traits>
+
 #include <iostream>
 
 template <typename T>
@@ -279,6 +283,7 @@ Custom iterators are a powerful way to extend the functionality of STL container
 
 ```cpp
 #include <iterator>
+
 #include <vector>
 #include <iostream>
 
@@ -355,6 +360,7 @@ Here's an example of a policy-based design for a custom vector:
 
 ```cpp
 #include <vector>
+
 #include <iostream>
 
 template <typename T>
@@ -466,6 +472,7 @@ Sometimes, you may need to create completely new containers with interfaces that
 
 ```cpp
 #include <iostream>
+
 #include <stdexcept>
 
 template <typename T>
@@ -582,6 +589,7 @@ First, define the interface for the dynamic array. The interface includes constr
 
 ```cpp
 #include <iostream>
+
 #include <stdexcept>
 
 template <typename T>
@@ -745,6 +753,7 @@ Combining all the pieces, here's the full implementation of the `DynamicArray` c
 
 ```cpp
 #include <iostream>
+
 #include <stdexcept>
 #include <iterator>
 
@@ -906,8 +915,10 @@ Define the interface for the hash table. This includes functions for insertion, 
 
 ```cpp
 #include <vector>
+
 #include <list>
 #include <functional>
+
 #include <iostream>
 #include <stdexcept>
 
@@ -1008,8 +1019,10 @@ Combining all the pieces, here's the full implementation of the `HashTable` clas
 
 ```cpp
 #include <vector>
+
 #include <list>
 #include <functional>
+
 #include <iostream>
 #include <stdexcept>
 

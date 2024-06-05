@@ -42,6 +42,7 @@ Az alábbi C++ kód bemutatja a Smoothsort alapvető lépéseit:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
 
@@ -100,6 +101,7 @@ Az alábbi C++ kód bemutatja a Library Sort alapvető lépéseit:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <cmath>
 
@@ -223,6 +225,7 @@ Az alábbi C++ kód bemutatja a Smoothsort algoritmus alapvető lépéseit. A k�
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 class Smoothsort {
@@ -347,8 +350,10 @@ Az alábbi C++ kód bemutatja a Library Sort alapvető lépéseit. A kód egysze
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <cmath>
+
 #include <algorithm>
 
 class LibrarySort {

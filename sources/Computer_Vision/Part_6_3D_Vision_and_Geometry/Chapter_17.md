@@ -40,6 +40,7 @@ We will use the ORB (Oriented FAST and Rotated BRIEF) detector to find keypoints
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 using namespace cv;
@@ -181,6 +182,7 @@ We use ORB to detect and match keypoints, as demonstrated in the previous subcha
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 #include <vector>
 
@@ -285,6 +287,7 @@ Bundle adjustment refines the 3D points and camera parameters to minimize the re
 // defining the cost function, and running the solver to minimize the reprojection error.
 
 #include <ceres/ceres.h>
+
 #include <ceres/rotation.h>
 
 // Define the cost function for bundle adjustment

@@ -15,6 +15,7 @@ Qt provides powerful classes to handle TCP and UDP communications, enabling the 
 
 ```cpp
 #include <QTcpSocket>
+
 #include <QCoreApplication>
 #include <QDebug> 
  
@@ -52,8 +53,10 @@ Key Concepts and Usage
 
 ```cpp
 #include <QTcpServer>
+
 #include <QTcpSocket>
 #include <QDataStream>
+
 #include <QCoreApplication>
 #include <QDebug>
 
@@ -107,8 +110,10 @@ int main(int argc, char *argv[]) {
 
 ```cpp
 #include <QTcpSocket>
+
 #include <QDataStream>
 #include <QCoreApplication>
+
 #include <QTextStream>
 #include <QDebug>
 
@@ -175,8 +180,10 @@ Qt SQL module provides a way to interact with databases using both SQL and Qt's 
 
 ```cpp
 #include <QSqlDatabase>
+
 #include <QSqlQuery>
 #include <QVariant>
+
 #include <QDebug> 
  
 int main() { 
@@ -207,8 +214,10 @@ XML and JSON are widely used data formats for storing and transferring structure
 
 ```cpp
 #include <QJsonDocument>
+
 #include <QJsonObject>
 #include <QJsonArray>
+
 #include <QDebug> 
  
 int main() { 

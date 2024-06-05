@@ -34,6 +34,7 @@ Az algoritmus egy egyszerű és érthető kóddal is megvalósítható C++ nyelv
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <limits>
 
@@ -182,6 +183,7 @@ Alább egy teljes C++ implementáció, beleértve az útrekonstrukciós részlet
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <limits.h>
 

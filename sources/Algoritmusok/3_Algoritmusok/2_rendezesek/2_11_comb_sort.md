@@ -35,6 +35,7 @@ Az alábbiakban bemutatjuk az összefésülő rendezés C++ nyelvű implementác
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 // Function to perform comb sort on a vector of integers
@@ -178,6 +179,7 @@ Az alábbi példakódban bemutatjuk a Tokuda sorozat implementálását C++ nyel
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <cmath>
 
@@ -305,8 +307,10 @@ Az alábbi példakód egy teljesítmény tesztet mutat be az összefésülő ren
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
+
 #include <chrono>
 
 // Function to perform comb sort with a given gap sequence
@@ -413,6 +417,7 @@ Egy beágyazott rendszerben, például egy érzékelő hálózatban, az érzéke
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 // Function to perform comb sort
@@ -466,6 +471,7 @@ Egy adatbázisban a rekordok gyors elérése és rendezése kritikus fontosság�
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <string>
 
@@ -533,6 +539,7 @@ Egy játékmotorban az objektumok z-index szerinti rendezése kritikus a helyes 
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 struct GameObject {

@@ -28,6 +28,7 @@ Each task is typically represented by a task control block (TCB), which contains
 
 ```cpp
 #include <cstdint>
+
 #include <vector>
 
 enum class TaskState {
@@ -374,6 +375,7 @@ Similarly, we can connect a humidity sensor like the DHT11, which uses a digital
 #include <DHT.h>
 
 #define DHTPIN 2 // Digital pin where the sensor is connected
+
 #define DHTTYPE DHT11 // DHT 11
 
 DHT dht(DHTPIN, DHTTYPE);
@@ -481,6 +483,7 @@ We'll use the ESP8266 Wi-Fi module to send data to a remote server.
 
 ```cpp
 #include <ESP8266WiFi.h>
+
 #include <ESP8266HTTPClient.h>
 
 const char* ssid = "your_SSID";
@@ -581,6 +584,7 @@ Microcontrollers often support various sleep modes to reduce power consumption w
 
 ```cpp
 #include <ESP8266WiFi.h>
+
 #include <ESP8266HTTPClient.h>
 
 void setup() {
@@ -653,12 +657,14 @@ To profile an embedded application using `gprof`, compile the code with profilin
 
 ```sh
 # Compile with profiling enabled
+
 g++ -pg -o my_app my_app.cpp
 
 # Run the application to generate profile data
 ./my_app
 
 # Analyze the profile data
+
 gprof my_app gmon.out > analysis.txt
 ```
 
@@ -851,6 +857,7 @@ Optimizing network communication can save power by reducing the time the communi
 
 ```cpp
 #include <ESP8266WiFi.h>
+
 #include <ESP8266HTTPClient.h>
 
 void setup() {

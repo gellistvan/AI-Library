@@ -29,10 +29,13 @@ Consider a scenario where you have a function with complex logic. You can use `#
 
 ```cpp
 #pragma message("Function: calculateInterest")
+
 #pragma message("Description: Calculates the compound interest based on principal, rate, and time.")
 #pragma message("Parameters: double principal - initial amount")
+
 #pragma message("            double rate - interest rate per period")
 #pragma message("            int time - number of periods")
+
 #pragma message("Returns: double - the calculated compound interest")
 
 double calculateInterest(double principal, double rate, int time) {
@@ -48,10 +51,13 @@ You can also use `#pragma` to embed documentation within class definitions. This
 
 ```cpp
 #pragma message("Class: Account")
+
 #pragma message("Description: Represents a bank account with basic operations.")
 #pragma message("Members: string accountNumber - unique identifier for the account")
+
 #pragma message("         double balance - current balance of the account")
 #pragma message("Methods: deposit(double amount) - adds the specified amount to the balance")
+
 #pragma message("         withdraw(double amount) - subtracts the specified amount from the balance if sufficient funds are available")
 
 class Account {
@@ -88,10 +94,12 @@ You can also use conditional compilation to include or exclude documentation bas
 
 ```cpp
 #ifdef DEBUG
+
 #pragma message("Debug Build: Additional checks and diagnostics are enabled.")
 #endif
 
 #ifdef RELEASE
+
 #pragma message("Release Build: Optimizations are enabled.")
 #endif
 
@@ -181,8 +189,10 @@ Conditional compilation in C++ allows you to control which parts of your code ar
 
 ```cpp
 #ifdef DEBUG
+
 #define LOG(x) std::cout << "DEBUG: " << x << std::endl
 #else
+
 #define LOG(x)
 #endif
 
@@ -211,6 +221,7 @@ When generating documentation, especially in larger projects, you might need dif
  * \return The result of the calculation.
  */
 #endif
+
 double complexCalculation(double value) {
     #ifdef DEBUG
     std::cout << "Debug: Performing complex calculation with value: " << value << std::endl;
@@ -265,6 +276,7 @@ You can combine multiple preprocessor conditions to create highly specific docum
  * \return The simulated response.
  */
 #endif
+
 std::string simulateNetworkRequest(const std::string& url) {
     #ifdef DEBUG
     std::cout << "Debug: Simulating network request to URL: " << url << std::endl;
@@ -289,6 +301,7 @@ Doxygen can be configured to recognize and handle preprocessor directives, ensur
 
 ```doxygen
 # Doxyfile configuration
+
 ENABLE_PREPROCESSING = YES
 MACRO_EXPANSION = YES
 EXPAND_ONLY_PREDEF = NO
@@ -316,6 +329,7 @@ In real-world projects, you might need to maintain different versions of documen
  * \return True if initialization was successful, false otherwise.
  */
 #endif
+
 bool initializeSystem(const Config& config) {
     // Initialization logic for version 1.0
     return true; // Placeholder
@@ -332,6 +346,7 @@ bool initializeSystem(const Config& config) {
  * \return True if initialization was successful, false otherwise.
  */
 #endif
+
 bool initializeSystem(const Config& config) {
     // Initialization logic for version 2.0
     return true; // Placeholder
@@ -374,9 +389,11 @@ First, install Doxygen on your system. You can download it from the [Doxygen web
 
 ```sh
 # On Ubuntu
+
 sudo apt-get install doxygen
 
 # On macOS
+
 brew install doxygen
 ```
 
@@ -437,6 +454,7 @@ To keep your documentation up-to-date, integrate the Doxygen generation process 
 
 ```cmake
 # CMakeLists.txt
+
 find_package(Doxygen REQUIRED)
 
 if (DOXYGEN_FOUND)
@@ -478,21 +496,25 @@ Edit the `conf.py` file in your Sphinx project directory to configure Sphinx and
 
 ```python
 # conf.py
+
 import os
 import sys
 sys.path.insert(0, os.path.abspath('.'))
 
 # Project information
+
 project = 'My C++ Project'
 author = 'Your Name'
 release = '1.0'
 
 # General configuration
+
 extensions = [
     'breathe'
 ]
 
 # Breathe configuration
+
 breathe_projects = {
     "My C++ Project": "./doxygen/xml"
 }

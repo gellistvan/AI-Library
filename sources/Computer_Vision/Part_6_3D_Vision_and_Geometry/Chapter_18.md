@@ -31,8 +31,10 @@ First, we need to define the structure to hold a point in a point cloud:
 
 ```cpp
 #include <vector>
+
 #include <cmath>
 #include <iostream>
+
 #include <opencv2/opencv.hpp>
 
 struct Point3D {
@@ -136,8 +138,10 @@ While OpenCV does not natively support ICP, we can implement a basic version in 
 
 ```cpp
 #include <vector>
+
 #include <iostream>
 #include <cmath>
+
 #include <Eigen/Dense>
 #include <opencv2/opencv.hpp>
 
@@ -297,8 +301,10 @@ First, include the necessary headers and define the structures:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <cmath>
+
 #include <Eigen/Dense>
 #include <PoissonRecon.h>
 

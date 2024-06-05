@@ -206,6 +206,7 @@ Az alábbiakban bemutatunk néhány gyakorlati példát C++ nyelven, hogy illusz
 
 ```cpp
 #include <iostream>
+
 #include <list>
 #include <iterator>
 
@@ -261,6 +262,7 @@ Ez a példa egy egyszerű hash tábla implementációját mutatja be, amely lán
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 class DoubleHashTable {
@@ -396,6 +398,7 @@ Az alábbiakban bemutatunk egy hash tábla implementációt, amely dinamikus át
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 class DoubleHashTable {

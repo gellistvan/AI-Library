@@ -17,6 +17,7 @@ Consider the following example of a class that follows the Rule of Zero:
 
 ```cpp
 #include <memory>
+
 #include <string>
 #include <vector>
 
@@ -278,8 +279,10 @@ Consider a class that manages a resource tied to its location, such as a memory-
 
 ```cpp
 #include <stdexcept> // For std::runtime_error
+
 #include <sys/mman.h> // For mmap, munmap
 #include <fcntl.h> // For open, O_RDONLY
+
 #include <unistd.h> // For close
 
 class MemoryMappedFile {
@@ -450,9 +453,11 @@ First, we define the public interface class. This class will contain a pointer t
 ```cpp
 // Widget.h
 #ifndef WIDGET_H
+
 #define WIDGET_H
 
 #include <memory> // For std::unique_ptr
+
 #include <string>
 
 class WidgetImpl; // Forward declaration
@@ -482,9 +487,11 @@ Next, we define the implementation class. This class will hold the actual data a
 ```cpp
 // WidgetImpl.h
 #ifndef WIDGETIMPL_H
+
 #define WIDGETIMPL_H
 
 #include <string>
+
 #include <vector>
 
 class WidgetImpl {
@@ -512,6 +519,7 @@ Now, we implement the public interface functions in the source file. The public 
 ```cpp
 // Widget.cpp
 #include "Widget.h"
+
 #include "WidgetImpl.h"
 
 Widget::Widget(const std::string& name) : pImpl(std::make_unique<WidgetImpl>(name)) {}
@@ -551,9 +559,11 @@ To fully support modern C++ idioms, the Pimpl Idiom can be extended to handle co
 ```cpp
 // Widget.h
 #ifndef WIDGET_H
+
 #define WIDGET_H
 
 #include <memory>
+
 #include <string>
 #include <vector>
 
@@ -584,6 +594,7 @@ std::unique_ptr<WidgetImpl> pImpl; // Pointer to implementation
 
 // Widget.cpp
 #include "Widget.h"
+
 #include "WidgetImpl.h"
 
 Widget::Widget(const std::string& name) : pImpl(std::make_unique<WidgetImpl>(name)) {}
@@ -745,6 +756,7 @@ Smart pointers, introduced in C++11, provide automatic lifetime management and h
 Example:
 ```cpp
 #include <iostream>
+
 #include <memory>
 
 class UniquePtrExample {
@@ -769,6 +781,7 @@ int main() {
 Example:
 ```cpp
 #include <iostream>
+
 #include <memory>
 
 class SharedPtrExample {
@@ -796,6 +809,7 @@ int main() {
 Example:
 ```cpp
 #include <iostream>
+
 #include <memory>
 
 class WeakPtrExample {
@@ -837,6 +851,7 @@ RAII is a programming idiom where resources are acquired and released by an obje
 Example:
 ```cpp
 #include <iostream>
+
 #include <memory>
 #include <fstream>
 
@@ -880,6 +895,7 @@ Ownership of dynamically allocated objects can be transferred to another owner u
 **Transferring Ownership with `std::unique_ptr`**:
 ```cpp
 #include <iostream>
+
 #include <memory>
 
 class TransferExample {
@@ -907,6 +923,7 @@ int main() {
 **Transferring Ownership with `std::shared_ptr`**:
 ```cpp
 #include <iostream>
+
 #include <memory>
 
 class TransferExample {
@@ -938,6 +955,7 @@ Circular references occur when two objects reference each other using `std::shar
 Example:
 ```cpp
 #include <iostream>
+
 #include <memory>
 
 class B; // Forward declaration
@@ -1010,6 +1028,7 @@ Define an abstract base class that contains the template method and abstract or 
 ```cpp
 // DataProcessor.h
 #ifndef DATAPROCESSOR_H
+
 #define DATAPROCESSOR_H
 
 #include <iostream>
@@ -1043,6 +1062,7 @@ Implement concrete subclasses that override the abstract methods to provide spec
 ```cpp
 // FileDataProcessor.h
 #ifndef FILEDATAPROCESSOR_H
+
 #define FILEDATAPROCESSOR_H
 
 #include "DataProcessor.h"
@@ -1069,6 +1089,7 @@ std::cout << "Writing data to file\n";
 
 // NetworkDataProcessor.h
 #ifndef NETWORKDATAPROCESSOR_H
+
 #define NETWORKDATAPROCESSOR_H
 
 #include "DataProcessor.h"
@@ -1102,6 +1123,7 @@ Create instances of the concrete subclasses and use the template method to execu
 
 ```cpp
 #include "FileDataProcessor.h"
+
 #include "NetworkDataProcessor.h"
 
 int main() {
@@ -1344,6 +1366,7 @@ Define an interface for policies and implement several concrete policy classes.
 ```cpp
 // LoggingPolicy.h
 #ifndef LOGGINGPOLICY_H
+
 #define LOGGINGPOLICY_H
 
 #include <iostream>
@@ -1380,6 +1403,7 @@ Define a host class that uses template parameters to incorporate the policies.
 ```cpp
 // DataProcessor.h
 #ifndef DATAPROCESSOR_H
+
 #define DATAPROCESSOR_H
 
 #include <string>
@@ -1410,6 +1434,7 @@ Create instances of the host class with different policies.
 
 ```cpp
 #include "DataProcessor.h"
+
 #include "LoggingPolicy.h"
 
 int main() {
@@ -1438,6 +1463,7 @@ Example:
 ```cpp
 // Policy.h
 #ifndef POLICY_H
+
 #define POLICY_H
 
 #include <iostream>
@@ -1493,6 +1519,7 @@ std::cout << "Caching data on disk: " << data << std::endl;
 ```cpp
 // DataProcessor.h
 #ifndef DATAPROCESSOR_H
+
 #define DATAPROCESSOR_H
 
 #include <string>
@@ -1519,6 +1546,7 @@ std::string data_;
 **Instantiating Host Class with Multiple Policies**:
 ```cpp
 #include "DataProcessor.h"
+
 #include "Policy.h"
 
 int main() {
@@ -1543,9 +1571,11 @@ Example:
 ```cpp
 // DataProcessor.h
 #ifndef DATAPROCESSOR_H
+
 #define DATAPROCESSOR_H
 
 #include <string>
+
 #include "Policy.h"
 
 template <typename LoggingPolicy = NoLogger, typename CachingPolicy = NoCache>
@@ -1596,6 +1626,7 @@ Policy-Based Design is widely used in real-world applications, particularly in l
 Example:
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 template <typename T, typename Allocator = std::allocator<T>>
@@ -1637,6 +1668,7 @@ int main() {
 Example:
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <algorithm>
 
@@ -1724,6 +1756,7 @@ Type traits are a form of metaprogramming that provide information about types. 
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 template <typename T>
@@ -1774,6 +1807,7 @@ SFINAE is a technique used to enable or disable template instantiations based on
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 template <typename T>
@@ -1840,8 +1874,10 @@ Tag dispatch is a technique used to select function overloads based on type trai
 
 ```cpp
 #include <iostream>
+
 #include <iterator>
 #include <vector>
+
 #include <list>
 
 template <typename Iterator>
@@ -1886,6 +1922,7 @@ Expression templates are a metaprogramming technique used to optimize mathematic
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 template <typename T>
@@ -1955,6 +1992,7 @@ Metaprogramming is widely used in real-world applications, especially in high-pe
 
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 template <typename T>

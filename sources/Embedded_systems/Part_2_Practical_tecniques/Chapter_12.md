@@ -49,6 +49,7 @@ The Observer pattern allows an object (the subject) to notify other objects (obs
 
 ```cpp
 #include <vector>
+
 #include <algorithm>
 
 class Observer {
@@ -296,6 +297,7 @@ Memory pools are a technique to manage dynamic memory allocation more efficientl
 
 ```cpp
 #include <array>
+
 #include <cstddef>
 
 template <typename T, std::size_t N>
@@ -445,6 +447,7 @@ Compiler optimizations can help reduce code size. Most compilers offer options t
 
 ```sh
 # GCC example
+
 gcc -Os -o output main.cpp
 ```
 
@@ -460,6 +463,7 @@ Using a real-time operating system (RTOS) can help manage task scheduling to mee
 
 ```cpp
 #include <FreeRTOS.h>
+
 #include <task.h>
 
 void highPriorityTask(void* pvParameters) {
@@ -734,6 +738,7 @@ Adopt a branching strategy like Git Flow to manage feature development, bug fixe
 git branch feature/add-sensor-calibration
 git checkout feature/add-sensor-calibration
 # Make changes
+
 git commit -m "Add calibration function to TemperatureSensor class"
 git checkout main
 git merge feature/add-sensor-calibration
@@ -749,6 +754,7 @@ Write unit tests to verify the functionality of individual modules. Use framewor
 
 ```cpp
 #include <gtest/gtest.h>
+
 #include "temperature_sensor.h"
 
 TEST(TemperatureSensorTest, ReadTemperature) {
@@ -768,6 +774,7 @@ Set up a CI pipeline using services like Travis CI, CircleCI, or GitHub Actions 
 
 ```yaml
 # .github/workflows/ci.yml
+
 name: CI
 
 on: [push, pull_request]

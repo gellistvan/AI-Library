@@ -68,6 +68,7 @@ A következő példában láthatjuk, hogyan lehet HMAC-ot implementálni C++ nye
 
 ```cpp
 #include <iostream>
+
 #include <string>
 #include <openssl/hmac.h>
 
@@ -141,6 +142,7 @@ Az MD5 (Message-Digest Algorithm 5) egy 128-bites hash funkció, amelyet széles
 Például:
 ```cpp
 #include <openssl/hmac.h>
+
 #include <iostream>
 #include <cstring>
 
@@ -170,6 +172,7 @@ A SHA-1 (Secure Hash Algorithm 1) 160-bites kimenetet generál, és bár sokkal 
 Például:
 ```cpp
 #include <openssl/hmac.h>
+
 #include <iostream>
 #include <cstring>
 
@@ -199,6 +202,7 @@ A SHA-256 a SHA-2 család tagja, amely 256-bites kimenettel rendelkezik. Sokkal 
 Például:
 ```cpp
 #include <openssl/hmac.h>
+
 #include <iostream>
 #include <cstring>
 
@@ -228,6 +232,7 @@ A SHA-512 szintén a SHA-2 család tagja, de 512-bites kimenettel. Ez az egyik l
 Például:
 ```cpp
 #include <openssl/hmac.h>
+
 #include <iostream>
 #include <cstring>
 

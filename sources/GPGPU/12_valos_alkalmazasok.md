@@ -17,6 +17,7 @@ Az Euler-módszer egy egyszerű és alapvető numerikus módszer az elsőrendű 
 
 ```cpp
 #include <stdio.h>
+
 #include <cuda.h>
 
 __global__ void euler_step(float *y, float *dydx, float dt, int N) {
@@ -69,6 +70,7 @@ A Runge-Kutta módszerek a numerikus integrálás pontosabb módszerei közé ta
 
 ```cpp
 #include <stdio.h>
+
 #include <cuda.h>
 
 __device__ float dydx(float y) {
@@ -122,6 +124,7 @@ A parciális differenciálegyenletek (PDE) megoldása még nagyobb számítási 
 
 ```cpp
 #include <stdio.h>
+
 #include <cuda.h>
 
 __global__ void heat_equation_step(float *u, float *u_new, int N, float alpha, float dt, float dx) {
@@ -192,6 +195,7 @@ A Sobel-operátor két 3x3-as konvolúciós mátrixot alkalmaz a kép x és y ir
 
 ```cpp
 #include <stdio.h>
+
 #include <cuda.h>
 
 __global__ void sobel_filter(unsigned char *input, unsigned char *output, int width, int height) {
@@ -251,9 +255,11 @@ Az alábbi példa bemutatja, hogyan lehet egy egyszerű konvolúciós műveletet
 
 ```cpp
 #include <stdio.h>
+
 #include <cuda.h>
 
 #define MASK_WIDTH 3
+
 #define MASK_RADIUS (MASK_WIDTH / 2)
 
 __global__ void convolution_2d(unsigned char *input, unsigned char *output, int width, int height, float *mask) {
@@ -341,6 +347,7 @@ from tensorflow.keras import layers, models
 train_images, test_images = train_images / 255.0, test_images / 255.0
 
 # Define the CNN model
+
 model = models.Sequential()
 model.add(layers.Conv2D(32, (3, 3), activation='relu', input_shape=(32, 32, 3)))
 model.add(layers.MaxPooling2D((2, 2)))
@@ -353,11 +360,13 @@ model.add(layers.Dense(64, activation='relu'))
 model.add(layers.Dense(10))
 
 # Compile the model
+
 model.compile(optimizer='adam',
               loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
               metrics=['accuracy'])
 
 # Train the model
+
 with tf.device('/GPU:0'):
     model.fit(train_images, train_labels, epochs=10, 
               validation_data=(test_images, test_labels))
@@ -391,6 +400,7 @@ train_images = train_images.reshape((60000, 28, 28, 1)).astype('float32') / 255
 test_images = test_images.reshape((10000, 28, 28, 1)).astype('float32') / 255
 
 # Define the neural network model
+
 model = models.Sequential([
     layers.Conv2D(32, (3, 3), activation='relu', input_shape=(28, 28, 1)),
     layers.MaxPooling2D((2, 2)),
@@ -402,11 +412,13 @@ model = models.Sequential([
 ])
 
 # Compile the model
+
 model.compile(optimizer='adam',
               loss='sparse_categorical_crossentropy',
               metrics=['accuracy'])
 
 # Train the model using GPU
+
 with tf.device('/GPU:0'):
     model.fit(train_images, train_labels, epochs=5, 
               validation_data=(test_images, test_labels))
@@ -425,6 +437,7 @@ import torch.optim as optim
 from torchvision import datasets, transforms
 
 # Load and preprocess data
+
 transform = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.5,), (0.5,))])
 trainset = datasets.MNIST('.', download=True, train=True, transform=transform)
 testset = datasets.MNIST('.', download=True, train=False, transform=transform)
@@ -432,6 +445,7 @@ trainloader = torch.utils.data.DataLoader(trainset, batch_size=64, shuffle=True)
 testloader = torch.utils.data.DataLoader(testset, batch_size=64, shuffle=False)
 
 # Define the neural network model
+
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
@@ -453,12 +467,14 @@ class Net(nn.Module):
         return torch.log_softmax(x, dim=1)
 
 # Initialize the model, loss function, and optimizer
+
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = Net().to(device)
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
 
 # Train the model
+
 epochs = 5
 for epoch in range(epochs):
     model.train()
@@ -472,6 +488,7 @@ for epoch in range(epochs):
     print(f'Epoch {epoch + 1}, Loss: {loss.item()}')
 
 # Test the model
+
 model.eval()
 correct = 0
 total = 0
@@ -507,12 +524,15 @@ train_images = train_images.astype('float32') / 255
 test_images = test_images.astype('float32') / 255
 
 # Load the pre-trained ResNet50 model
+
 base_model = applications.ResNet50(weights='imagenet', include_top=False, input_shape=(32, 32, 3))
 
 # Freeze the base model
+
 base_model.trainable = False
 
 # Add custom layers on top
+
 model = models.Sequential([
     base_model,
     layers.GlobalAveragePooling2D(),
@@ -521,11 +541,13 @@ model = models.Sequential([
 ])
 
 # Compile the model
+
 model.compile(optimizer='adam',
               loss='sparse_categorical_crossentropy',
               metrics=['accuracy'])
 
 # Train the model using GPU
+
 with tf.device('/GPU:0'):
     model.fit(train_images, train_labels, epochs=5, 
               validation_data=(test_images, test_labels))
@@ -551,6 +573,7 @@ Az alábbi példa bemutatja, hogyan lehet egy egyszerű ray tracing algoritmust 
 
 ```cpp
 #include <stdio.h>
+
 #include <curand_kernel.h>
 
 struct Vec3 {
@@ -703,6 +726,7 @@ A modern grafikus API-k, mint a Vulkan, támogatják a valós idejű ray tracing
 
 ```cpp
 #include <vulkan/vulkan.h>
+
 #include <glm/glm.hpp>
 #include <vector>
 

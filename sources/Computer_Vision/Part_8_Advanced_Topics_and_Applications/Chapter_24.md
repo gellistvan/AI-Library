@@ -39,6 +39,7 @@ First, we will implement object detection using the HOG feature descriptor and S
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/ml.hpp>
 #include <iostream>
 
@@ -88,6 +89,7 @@ Next, we will implement lane detection using the Hough Transform in C++ with Ope
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 using namespace cv;
@@ -181,6 +183,7 @@ First, let's implement feature extraction and matching using ORB.
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/features2d.hpp>
 #include <iostream>
 
@@ -226,8 +229,10 @@ Next, we will estimate the camera's motion between frames using the matched feat
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/calib3d.hpp>
 #include <opencv2/features2d.hpp>
+
 #include <iostream>
 
 using namespace cv;
@@ -323,6 +328,7 @@ We will start by implementing camera calibration using a chessboard pattern.
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 
 using namespace cv;
@@ -375,6 +381,7 @@ Next, we will implement object recognition using ORB features and the FLANN-base
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/features2d.hpp>
 #include <iostream>
 
@@ -422,6 +429,7 @@ Finally, we will implement a basic depth estimation for obstacle detection using
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/calib3d.hpp>
 #include <iostream>
 

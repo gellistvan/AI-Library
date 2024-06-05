@@ -65,6 +65,7 @@ Az alábbiakban egy egyszerű pseudo-kód bemutatja a kombinált ugrásos keres�
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <cmath>
 
@@ -233,8 +234,10 @@ Az alábbi példa egy kombinált ugrásos keresési algoritmust mutat be C++ nye
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <cmath>
+
 #include <chrono>
 
 // Node structure for the skip list

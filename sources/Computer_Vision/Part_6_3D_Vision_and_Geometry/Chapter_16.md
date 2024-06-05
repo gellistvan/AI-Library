@@ -47,6 +47,7 @@ OpenCV provides a rich set of functions to handle epipolar geometry. Below, we w
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <vector>
 #include <iostream>
 ```
@@ -174,8 +175,10 @@ OpenCV provides several functions for stereo matching, including the block match
 
 ```cpp
 #include <opencv2/opencv.hpp>
+
 #include <opencv2/calib3d.hpp>
 #include <opencv2/imgproc.hpp>
+
 #include <iostream>
 ```
 

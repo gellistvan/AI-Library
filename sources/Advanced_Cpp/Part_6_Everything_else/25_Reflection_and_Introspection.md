@@ -23,6 +23,7 @@ dynamic_cast<new_type>(expression)
 ##### Example
 ```cpp
 #include <iostream>
+
 #include <typeinfo>
 
 class Base {
@@ -64,6 +65,7 @@ typeid(expression)
 ##### Example
 ```cpp
 #include <iostream>
+
 #include <typeinfo>
 
 class Base {
@@ -98,6 +100,7 @@ RTTI is particularly useful in conjunction with polymorphism. When dealing with 
 ##### Example
 ```cpp
 #include <iostream>
+
 #include <typeinfo>
 
 class Animal {
@@ -161,6 +164,7 @@ While RTTI provides powerful capabilities, there are some limitations and consid
 RTTI is typically enabled by default in most C++ compilers. However, it can be disabled for performance or binary size reasons.
 
 ##### Example (GCC/Clang)
+
 To disable RTTI in GCC or Clang, use the `-fno-rtti` compiler flag:
 ```sh
 g++ -fno-rtti main.cpp -o main
@@ -179,6 +183,7 @@ Disabling RTTI will cause `dynamic_cast` and `typeid` to fail or be unavailable,
 ##### Example
 ```cpp
 #include <iostream>
+
 #include <typeinfo>
 #include <vector>
 
@@ -236,6 +241,7 @@ Type traits are templates that provide information about types at compile-time. 
 ##### Example
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 int main() {
@@ -279,6 +285,7 @@ The `<type_traits>` header provides a variety of type traits, including:
 ##### Example
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 struct PODType {
@@ -326,6 +333,7 @@ Type traits also provide templates to modify types. These are particularly usefu
 ##### Example
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 int main() {
@@ -350,6 +358,7 @@ Type functions, often implemented as templates, allow you to define custom type 
 ##### Example: Custom Type Function
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 template<typename T>
@@ -377,6 +386,7 @@ Substitution Failure Is Not An Error (SFINAE) is a key concept in template metap
 ##### Example: SFINAE with `std::enable_if`
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 template<typename T>
@@ -413,6 +423,7 @@ Type traits and type functions have numerous practical applications in C++ progr
 ##### Example: Compile-Time Check
 ```cpp
 #include <iostream>
+
 #include <type_traits>
 
 template<typename T>
@@ -458,8 +469,10 @@ First, we define macros to simplify the declaration of reflected classes and the
 
 ```cpp
 #include <iostream>
+
 #include <string>
 #include <unordered_map>
+
 #include <vector>
 
 struct MemberInfo {
@@ -746,6 +759,7 @@ Using the reflection system, we can implement a simple JSON serializer:
 
 ```cpp
 #include <iostream>
+
 #include <string>
 #include <nlohmann/json.hpp>
 
@@ -803,8 +817,10 @@ First, include the necessary Boost headers and set up a type-erased wrapper:
 
 ```cpp
 #include <iostream>
+
 #include <boost/type_erasure/any.hpp>
 #include <boost/type_erasure/any_cast.hpp>
+
 #include <boost/type_erasure/member.hpp>
 #include <boost/mpl/vector.hpp>
 
@@ -844,6 +860,7 @@ First, include the RTTR headers and set up a class for reflection:
 
 ```cpp
 #include <iostream>
+
 #include <rttr/registration>
 
 class Person {
@@ -897,6 +914,7 @@ First, include the Meta headers and set up a class for reflection:
 
 ```cpp
 #include <iostream>
+
 #include <meta/meta.hpp>
 
 class Car {
@@ -968,6 +986,7 @@ Using RTTR, we can implement a JSON serializer for our `Person` class:
 
 ```cpp
 #include <iostream>
+
 #include <rttr/registration>
 #include <nlohmann/json.hpp>
 

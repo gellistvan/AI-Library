@@ -27,6 +27,7 @@ Let’s start with a simple example of an embedded DSL for mathematical expressi
 
 ```cpp
 #include <iostream>
+
 #include <sstream>
 #include <string>
 
@@ -103,8 +104,10 @@ To improve the fluency of our DSL, we can enhance it with method chaining. This 
 
 ```cpp
 #include <iostream>
+
 #include <sstream>
 #include <memory>
+
 #include <string>
 
 class Expression {
@@ -185,8 +188,10 @@ For more advanced DSLs, template metaprogramming can be used to create even more
 
 ```cpp
 #include <iostream>
+
 #include <sstream>
 #include <memory>
+
 #include <string>
 
 template<typename T>
@@ -304,6 +309,7 @@ Create a file named `calc.y` for the grammar:
 ```yacc
 %{
 #include <cstdio>
+
 #include <cstdlib>
 
 void yyerror(const char *s);
@@ -427,8 +433,10 @@ Create a `main.cpp` file to integrate the generated parser:
 
 ```cpp
 #include <iostream>
+
 #include "antlr4-runtime.h"
 #include "CalcLexer.h"
+
 #include "CalcParser.h"
 
 using namespace antlr4;
@@ -471,6 +479,7 @@ Let’s define the same arithmetic language using Boost.Spirit:
 
 ```cpp
 #include <boost/spirit/include/qi.hpp>
+
 #include <iostream>
 #include <string>
 
@@ -557,6 +566,7 @@ First, let's define a basic vector class without expression templates:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 class Vector {
@@ -636,6 +646,7 @@ Let's define an expression template framework:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 // Forward declaration of template classes
@@ -856,8 +867,10 @@ We start by defining the basic constructs of our query language. We'll focus on 
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <string>
+
 #include <functional>
 
 class Query {
@@ -946,6 +959,7 @@ We define classes for HTML elements and attributes, allowing for nested structur
 
 ```cpp
 #include <iostream>
+
 #include <string>
 #include <vector>
 
@@ -1025,6 +1039,7 @@ We start by defining a basic matrix class with support for addition, subtraction
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <stdexcept>
 

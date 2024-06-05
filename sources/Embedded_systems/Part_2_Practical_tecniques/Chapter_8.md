@@ -78,9 +78,11 @@ To use GDB with an embedded system, you typically need a GDB server, such as Ope
 
 ```sh
 # Start the GDB server
+
 openocd -f interface/stlink.cfg -f target/stm32f4x.cfg
 
 # In another terminal, start GDB and connect to the server
+
 arm-none-eabi-gdb my_program.elf
 (gdb) target remote localhost:3333
 (gdb) load
@@ -234,6 +236,7 @@ Let's write a simple example to demonstrate how to use CppUTest.
 ```cpp
 // Calculator.h
 #ifndef CALCULATOR_H
+
 #define CALCULATOR_H
 
 class Calculator {
@@ -263,6 +266,7 @@ int Calculator::subtract(int a, int b) {
 ```cpp
 // CalculatorTest.cpp
 #include "CppUTest/TestHarness.h"
+
 #include "Calculator.h"
 
 TEST_GROUP(CalculatorTest) {
@@ -308,6 +312,7 @@ Mocking allows you to simulate hardware components, making it possible to run te
 ```cpp
 // MockGPIO.h
 #ifndef MOCKGPIO_H
+
 #define MOCKGPIO_H
 
 class MockGPIO {
@@ -344,6 +349,7 @@ You can then use the mock class in your tests:
 ```cpp
 // GPIOTest.cpp
 #include "CppUTest/TestHarness.h"
+
 #include "MockGPIO.h"
 
 TEST_GROUP(GPIOTest) {
@@ -376,6 +382,7 @@ In some cases, you may need to run tests on actual hardware. This approach, know
 ```cpp
 // GPIO.h
 #ifndef GPIO_H
+
 #define GPIO_H
 
 class GPIO {
@@ -391,6 +398,7 @@ public:
 ```cpp
 // GPIO.cpp
 #include "GPIO.h"
+
 #include "mbed.h"
 
 DigitalOut led(LED1);
@@ -436,6 +444,7 @@ Automating your tests and integrating them into a continuous integration (CI) pi
 
 ```sh
 #!/bin/bash
+
 make clean
 make all
 ./CalculatorTest
@@ -715,6 +724,7 @@ The output will show which functions consume the most time, helping you focus op
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 void heavyComputation() {

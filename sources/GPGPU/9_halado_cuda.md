@@ -61,6 +61,7 @@ Az alábbi példában egy egyszerű CUDA alkalmazást mutatunk be, amely két k�
 
 ```cpp
 #include <cuda_runtime.h>
+
 #include <iostream>
 
 __global__ void simpleKernel(int *data) {
@@ -122,6 +123,7 @@ A következő példában egy összetettebb alkalmazást mutatunk be, amely több
 
 ```cpp
 #include <cuda_runtime.h>
+
 #include <iostream>
 #include <vector>
 
@@ -225,6 +227,7 @@ A CUDA 6.0 óta a `cudaMalloc` és `cudaFree` függvények nemcsak a host oldalo
 
 ```cpp
 #include <cuda_runtime.h>
+
 #include <iostream>
 
 __global__ void dynamicAllocKernel(int n) {
@@ -280,6 +283,7 @@ Egy alternatív megoldás a `cudaMallocManaged` használata, amely unified memor
 
 ```cpp
 #include <cuda_runtime.h>
+
 #include <iostream>
 
 __global__ void managedMemoryKernel(int *data, int n) {
@@ -328,6 +332,7 @@ A dinamikus memóriaallokáció hasznos lehet számos alkalmazásban, például:
 
 ```cpp
 #include <cuda_runtime.h>
+
 #include <iostream>
 #include <vector>
 
@@ -398,6 +403,7 @@ A CUDA 6.0 verziótól kezdve a `malloc` és `free` függvények elérhetők a G
 
 ```cpp
 #include <cuda_runtime.h>
+
 #include <iostream>
 
 __global__ void dynamicAllocKernel(int n) {
@@ -458,6 +464,7 @@ Az alábbi példában bemutatjuk, hogyan használhatjuk újra a dinamikusan allo
 
 ```cpp
 #include <cuda_runtime.h>
+
 #include <iostream>
 
 __global__ void reuseDynamicAllocKernel(int *data, int n, int iterations) {
@@ -524,6 +531,7 @@ A `cudaMallocManaged` függvény segítségével unified memory-t is használhat
 
 ```cpp
 #include <cuda_runtime.h>
+
 #include <iostream>
 
 __global__ void managedMemoryKernel(int *data, int n) {
@@ -572,6 +580,7 @@ A dinamikus memóriaallokáció számos gyakorlati alkalmazásban hasznos lehet,
 
 ```cpp
 #include <cuda_runtime.h>
+
 #include <iostream>
 #include <vector>
 
@@ -644,6 +653,7 @@ Az alábbi példában bemutatjuk, hogyan használhatjuk a Managed Memory-t egy e
 
 ```cpp
 #include <cuda_runtime.h>
+
 #include <iostream>
 
 __global__ void incrementKernel(int *data, int size) {
@@ -711,6 +721,7 @@ Az alábbi példában egy nagyméretű adatsorozatot dolgozunk fel a GPU-n, majd
 
 ```cpp
 #include <cuda_runtime.h>
+
 #include <iostream>
 
 __global__ void processLargeDataKernel(float *data, int size) {
@@ -758,6 +769,7 @@ A következő példában egy dinamikus adatszerkezet, például egy lista, kezel
 
 ```cpp
 #include <cuda_runtime.h>
+
 #include <iostream>
 #include <vector>
 
@@ -833,6 +845,7 @@ Az alábbi példában bemutatjuk, hogyan használhatjuk a `cudaMemPrefetchAsync`
 
 ```cpp
 #include <cuda_runtime.h>
+
 #include <iostream>
 
 __global__ void prefetchKernel(float *data, int size) {

@@ -27,6 +27,7 @@ Az alábbiakban bemutatjuk a rekurzív Merge Sort algoritmus C++ nyelvű impleme
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 // Merge két rendezett alrész összevonása
@@ -137,6 +138,7 @@ A Bottom-up merge sort algoritmus C++ nyelvű implementációja az alábbiakban 
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 // Merge két rendezett alrész összevonása
@@ -291,6 +293,7 @@ Az alábbiakban bemutatjuk a Merge Sort algoritmus C++ nyelvű implementációj�
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 void merge(std::vector<int>& arr, int left, int mid, int right) {
@@ -364,6 +367,7 @@ int main() {
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 void merge(std::vector<int>& arr, int left, int mid, int right) {
@@ -464,6 +468,7 @@ Tegyük fel, hogy egy adatbázisban található rekordokat kell rendezni név sz
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <string>
 
@@ -548,6 +553,7 @@ A párhuzamos Merge Sort implementálása C++ nyelven:
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 #include <thread>
 

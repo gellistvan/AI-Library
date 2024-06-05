@@ -205,8 +205,10 @@ Consider an example where a program processes multiple files concurrently. Each 
 
 ```cpp
 #include <iostream>
+
 #include <fstream>
 #include <thread>
+
 #include <vector>
 #include <string>
 
@@ -248,10 +250,13 @@ To ensure thread-safe access to shared data, use a mutex.
 
 ```cpp
 #include <iostream>
+
 #include <fstream>
 #include <thread>
+
 #include <vector>
 #include <string>
+
 #include <mutex>
 
 std::mutex mtx;
@@ -580,8 +585,10 @@ Consider a multithreaded application that processes data chunks. Optimizing sync
 
 ```cpp
 #include <iostream>
+
 #include <thread>
 #include <vector>
+
 #include <mutex>
 
 std::mutex mtx;
@@ -894,8 +901,10 @@ Consider a real-life scenario where multiple threads increment a shared counter.
 
 ```cpp
 #include <iostream>
+
 #include <thread>
 #include <mutex>
+
 #include <vector>
 
 std::mutex mtx;

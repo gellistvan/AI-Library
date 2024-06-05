@@ -50,6 +50,7 @@ Az alábbiakban bemutatunk egy példaimplementációt C++ nyelven a Sudoku megol
 
 ```cpp
 #include <iostream>
+
 #include <vector>
 
 using namespace std;
