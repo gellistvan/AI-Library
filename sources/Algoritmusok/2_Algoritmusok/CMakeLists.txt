@@ -1,0 +1,91 @@
+include(common)
+set(1_SEARCH
+        "${CMAKE_CURRENT_SOURCE_DIR}/1_1.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/1_2.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/1_3.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/1_4.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/1_5.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/1_6.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/1_7.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/1_8.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/1_9.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/1_10.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/1_11.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/1_12.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/1_13.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/1_14.md"
+        PARENT_SCOPE
+)
+
+set(2_ORDER
+        "${CMAKE_CURRENT_SOURCE_DIR}/2_1.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/2_2.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/2_3.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/2_4.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/2_5.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/2_6.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/2_7.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/2_8.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/2_9.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/2_10.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/2_11.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/2_12.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/2_13.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/2_14.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/2_15.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/2_16.md"
+        PARENT_SCOPE
+)
+
+set(3_DYNAMIC
+        "${CMAKE_CURRENT_SOURCE_DIR}/3_1.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/3_2.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/3_3.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/3_4.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/3_5.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/3_6.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/3_7.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/3_8.md"
+        PARENT_SCOPE
+)
+
+set(4_GREEDY
+        "${CMAKE_CURRENT_SOURCE_DIR}/4_1.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/4_2.md"
+        PARENT_SCOPE
+)
+
+set(5_BACKTRACK
+        "${CMAKE_CURRENT_SOURCE_DIR}/5_1.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/5_2.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/5_3.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/5_4.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/5_5.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/5_6.md"
+        PARENT_SCOPE
+)
+
+set(6_DIVIDE
+        "${CMAKE_CURRENT_SOURCE_DIR}/6_1.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/6_2.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/6_3.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/6_4.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/6_5.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/6_6.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/6_7.md"
+        PARENT_SCOPE
+)
+set(7_HALOZATI
+        "${CMAKE_CURRENT_SOURCE_DIR}/7_1.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/7_2.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/7_3.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/7_4.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/7_5.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/7_6.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/7_7.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/7_8.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/7_9.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/7_10.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/7_11.md"
+        PARENT_SCOPE
+)

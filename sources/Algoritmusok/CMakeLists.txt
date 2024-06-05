@@ -1,5 +1,7 @@
-add_subdirectory(2_adatszerkezetek)
-add_subdirectory(3_Algoritmusok)
+add_subdirectory(1_adatszerkezetek)
+add_subdirectory(2_Algoritmusok)
+add_subdirectory(3_kriptografia_es_kodolas)
+add_subdirectory(4_specialis_temak_fejlett_algoritmusok)
 
 set(ALGORITHMS
         ${1_SEARCH}
@@ -19,14 +21,16 @@ set(ALL_CHAPTERS
 )
 
 
-#add_combined_book_target(3_1_keresesek ${CMAKE_CURRENT_SOURCE_DIR}/preamble.yml a4 "${1_SEARCH}")
-#add_combined_book_target(3_2_rendezesek ${CMAKE_CURRENT_SOURCE_DIR}/preamble.yml a4 "${2_ORDER}")
-#add_combined_book_target(3_3_dinamikus ${CMAKE_CURRENT_SOURCE_DIR}/preamble.yml a4 "${3_DYNAMIC}")
-#add_combined_book_target(3_4_moho ${CMAKE_CURRENT_SOURCE_DIR}/preamble.yml a4 "${4_GREEDY}")
-#add_combined_book_target(3_5_backtrack ${CMAKE_CURRENT_SOURCE_DIR}/preamble.yml a4 "${5_BACKTRACK}")
-#add_combined_book_target(3_6_oszd_meg ${CMAKE_CURRENT_SOURCE_DIR}/preamble.yml a4 "${6_DIVIDE}")
-#add_combined_book_target(3_7_halozati ${CMAKE_CURRENT_SOURCE_DIR}/preamble.yml a4 "${7_HALOZATI}")
+#add_combined_book_target(3_1_keresesek ${CMAKE_CURRENT_SOURCE_DIR}/algoritmusok.yml a4 "${1_SEARCH}")
+#add_combined_book_target(3_2_rendezesek ${CMAKE_CURRENT_SOURCE_DIR}/algoritmusok.yml a4 "${2_ORDER}")
+#add_combined_book_target(3_3_dinamikus ${CMAKE_CURRENT_SOURCE_DIR}/algoritmusok.yml a4 "${3_DYNAMIC}")
+#add_combined_book_target(3_4_moho ${CMAKE_CURRENT_SOURCE_DIR}/algoritmusok.yml a4 "${4_GREEDY}")
+#add_combined_book_target(3_5_backtrack ${CMAKE_CURRENT_SOURCE_DIR}/algoritmusok.yml a4 "${5_BACKTRACK}")
+#add_combined_book_target(3_6_oszd_meg ${CMAKE_CURRENT_SOURCE_DIR}/algoritmusok.yml a4 "${6_DIVIDE}")
+#add_combined_book_target(3_7_halozati ${CMAKE_CURRENT_SOURCE_DIR}/algoritmusok.yml a4 "${7_HALOZATI}")
 
-add_combined_book_target(adatszerkezetek ${CMAKE_CURRENT_SOURCE_DIR}/preamble.yml a4 "${PART_2_CHAPTERS}")
-add_combined_book_target(algoritmusok ${CMAKE_CURRENT_SOURCE_DIR}/preamble.yml a4 "${ALGORITHMS}")
+add_combined_book_target(adatszerkezetek ${CMAKE_CURRENT_SOURCE_DIR}/adatszerkezetek.yml a4 "${PART_2_CHAPTERS}")
+add_combined_book_target(algoritmusok ${CMAKE_CURRENT_SOURCE_DIR}/algoritmusok.yml a4 "${ALGORITHMS}")
+add_combined_book_target(kriptografia_es_kodolas ${CMAKE_CURRENT_SOURCE_DIR}/kriptografia.yml a4 "${PART_4_CHAPTERS}")
+add_combined_book_target(specialis_temak_fejlett_algoritmusok ${CMAKE_CURRENT_SOURCE_DIR}/fejlett_algoritmusok.yml a4 "${PART_5_CHAPTERS}")
 #add_combined_book_target(algoritmusok_es_adatszerkezetek ${CMAKE_CURRENT_SOURCE_DIR}/preamble.yml a4 "${ALL_CHAPTERS}")

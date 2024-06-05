@@ -1,6 +1,6 @@
 \newpage
 
-# I. Bevezetés az algoritmusok és adatszerkezetek világába
+# Bevezetés az algoritmusok és adatszerkezetek világába
 
 ### 1. Az algoritmusok és adatszerkezetek szerepe a programozásban
 
