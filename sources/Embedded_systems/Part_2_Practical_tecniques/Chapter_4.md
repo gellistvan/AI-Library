@@ -52,7 +52,8 @@ int32_t sensorReading; // Use for standard sensor readings, needing more range`
 
 **Example of Structure Packing:**
 
-```cppcpp#include <stdint.h>
+```cpp
+#include <stdint.h>
 
 #pragma pack(push, 1) // Start byte packing
 struct SensorData {
