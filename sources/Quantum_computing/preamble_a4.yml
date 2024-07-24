@@ -1,0 +1,14 @@
+title: Quantum Computing
+subtitle: Fundamentals, Algorithms, and Applications
+author: Istvan Gellai
+fontsize: 12pt
+papersize: a4
+margin-left: 2cm
+margin-right: 2cm
+margin-top: 2.5cm
+margin-bottom: 2.5cm
+highlight-syntax: kate
+toc: true
+header-includes:
+  - \usepackage{fvextra}
+  - \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
